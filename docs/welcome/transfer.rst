@@ -131,7 +131,7 @@ You should `import your beatmaps and skins manually instead <import.html>`_.
 
 .. note::
 
-    Well I guess it is actually sort of possible rn.
+    Well I guess it is actually *sort of* possible.
 
     For someone who plays more on lazer than stable, having a beatmap importer that could import files from lazer to stable sure would be useful!
 
