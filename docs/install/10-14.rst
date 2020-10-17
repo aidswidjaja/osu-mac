@@ -99,7 +99,7 @@ Below are some helpful tips if you're a bit lost, but if you know what you're do
        
             su - administrator
 
-    where ``administrator`` is the name of your system's admin account. When the ``Password:`` prompt appears, enter your password for ``administrator`` (or whatever your admin account is). Then try running the Terminal command in Option B again (or to do this automatically, type ``sudo !!``).
+    where ``administrator`` is the name of your system's admin account. When the ``Password:`` prompt appears, enter your password for ``administrator`` (or whatever your admin account is). Then try running the Terminal command again (or to do this automatically, type ``sudo !!``).
 
     If you don't know which account is your admin account (like if you use a family computer), go to the ``Apple menu`` (top-left corner of the screen) > ``System Preferences...`` > ``Users & Groups`` and you should be able to see which account is your administrator account. You'll still need the password to execute the command though.
 
