@@ -72,11 +72,15 @@ For example, my configuration file is ``osu!.Adrian.cfg`` and it looks like this
 Compatibility Mode
 =======================================
 
-If you enabled Compatibility Mode (aka osu!fallback) and now osu! won't start, find the ``CompatibilityContext`` option.
+If you enabled Compatibility Mode and now osu! won't start, find the ``CompatibilityContext`` option.
 
 .. tip::
 
     Use ``Command + F`` in TextEdit to quickly search for ``CompatibilityContext``.
+
+.. note::
+
+	`osu!macOS Agent <https://osu.ppy.sh/community/forums/topics/1036678>`_ will automatically disable Compatibly Mode as part of its troubleshooting steps.
 
 If you *did* enable it, it would look like this:
 

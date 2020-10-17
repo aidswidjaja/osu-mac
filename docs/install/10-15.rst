@@ -58,7 +58,7 @@ Step 1: Download the Wineskin
 
 **Download the osu! Wineskin from Technocoder:**
 
-- **osu! forum thread:** `https://osu.ppy.sh/community/forums/topics/1106057?start=7560723 <https://osu.ppy.sh/community/forums/topics/1106057?start=7560723>`_
+- **osu! forum thread:** `https://osu.ppy.sh/community/forums/posts/7560723 <https://osu.ppy.sh/community/forums/posts/7560723>`_
 - **Mega.NZ (468MB):** `https://mega.nz/file/... <https://mega.nz/file/54sgCaJB#nzuV4BNcOx7sJ-zx8elWwO9qgQCrHK763mIrTYyozZU>`_
 
 .. note::
@@ -82,7 +82,7 @@ Step 2: Repair the Wineskin
 ****************************************
 
 .. image:: ../assets/osu-broken.png
-    :alt: 'osu!.app is damage and can't be opened. You should move it to the Bin.
+    :alt: 'osu!.app is damaged and can't be opened. You should move it to the Bin.
 
 If you try to open the Wineskin immediately, macOS will say that it's broken. Let's fix that.
 
@@ -94,7 +94,7 @@ If you try to open the Wineskin immediately, macOS will say that it's broken. Le
 If it was successful, you should see a **Fixed** indicator next to ``Quarantine attribute is present`` in the log.
 
 .. image:: ../assets/osu-agent-log.png
-    :alt: 'osu!.app is damage and can't be opened. You should move it to the Bin.
+    :alt: 'osu!.app is damaged and can't be opened. You should move it to the Bin.
 
 .. raw:: html
 

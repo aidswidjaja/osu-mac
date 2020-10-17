@@ -30,6 +30,10 @@ Transferring from a different osu! Wineskin
 
 *Well this is about to get meta*
 
+.. danger::
+
+	These steps will **not** transfer over replays and scores.
+
 To transfer Songs or Skins from another osu! Wineskin:
 
 1. In your **old osu! Wineskin**, find your ``Songs`` or ``Skins`` directory
