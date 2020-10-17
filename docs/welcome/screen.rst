@@ -98,7 +98,7 @@ To save your changes, click the red circular close icon in the top-left corner o
 
     Turning on Compatibility Mode in osu! may crash your game.
     
-    If you turned on Compatibility Mode and now osu! crashes on startup, see `Common issues: osu! was unable to obtain a graphics context. <graphics.html>`_.
+    If you turned on Compatibility Mode and now osu! crashes on startup, see `Common issues: osu! was unable to obtain a graphics context. <../issues/graphics.html>`_.
 
 .. warning::
 
@@ -109,6 +109,6 @@ To save your changes, click the red circular close icon in the top-left corner o
         :height: 200px
 
     |
-    | If your osu! crashes after a graphics settings modification in-game, see `Common issues: osu! was unable to obtain a graphics context. <graphics.html>`_.
+    | If your osu! crashes after a graphics settings modification in-game, see `Common issues: osu! was unable to obtain a graphics context. <../issues/graphics.html>`_.
 
 .. image source: https://www.reddit.com/r/osugame/comments/cfv3td/compatibility_mode_crashes_osu_on_mac/
