@@ -80,7 +80,7 @@ If you enabled Compatibility Mode and now osu! won't start, find the ``Compatibi
 
 .. note::
 
-	`osu!macOS Agent <https://osu.ppy.sh/community/forums/topics/1036678>`_ will automatically disable Compatibly Mode as part of its troubleshooting steps.
+	`osu!macOS Agent <https://osu.ppy.sh/community/forums/topics/1036678>`_ will automatically disable Compatibility Mode as part of its troubleshooting steps.
 
 If you *did* enable it, it would look like this:
 
