@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>slc’s Wineskin for macOS 10.14 Mojave and earlier &mdash; osu!mac</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Welcome to osu!" href="../welcome/index.html" />
+    <link rel="prev" title="Technocoder’s Wineskin with support for macOS 10.15 Catalina and later" href="10-15.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> osu!mac
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installing osu!</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="10-15.html">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">slc’s Wineskin for macOS 10.14 Mojave and earlier</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-download-the-wineskin">Step 1: Download the Wineskin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-repair-the-wineskin">Step 2: Repair the Wineskin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-updating-osu">Step 3: Updating osu!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-4-run-osu">Step 4: Run osu!</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Welcome to osu!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/index.html">Welcome to osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/screen.html">Setting up your screen options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/import.html">Importing beatmaps and skins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/transfer.html">Transferring data from another osu! installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../issues/index.html">Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/troubleshooting.html">Troubleshooting Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/wontclose.html">osu! won’t close</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/malware.html">osu! is being detected as malware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (&lt;10.14)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (10.15+)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About this project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">osu!mac</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>slc’s Wineskin for macOS 10.14 Mojave and earlier</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/install/10-14.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="slc-s-wineskin-for-macos-10-14-mojave-and-earlier">
+<h1>slc’s Wineskin for macOS 10.14 Mojave and earlier<a class="headerlink" href="#slc-s-wineskin-for-macos-10-14-mojave-and-earlier" title="Permalink to this headline">¶</a></h1>
+<div class="wineskin-version line-block">
+<div class="line">This article is applicable to the following wrappers:</div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://drive.google.com/uc?id=16lR87eCVYtpjiK6KKA4rNghfpimnj1aE&amp;export=download">Wineskin for macOS 10.14 Mojave and earlier</a></div>
+</div>
+<p>This guide will walk you through how to install <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s Wineskin for <strong>macOS 10.14 Mojave and earlier.</strong> If you are using macOS Catalina 10.15 or later, view the <a class="reference external" href="10-15.html">Catalina tutorial</a> instead.</p>
+<hr class="docutils" />
+<div class="section" id="step-1-download-the-wineskin">
+<h2>Step 1: Download the Wineskin<a class="headerlink" href="#step-1-download-the-wineskin" title="Permalink to this headline">¶</a></h2>
+<p><strong>Download the osu! Wineskin from slc:</strong></p>
+<ul class="simple">
+<li><p><strong>osu! forum thread:</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">community/forums/topics/682197?start=6919344</a></p></li>
+<li><p><strong>Google Drive download link (248MB):</strong> <a class="reference external" href="https://drive.google.com/uc?id=16lR87eCVYtpjiK6KKA4rNghfpimnj1aE&amp;export=download">https://drive.google.com/…</a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To play osu! on macOS a compatibility layer called <strong>Wine</strong> is used. A <strong>Wineskin</strong> allows a preconfigured version of Wine to be bundled as one app so that you can get right into the game without messing about with the settings.</p>
+</div>
+<p>Once it has downloaded, extract the <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file.</p>
+<p><strong>Move it outside of your Downloads folder, such as your Desktop.</strong> This is really important, as not doing so could lead osu! to be <a class="reference external" href="https://en.wikipedia.org/wiki/Sandbox_(computer_security)">sandboxed</a>.</p>
+<p>We also recommend downloading <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s osu!macOS Agent program, since it’ll be used throughout this guide. In general, it’s a great tool that every macOS osu-stable player on Wine should have. However, this is optional (though strongly encouraged) and alternative instructions are provided for those who are comfortable with digging deeper.</p>
+<ul class="simple">
+<li><p><strong>osu! forum thread:</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">community/forums/topics/1036678</a></p></li>
+<li><p><strong>GitHub download link (7.61MB):</strong> <a class="reference external" href="https://github.com/Techno-coder/osu-macOS-Agent/releases/download/refs%2Fheads%2Fmaster/osu.macOS.Agent.zip">&lt;https://github.com/Techno-coder/…</a></p></li>
+<li><p><strong>Mega.nz download link (7.61MB):</strong> <a class="reference external" href="https://mega.nz/file/Fw9UmIbK#tzI4XDO1aoDuDiQ35V1sy8XDWlB5p_0O2ovCBbo9feo">https://mega.nz/…</a></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="step-2-repair-the-wineskin">
+<h2>Step 2: Repair the Wineskin<a class="headerlink" href="#step-2-repair-the-wineskin" title="Permalink to this headline">¶</a></h2>
+<p>If you try to open the Wineskin immediately, macOS will say that it’s broken.</p>
+<img alt="'osu!.app is damage and can't be opened. You should move it to the Bin." src="../_images/osu-broken.png" />
+<ol class="arabic simple">
+<li><p>Open osu!macOS Agent</p></li>
+<li><p>Click the <strong>Troubleshoot</strong> tab</p></li>
+<li><p>Click <strong>Scan</strong></p></li>
+<li><p>Once the scan is complete, click <strong>Repair</strong></p></li>
+</ol>
+<p>If it was successful, you should see a <strong>Fixed</strong> indicator next to <code class="docutils literal notranslate"><span class="pre">Quarantine</span> <span class="pre">attribute</span> <span class="pre">is</span> <span class="pre">present</span></code> in the log.</p>
+<img alt="'osu!.app is damage and can't be opened. You should move it to the Bin." src="../_images/osu-agent-log.png" />
+<details>
+<summary><h4 style="display: inline;">Alternative option: Using the Terminal</h4></summary>
+<br><p>On the bleeding edge? You can also use the Terminal to repair your Wineskin.</p>
+<ol class="arabic simple">
+<li><p>Open Terminal. It should be in your <code class="docutils literal notranslate"><span class="pre">Applications/Utilities</span></code> folder.</p></li>
+<li><p>Type the following command.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo xattr -rd com.apple.quarantine <span class="s2">&quot;~/path/to/my/osu\!.app&quot;</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">~/path/to/my/osu\!.app</span></code> is the filepath to your osu! install.</p>
+<p>For example: if my <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> was in the Desktop, the command to enter would be:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo xattr -rd com.apple.quarantine <span class="s2">&quot;/Users/Adrian/Desktop/osu!.app&quot;</span>
+</pre></div>
+</div>
+<p>Below are some helpful tips if you’re a bit lost, but if you know what you’re doing feel free to skim over them.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For an application with the name <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code>, the <code class="docutils literal notranslate"><span class="pre">!</span></code> will confuse the Terminal window. Therefore, you must <a class="reference external" href="https://en.wikipedia.org/wiki/Escape_character">escape</a> it by prefixing the <code class="docutils literal notranslate"><span class="pre">!</span></code> with a <code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash) to form <code class="docutils literal notranslate"><span class="pre">osu\!.app</span></code>. It is also recommended you enclose the filepath in quotation marks.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may be asked for your password. While entering your password the cursor might blink but you won’t see any characters appear on the screen - this is normal! Just proceed to type your password as if there was a dialog box there, and hit <em>Enter</em> once you’re done. (If you stuffed it up you’ll get another chance to retype it.)</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you get a <code class="docutils literal notranslate"><span class="pre">Permission</span> <span class="pre">denied</span></code> error it means you aren’t using an administrator account. In your Terminal window, type:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>su - administrator
+</pre></div>
+</div>
+</div></blockquote>
+<p>where <code class="docutils literal notranslate"><span class="pre">administrator</span></code> is the name of your system’s admin account. When the <code class="docutils literal notranslate"><span class="pre">Password:</span></code> prompt appears, enter your password for <code class="docutils literal notranslate"><span class="pre">administrator</span></code> (or whatever your admin account is). Then try running the Terminal command in Option B again (or to do this automatically, type <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">!!</span></code>).</p>
+<p>If you don’t know which account is your admin account (like if you use a family computer), go to the <code class="docutils literal notranslate"><span class="pre">Apple</span> <span class="pre">menu</span></code> (top-left corner of the screen) &gt; <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Preferences...</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Users</span> <span class="pre">&amp;</span> <span class="pre">Groups</span></code> and you should be able to see which account is your administrator account. You’ll still need the password to execute the command though.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On older macOS versions, you may get a warning that looks like this.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Improper use of the sudo <span class="nb">command</span> could lead to data loss or the deletion of important system files. Please double-check your typing when using sudo. Type <span class="s2">&quot;man sudo&quot;</span> <span class="k">for</span> more information. To proceed, enter your password, or <span class="nb">type</span> Ctrl-C to abort.
+</pre></div>
+</div>
+</div></blockquote>
+<p>Type your password as normal, as shown above.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Having trouble finding the filepath of your osu! installation? You can drag and drop the file from your installation directory (or the Desktop) to get the path!</p>
+<img alt="Dragging and dropping osu!.app into the terminal" src="../_images/terminal-drag-and-drop.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">My Terminal will look slightly different to yours, but the concept (and the command!) remains the same.</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Unless you do something incredibly stupid, you probably won’t completely stuff your computer. That being said, if you do something incredibly stupid, you’ll stuff your computer. The <code class="docutils literal notranslate"><span class="pre">sudo</span></code> command allows your local user account to perform otherwise restricted actions, so please don’t go around typing random things if something’s not working - ask us a question instead!</p>
+</div>
+</details>
+<br></div>
+<hr class="docutils" />
+<div class="section" id="step-3-updating-osu">
+<h2>Step 3: Updating osu!<a class="headerlink" href="#step-3-updating-osu" title="Permalink to this headline">¶</a></h2>
+<p>At this point, you should have already repaired osu! and now you’re set to open it. In some cases, this will work perfectly, but for most people including myself, osu! will be stuck in an update loop. It can even be difficult to kill the process once it starts updating.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you ever have trouble closing osu! once it’s stuck in an update loop, see <a class="reference external" href="../issues/wontclose.html">Common issues: osu! won’t close</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Does osu! appear to be running fine? If you’re not stuck in an update loop, then you can easily skip this section.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Open osu!macOS Agent</p></li>
+<li><p>Click the <strong>Other</strong> tab</p></li>
+<li><p>Click <strong>Update osu!</strong></p></li>
+</ol>
+<img alt="osu!macOS Agent update tab." src="../_images/osu-agent-update.png" />
+<p>This will download the latest executable from the osu! servers and replace the existing <code class="docutils literal notranslate"><span class="pre">osu!.exe</span></code> inside your Wineskin wrapper.</p>
+<details>
+<summary><h4 style="display: inline;">Alternative option: Manually installing the latest version of osu!</h4></summary>
+<br><p>If you’re brave enough to go it alone, these steps will get you the latest version of osu! running - avoiding the possibility of an update loop.</p>
+<ol class="arabic simple">
+<li><p>Download <code class="docutils literal notranslate"><span class="pre">osu.exe</span></code> from <a class="reference external" href="https://osu.ppy.sh/home/download">osu.ppy.sh/home/download</a>.</p></li>
+<li><p>Locate where <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
+<li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
+<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">drive_c</span></code>.</p></li>
+<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code>.</p></li>
+<li><p>From here, locate <code class="docutils literal notranslate"><span class="pre">osu!.exe</span></code> and replace this file with the updated version that you just downloaded. Make sure you keep the filename the same.</p></li>
+</ol>
+</details>
+<br></div>
+<hr class="docutils" />
+<div class="section" id="step-4-run-osu">
+<h2>Step 4: Run osu!<a class="headerlink" href="#step-4-run-osu" title="Permalink to this headline">¶</a></h2>
+<p>Now everything should be good to go! Click <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> in whichever directory you placed it in and try it out for a spin!</p>
+<p>Did things not go to plan? Check out <a class="reference external" href="../issues/index.html">Common issues</a> to see if someone else has encountered your problem before, or ask a question on the osu! forums.</p>
+<p>If everything turned out fine, check out <a class="reference external" href="../issues/screen.html">Setting up your screen options</a> and <a class="reference external" href="../welcome/index.html">Welcome to osu!</a> to improve your osu! experience. We’d recommend doing this before you start clicking circles.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../welcome/index.html" class="btn btn-neutral float-right" title="Welcome to osu!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="10-15.html" class="btn btn-neutral float-left" title="Technocoder’s Wineskin with support for macOS 10.15 Catalina and later" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright aidswidjaja and other osu!mac contributors. Licensed under the FreeBSD Documentation License, available at https://www.freebsd.org/copyright/freebsd-doc-license.html
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x103251ca0>
+<br><br>
+<div class="customfooter">
+    <strong>
+        <p>Visit more <a href="../about/resources.html">community resources</a> to help you get osu! running on macOS.</p>
+        <p>View our <a href="../issues/index.html">Issues</a> section for tips on how to <a href="../issues/troubleshooting.html">troubleshoot</a> your problems, or see how to diagnose common issues other users have experienced in the paat.</p>
+        <p>Make these docs better by <a href="../about/contributing.html">contributing to osu!mac</a> on <a href="https://github.com/aidswidjaja/osu-mac">GitHub</a>.
+        <p>Visit the <a href="https://osu.ppy.sh/community/forums/5">osu! forums</a> if you're stuck with anything at all!
+        </p>
+    </strong>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Discord Rich Presence (&lt;10.14) &mdash; osu!mac</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Discord Rich Presence (10.15+)" href="discord-10-15.html" />
+    <link rel="prev" title="Pointing osu!macOS Agent to your osu! install location" href="macos-agent.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> osu!mac
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installing osu!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/10-15.html">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/10-14.html">slc’s Wineskin for macOS 10.14 Mojave and earlier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Welcome to osu!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/index.html">Welcome to osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/screen.html">Setting up your screen options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/import.html">Importing beatmaps and skins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/transfer.html">Transferring data from another osu! installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common issues</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
+<li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (&lt;10.14)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (10.15+)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About this project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">osu!mac</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Discord Rich Presence (&lt;10.14)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/issues/discord-10-14.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="discord-rich-presence-10-14">
+<h1>Discord Rich Presence (&lt;10.14)<a class="headerlink" href="#discord-rich-presence-10-14" title="Permalink to this headline">¶</a></h1>
+<div class="wineskin-version line-block">
+<div class="line">This article is applicable to the following wrappers:</div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197">unofficial Wineskin for macOS 10.14 Mojave and earlier</a></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is for users on macOS 10.14 and earlier. If you use macOS 10.15 and later, then the process behind Discord Rich Presence is slightly different - <a class="reference external" href="10-15.html">you actually can enable Discord Rich Presence with relative ease</a>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="behaviour">
+<h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
+<p>osu! is not detected by Discord in the Game Activity menu, nor is it displayed on your profile.</p>
+<img alt="../_images/discord-rpc.png" src="../_images/discord-rpc.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="cause">
+<h2>Cause<a class="headerlink" href="#cause" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="discord-disc.html">It’s complicated.</a></p>
+<p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1046150">And other people had a few issues too.</a></p>
+<p><strong>Tl;dr:</strong> noone has made a successful Discord Rich Presence solution running under macOS 32-bit Wineskins.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="resolution">
+<h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
+<p>If you read my <a class="reference external" href="discord-disc.html">Discord Rich Presence discussion article</a> you’ll know why I had some trouble with getting Rich Presence to work on my Wineskin. I don’t really have time to look into this further, but you can try these instructions and see if they work for you:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These instructions are for <strong>macOS 10.14 and earlier</strong>. If you are using macOS 10.15 or later, these instructions will not work and you need to use <a class="reference external" href="discord-10-15.html">this one instead</a>.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Download <a class="reference external" href="https://osu.ppy.sh/users/5405852">0e4ef622</a>’s <a class="reference external" href="https://github.com/0e4ef622/wine-discord-ipc-bridge">Wine Discord IPC Bridge</a>.</p></li>
+</ol>
+<p><strong>Download (GitHub mirror):</strong> <a class="reference external" href="https://github.com/0e4ef622/wine-discord-ipc-bridge/raw/master/winediscordipcbridge.exe">https://github.com/0e4ef622/wine-discord-ipc-bridge/raw/master/winediscordipcbridge.exe</a></p>
+<ol class="arabic" start="2">
+<li><p>Drag and drop the bridge into the same directory as <code class="docutils literal notranslate"><span class="pre">osu!.exe</span></code></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Locate where <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
+<li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
+<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">drive_c</span></code>.</p></li>
+<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Rename it <code class="docutils literal notranslate"><span class="pre">bridge.exe</span></code> (just to keep things simple)</p></li>
+<li><p>Open TextEdit (it should be in your Applications folder)</p></li>
+<li><p>Create a new text file. Inside it, copy and paste the following:</p></li>
+</ol>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">start</span> C:\osu!\osu!.exe
+<span class="k">start</span> C:\osu!\bridge.exe
+</pre></div>
+</div>
+<ol class="arabic" start="6">
+<li><p>Save it as <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code> and place it inside of the <code class="docutils literal notranslate"><span class="pre">osu!</span></code> folder that we mentioned above. It should be stored in the same directory as <code class="docutils literal notranslate"><span class="pre">osu!.exe</span></code> and <code class="docutils literal notranslate"><span class="pre">bridge.exe</span></code>.</p></li>
+<li><p>Open your Wineskin options</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Locate where <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
+<li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
+<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>A window like the one below should pop up. Click <strong>Advanced</strong></p></li>
+</ol>
+<img alt="../_images/wineskin.png" src="../_images/wineskin.png" />
+<ol class="arabic simple" start="7">
+<li><p>A window like the one below should pop up.</p></li>
+</ol>
+<img alt="../_images/wineskin-windows-exe.png" src="../_images/wineskin-windows-exe.png" />
+<p>In the <strong>Windows EXE</strong> text box, copy and paste the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>C:\osu!\execute.bat
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Alternatively, you could just click the <strong>Browse..</strong> button and navigate to where you saved your <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code> file.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="if-that-didn-t-work">
+<h2>If that didn’t work<a class="headerlink" href="#if-that-didn-t-work" title="Permalink to this headline">¶</a></h2>
+<p>In theory, this should enable you to connect osu! under Wine, to the Discord client on your Mac, but as previously mentioned, I wasn’t able to get it to work.</p>
+<p>You can read more about this program on it’s <a class="reference external" href="https://github.com/0e4ef622/wine-discord-ipc-bridge">GitHub page</a> which contains information on how the bridge works and how to use it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do you have anything to add? See our <a class="reference external" href="../about/contributing.html">Contributing</a> to see how you can contribute to these docs.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="discord-10-15.html" class="btn btn-neutral float-right" title="Discord Rich Presence (10.15+)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="macos-agent.html" class="btn btn-neutral float-left" title="Pointing osu!macOS Agent to your osu! install location" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright aidswidjaja and other osu!mac contributors. Licensed under the FreeBSD Documentation License, available at https://www.freebsd.org/copyright/freebsd-doc-license.html
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10341e160>
+<br><br>
+<div class="customfooter">
+    <strong>
+        <p>Visit more <a href="../about/resources.html">community resources</a> to help you get osu! running on macOS.</p>
+        <p>View our <a href="../issues/index.html">Issues</a> section for tips on how to <a href="../issues/troubleshooting.html">troubleshoot</a> your problems, or see how to diagnose common issues other users have experienced in the paat.</p>
+        <p>Make these docs better by <a href="../about/contributing.html">contributing to osu!mac</a> on <a href="https://github.com/aidswidjaja/osu-mac">GitHub</a>.
+        <p>Visit the <a href="https://osu.ppy.sh/community/forums/5">osu! forums</a> if you're stuck with anything at all!
+        </p>
+    </strong>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

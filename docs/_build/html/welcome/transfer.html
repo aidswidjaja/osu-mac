@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Transferring data from another osu! installation &mdash; osu!mac</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contents" href="../issues/index.html" />
+    <link rel="prev" title="Importing beatmaps and skins" href="import.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> osu!mac
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installing osu!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/10-15.html">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/10-14.html">slc’s Wineskin for macOS 10.14 Mojave and earlier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Welcome to osu!</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Welcome to osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="screen.html">Setting up your screen options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import.html">Importing beatmaps and skins</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Transferring data from another osu! installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#transferring-from-a-different-osu-wineskin">Transferring from a different osu! Wineskin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transferring-from-windows">Transferring from Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transferring-to-osu-lazer">Transferring to osu!lazer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transferring-from-osu-lazer">Transferring from osu!lazer</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Common issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../issues/index.html">Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/troubleshooting.html">Troubleshooting Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/wontclose.html">osu! won’t close</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/malware.html">osu! is being detected as malware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (&lt;10.14)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (10.15+)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About this project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">osu!mac</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Transferring data from another osu! installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/welcome/transfer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="transferring-data-from-another-osu-installation">
+<h1>Transferring data from another osu! installation<a class="headerlink" href="#transferring-data-from-another-osu-installation" title="Permalink to this headline">¶</a></h1>
+<div class="wineskin-version line-block">
+<div class="line">This article is applicable to the following wrappers:</div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197">unofficial Wineskin for macOS 10.14 Mojave and earlier</a></div>
+</div>
+<hr class="docutils" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can also use these same instructions to transfer your osu! configuration file (we’ve left it out to keep the instructions clean). Your osu! configuration file is entitled <code class="docutils literal notranslate"><span class="pre">osu.yourcomputername.cfg</span></code>. For example, my configuration file is called osu!.Adrian.cfg`` and it looks like this:</p>
+<img alt="osu! user configuration file." src="../_images/osu-config1.png" />
+<p>It is located in the same directory as your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directories.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>You should remove all screen-resolution related properties as this may crash your game (see <a class="reference external" href="../issues/graphics.html">Common issues: osu! was unable to obtain a graphics context.</a>) - be careful out there!</p>
+</div>
+</div>
+<div class="section" id="transferring-from-a-different-osu-wineskin">
+<h2>Transferring from a different osu! Wineskin<a class="headerlink" href="#transferring-from-a-different-osu-wineskin" title="Permalink to this headline">¶</a></h2>
+<p><em>Well this is about to get meta</em></p>
+<p>To transfer Songs or Skins from another osu! Wineskin:</p>
+<ol class="arabic">
+<li><p>In your <strong>old osu! Wineskin</strong>, find your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Locate where your <strong>old</strong> <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
+<li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
+<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">drive_c</span></code>.</p></li>
+<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code>.</p></li>
+<li><p>From here, locate <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Then, in your <strong>new</strong> osu! Wineskin, find your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Locate where your <strong>new</strong> <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
+<li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
+<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">drive_c</span></code>.</p></li>
+<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code>.</p></li>
+<li><p>From here, locate <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Replace the directories in your <strong>new</strong> osu! Wineskin with that from your <strong>old</strong> osu! Wineskin</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="transferring-from-windows">
+<h2>Transferring from Windows<a class="headerlink" href="#transferring-from-windows" title="Permalink to this headline">¶</a></h2>
+<p>To transfer Songs or Skins from an osu! installation on Windows:</p>
+<ol class="arabic simple">
+<li><p>In Windows, open <strong>osu!</strong></p></li>
+<li><p>Inside the game, open in-game settings (you can use the <code class="docutils literal notranslate"><span class="pre">Ctrl-O</span></code> shortcut to perform this)</p></li>
+</ol>
+<img alt="osu! in-game settings menu." src="../_images/open-osu-folder.png" />
+<ol class="arabic simple" start="3">
+<li><p>Click <strong>Open osu! folder</strong></p></li>
+<li><p>It should show you your osu! installation directory:</p></li>
+</ol>
+<img alt="osu! installation directory on Windows." src="../_images/osu-directory-windows.png" />
+<ol class="arabic" start="5">
+<li><p>Here are your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> and <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directories. Put this on a USB drive or someplace which you can access from your Mac later on.</p></li>
+<li><p>On your Mac, locate your osu! Wineskin and find your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Locate where your <strong>new</strong> <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
+<li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
+<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">drive_c</span></code>.</p></li>
+<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code>.</p></li>
+<li><p>From here, locate <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Replace the directories in your <strong>new</strong> osu! Wineskin with that from your <strong>Windows</strong> install of osu!.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="transferring-to-osu-lazer">
+<h2>Transferring to osu!lazer<a class="headerlink" href="#transferring-to-osu-lazer" title="Permalink to this headline">¶</a></h2>
+<p>Transferring game data from osu! on Wine to a local osu!lazer installation is currently not possible at this time, but it is likely to come in the future.</p>
+<p>The reason is because the in-built “Import from Stable” buttons in osu!lazer use registry keys to determine where your install of osu-stable is (and obviously macOS doesn’t have registry keys).</p>
+<p>You should <a class="reference external" href="import.html">import your beatmaps and skins manually instead</a>.</p>
+<p>Feel free to <a class="reference external" href="https://github.com/ppy/osu/issues/1907">contribute though to the development of osu!lazer and get a custom install path function set up</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Actually this isn’t entirely true.</p>
+<p><a class="reference external" href="https://osu.ppy.sh/users/7004641">jorolf</a>’s <a class="reference external" href="https://github.com/jorolf/osu-lazer-beatmap-importer">osu-lazer-beatmap-importer</a> allows you to zip your osu-stable (under Wine) files and then open them with osu!lazer. But it’s Windows only, and while I could probably make it work on macOS, like most of the things in my life I don’t have a lot of time on my hands right now.</p>
+<p>If you’re wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the MIT License) and work on making a port to macOS.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="transferring-from-osu-lazer">
+<h2>Transferring from osu!lazer<a class="headerlink" href="#transferring-from-osu-lazer" title="Permalink to this headline">¶</a></h2>
+<p>Transferring game data from osu!lazer to an osu! on Wine installation is currently not possible at this time.</p>
+<p>This is because the filetypes used by osu-stable and osu!lazer are very different.</p>
+<img alt="osu!lazer file directory setup." src="../_images/osu-lazer-filedir.png" />
+<p>(above) osu!lazer file directory setup.
+(below) osu-stable fle directory setup.
+yes I know I only have one beatmap <code class="docutils literal notranslate"><span class="pre">.osz</span></code> in my stable install..</p>
+<img alt="osu-stable file directory setup." src="../_images/osu-stable-filedir.png" />
+<p>You should <a class="reference external" href="import.html">import your beatmaps and skins manually instead</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Well I guess it is actually sort of possible rn.</p>
+<p>For someone who plays more on lazer than stable, having a beatmap importer that could import files from lazer to stable sure would be useful!</p>
+<p>And actually, that already exists.</p>
+<p><a class="reference external" href="https://osu.ppy.sh/users/9507946">Ringosham</a>’s <a class="reference external" href="https://github.com/ringosham/Lazer-exporter/">Lazer exporter</a> has a number of features that make importing and exporting beatmaps on osu!lazer quite easy, including <strong>being able to export Lazer beatmaps</strong> to <code class="docutils literal notranslate"><span class="pre">.osz</span></code>. Naisu.</p>
+<p>Unfortunately, it only works on Windows, and while I could probably make it work on macOS, and as previously mentioned, like most of the things in my life I don’t have a lot of time on my hands right now :(</p>
+<blockquote>
+<div><p>If you’re wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the Apache-2. License) and work on making a port to macOS.</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../issues/index.html" class="btn btn-neutral float-right" title="Contents" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="import.html" class="btn btn-neutral float-left" title="Importing beatmaps and skins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright aidswidjaja and other osu!mac contributors. Licensed under the FreeBSD Documentation License, available at https://www.freebsd.org/copyright/freebsd-doc-license.html
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x102efb9a0>
+<br><br>
+<div class="customfooter">
+    <strong>
+        <p>Visit more <a href="../about/resources.html">community resources</a> to help you get osu! running on macOS.</p>
+        <p>View our <a href="../issues/index.html">Issues</a> section for tips on how to <a href="../issues/troubleshooting.html">troubleshoot</a> your problems, or see how to diagnose common issues other users have experienced in the paat.</p>
+        <p>Make these docs better by <a href="../about/contributing.html">contributing to osu!mac</a> on <a href="https://github.com/aidswidjaja/osu-mac">GitHub</a>.
+        <p>Visit the <a href="https://osu.ppy.sh/community/forums/5">osu! forums</a> if you're stuck with anything at all!
+        </p>
+    </strong>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

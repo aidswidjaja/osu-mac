@@ -1,0 +1,31 @@
+########################################
+To-do
+########################################
+
+last updated 14 October 2020 AEST
+
+****************************************
+Work in Progress
+****************************************
+
+? install/10-15.html - osu! Forum thread link needs to be fixed
+- image alts:
+	- malware
+	- retina
+	- install/10-14
+	- install/10-15
+	- welcome/import
+
+****************************************
+Possible future additions
+****************************************
+
+- osu! on Linux, however Forefront and Franc[e]sco have already written really great forum posts that would probably make this redundant.
+
+****************************************
+``make html``
+****************************************
+
+.. code-block:: bash
+
+    cd git/osu-mac/docs && make html

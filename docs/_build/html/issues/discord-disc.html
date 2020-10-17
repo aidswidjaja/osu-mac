@@ -1,0 +1,488 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Discord Rich Presence (Discussion) &mdash; osu!mac</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script src="../_static/sphinx_tabs/tabs.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Other resources" href="../about/resources.html" />
+    <link rel="prev" title="Discord Rich Presence (10.15+)" href="discord-10-15.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> osu!mac
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installing osu!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/10-15.html">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/10-14.html">slc’s Wineskin for macOS 10.14 Mojave and earlier</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Welcome to osu!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/index.html">Welcome to osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/screen.html">Setting up your screen options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/import.html">Importing beatmaps and skins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/transfer.html">Transferring data from another osu! installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common issues</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
+<li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (&lt;10.14)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (10.15+)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (Discussion)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#understanding-discord-rich-presence">Understanding Discord Rich Presence</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#osu-s-implementation-of-gamesdk">osu!’s implementation of GameSDK</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#what-does-that-mean-for-osu-mac">What does that mean for osu!mac?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#licensing-information">Licensing information</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">About this project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">osu!mac</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Discord Rich Presence (Discussion)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/issues/discord-disc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="discord-rich-presence-discussion">
+<h1>Discord Rich Presence (Discussion)<a class="headerlink" href="#discord-rich-presence-discussion" title="Permalink to this headline">¶</a></h1>
+<div class="wineskin-version line-block">
+<div class="line">This article is applicable to the following wrappers:</div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197">unofficial Wineskin for macOS 10.14 Mojave and earlier</a></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section goes into the technical aspects of Discord Rich Presence. Looking to diagnose or troubleshoot issues with respect to getting osu! on Wine working with Discord Rich Presence? Click <a class="reference external" href="discord-10-14.html">here</a>.</p>
+</div>
+<p>The issue of Discord Rich Presence has always been a complicated one, and one that I haven’t been able to fully address. So, let’s talk about Discord Rich Presence then.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>tl;dr:</strong></p>
+<p>Discord depreceated <code class="docutils literal notranslate"><span class="pre">discord-rpc</span></code> in favour of their new GameSDK, which meant a special pipe would need to be used instead of just dropping a DLL in like you could before. However, since only WS11 Wine engines can run 64-bit engines, Techno’s bridge wouldn’t work, which meant we have to look towards 0e4ef622 upstream base fork (since Techno’s fork only adds 64-bit support for Catalina), however that wouldn’t work (and then I had ran out of time to keep looking into the issue)</p>
+</div>
+<div class="section" id="understanding-discord-rich-presence">
+<h2>Understanding Discord Rich Presence<a class="headerlink" href="#understanding-discord-rich-presence" title="Permalink to this headline">¶</a></h2>
+<p>If you use Discord regularly, you’ll know that when you load a game, application or other software, it might display a status message in your profile. Both osu!lazer and osu-stable support this feature natively on their respective platforms.</p>
+<img alt="../_images/discord-rpc.png" src="../_images/discord-rpc.png" />
+<p>In order for games to use Rich Presence, an additional <a class="reference external" href="https://www.reddit.com/r/explainlikeimfive/comments/13dgk8/eli5_what_are_libraries_in_terms_of_programming/">library</a> or <a class="reference external" href="https://www.reddit.com/r/explainlikeimfive/comments/1al2az/eli5_what_is_an_api_what_is_a_sdk_what_is_an_ide/">SDK</a> is incorporated into the game.</p>
+<p>In the past, Discord used discord-rpc - a library that enabled Rich Presence by including a <a class="reference external" href="https://www.reddit.com/r/explainlikeimfive/comments/xci02/eli5_what_is_a_dll_how_does_it_work_and_what_use/">DLL</a> file with the application, located in the same directory as the executable.</p>
+<p>This made it easy for us since we could translate RPC calls from the application, through the Wine compatibility layer, onto your local instance of Discord (which is obviously running outside of Wine), by injecting some code in a modified DLL.</p>
+<p>In fact, there are already a number of options available for discord-rpc under Wine. Typing <code class="docutils literal notranslate"><span class="pre">wine</span> <span class="pre">discord</span> <span class="pre">rpc</span></code> into Google will fetch you a large number of results, but here are just a few:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/Marc3842h/rpc-wine">Marc’s discord-rpc.dll implementation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/goeo-/discord-rpc/tree/v3.2.0">Genco’s discord-rpc.dll implementation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Dark565/DiscordRPC-Wine">Dark565’s discord-rpc compiler</a></p></li>
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/752510">Forefront’s now-deleted discord-rpc.dll implentation (specific to osu!)</a></p></li>
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/367783">null-von-sushi’s Discordcomp dummy exe implementation</a></p></li>
+</ul>
+<p>However, <a class="reference external" href="https://github.com/discord/discord-rpc/issues/290">around April 2019 Discord depreceated discord-rpc in favour of GameSDK</a>. This changes things up so that a single <code class="docutils literal notranslate"><span class="pre">discord-rpc.dll</span></code> file is no longer used. Instead, we look towards a C# wrapper.</p>
+<div class="section" id="osu-s-implementation-of-gamesdk">
+<h3>osu!’s implementation of GameSDK<a class="headerlink" href="#osu-s-implementation-of-gamesdk" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is about to get technical (and it’s also a bit convoluted), though it isn’t essential to understanding Rich Presence on Wine, so unless you’re interested in the technical aspects of osu! and GameSDK, you don’t really need ot read this section.</p>
+</div>
+<p>To quote <a class="reference external" href="https://osu.ppy.sh/users/7559478">Game4All</a> on <a class="reference external" href="https://github.com/ppy/osu/pull/4654#issuecomment-565724531">#4654</a>:</p>
+<blockquote>
+<div><p>C# FFI wrapper for the GameSDK is needed (adapting unity wrapper code?) as well as packaging native libraries for every desktop platform.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This comment was made on a <a class="reference external" href="https://docs.github.com/en/free-pro-team&#64;latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests">pull request (PR)</a> on the osu!lazer codebase, not osu-stable, but the core concept remains the same.</p>
+</div>
+<p>Since osu-stable is closed-source we don’t know the precise aspects of the GameSDK implementation they opted into, but the lack of a <code class="docutils literal notranslate"><span class="pre">discord-rpc.dll</span></code> file bundled with the binary at the very least confirms they have moved to GameSDK. However, since osu! is written in C# (it uses <a class="reference external" href="https://dotnet.microsoft.com/">.NET</a>) it has two possible implementations of GameSDK - the Unity implementation and the non-Unity implementation.</p>
+<img alt="../_images/gamesdk-unity-imp.png" src="../_images/gamesdk-unity-imp.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Unity implementation is designed to work with games using the <a class="reference external" href="https://unity.com/">Unity Engine</a>.</p>
+</div>
+<p>If you take a look at the osu!lazer codebase however, you’ll see they used a C# implementation that mirrored that of the <a class="reference external" href="https://discord.com/developers/docs/game-sdk/sdk-starter-guide#code-primer-unity-csharp">Unity implementation on the Discord docs</a>.</p>
+<img alt="../_images/discordrichpresence-cs.png" src="../_images/discordrichpresence-cs.png" />
+<p>Whereas the C# <strong>with</strong> Unity implementation relied on a <code class="docutils literal notranslate"><span class="pre">DiscordController.cs</span></code> script that gets attached to the main scene (in osu!lazer’s case, <code class="docutils literal notranslate"><span class="pre">osu.Desktop</span></code>), the C# <strong>without</strong> Unity implementation relied on a mini library + a DLL file in the same directory as the executable file (sound familiar?).</p>
+<p>But I don’t think osu! (stable and lazer) does that. If you take a look inside the <code class="docutils literal notranslate"><span class="pre">drive_c/osu!</span></code> you won’t find the <code class="docutils literal notranslate"><span class="pre">discord_game_sdk</span></code> files, including <code class="docutils literal notranslate"><span class="pre">.bundles</span></code> or <code class="docutils literal notranslate"><span class="pre">.dll</span></code>. And the presence of the <code class="docutils literal notranslate"><span class="pre">osu/osu.Desktop/DiscordRichPresence.cs</span></code> file in the <a class="reference external" href="https://github.com/ppy/osu/blob/master/osu.Desktop/DiscordRichPresence.cs">osu!lazer codebase</a> really does suggest that osu! has a Unity-esque implementation of GameSDK.</p>
+<p>If osu! used the non-Unity C# implementation of GameSDK…</p>
+<ul class="simple">
+<li><p>the source files would contain these files</p></li>
+</ul>
+<img alt="../_images/gamesdk-csharp.png" src="../_images/gamesdk-csharp.png" />
+<ul class="simple">
+<li><p>and the binary would contain one of the <code class="docutils literal notranslate"><span class="pre">.dll</span></code> or similar library files</p></li>
+</ul>
+<img alt="../_images/gamesdk-lib.png" src="../_images/gamesdk-lib.png" />
+<p><strong>So, what can we conclude?</strong> osu! uses the C# Unity-style implementation of Discord’s GameSDK in order to facilitate Rich Presence. This is most likely because the <a class="reference external" href="https://github.com/discord/discord-api-docs/blob/06790f2e8f46bc25b563967fa415b29d4961c395/docs/game_sdk/SDK_Starter_Guide.md">Discord Developer Documentation didn’t have a reference implementation for non-Unity C# programs</a> at the time when the feature was initially proposed and then eventually implemented..</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>osu! would only be using the C# non-Unity-style implementation <strong>if and only if</strong> there was the presence of library files in the binaries and C# source files in the source.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can download the GameSDK zip file <a class="reference external" href="https://discord.com/developers/docs/game-sdk/sdk-starter-guide#step-1-get-the-thing">from the Discord Developer Documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="what-does-that-mean-for-osu-mac">
+<h2>What does that mean for osu!mac?<a class="headerlink" href="#what-does-that-mean-for-osu-mac" title="Permalink to this headline">¶</a></h2>
+<p>Firstly, let’s take a look at the current community implementation(s) of Rich Presence on osu!mac: <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://github.com/Techno-coder/macOS-wine-bridge">macOS Wine Bridge</a>, which is a fork of <a class="reference external" href="https://osu.ppy.sh/users/5405852">0e4ef622</a>’s <a class="reference external" href="https://github.com/0e4ef622/wine-discord-ipc-bridge">Wine Discord IPC Bridge</a>. You can read each respective repository’s READMEs for the technical information behind these bridges - which basically just bridge Windows <a class="reference external" href="https://en.wikipedia.org/wiki/Named_pipe">named pipes</a> (e.g <code class="docutils literal notranslate"><span class="pre">\\.\pipe\discord-ipc-0</span></code> to Unix named pipes (e.g <code class="docutils literal notranslate"><span class="pre">/run/user/{userid}/discord-ipc-0</span></code>). (Technocoder’s fork converts 0e4ef622’s to 64-bit system calls, if you’re interested)</p>
+<p>Let’s step back to the beginning. Do you know why there are separate Catalina&lt; and Mojave&gt; Wineskins? It’s because with macOS 10.15 Apple removed 32-bit application support. To respond to this change, Techno’s Wineskin uses the <strong>WineCX19.0.1-1</strong> Wineskin engine, which along with the <a class="reference external" href="https://github.com/Gcenx/WineskinServer#macos-catalina-support">WS11 engines</a> are the only current options available to getting 64-bit Wine programs to run on Catalina.</p>
+<p>While Techno’s bridge will work fine on his 10.15 Catalina and later Wineksin, since it’s a 64-bit program, with a 64-bit Wineskin, <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s Wineskin uses <strong>WS9Wine4.0-rc3</strong> - a 32-bit Wine engine that will ONLY run 32-bit Wine programs.</p>
+<p>This took me a while to figure out, especially since cmd wasn’t too useful (giving me only <code class="docutils literal notranslate"><span class="pre">ShellExecuteEx</span> <span class="pre">failed:</span> <span class="pre">File</span> <span class="pre">not</span> <span class="pre">found</span></code>), but after running the Wineskin under a Test Run, the Test logs revealed a <code class="docutils literal notranslate"><span class="pre">Bad</span> <span class="pre">EXE</span> <span class="pre">format</span> <span class="pre">for</span> <span class="pre">C:\osu!\bridge.exe</span></code>. This meant that Wineskin wasn’t able to run the 64-bit program provided by Techno, which makes much more complete sense considering there isn’t a <code class="docutils literal notranslate"><span class="pre">Program</span> <span class="pre">Files</span> <span class="pre">(x86)</span></code> folder under slc’s Wineskin and that running the <code class="docutils literal notranslate"><span class="pre">file</span></code> command on both files (in my local Terminal) revealed that they were in fact differing in architecture.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Adrian@192-168-1-102 ~&gt; file <span class="s1">&#39;/Users/Adrian/Desktop/osu!.app/Contents/Resources/drive_c/osu!/osu!.exe&#39;</span>
+/Users/Adrian/Desktop/osu!.app/Contents/Resources/drive_c/osu!/osu!.exe: PE32 executable <span class="o">(</span>GUI<span class="o">)</span> Intel <span class="m">80386</span> Mono/.Net assembly, <span class="k">for</span> MS Windows
+Adrian@192-168-1-102 ~&gt; file <span class="s1">&#39;/Users/Adrian/Desktop/osu!.app/Contents/Resources/drive_c/osu!/bridge.exe&#39;</span>
+/Users/Adrian/Desktop/osu!.app/Contents/Resources/drive_c/osu!/bridge.exe: PE32+ executable <span class="o">(</span>GUI<span class="o">)</span> x86-64, <span class="k">for</span> MS Windows
+</pre></div>
+</div>
+<p>(notice how osu! is <code class="docutils literal notranslate"><span class="pre">PE32</span></code> [32-bit] while bridge is <code class="docutils literal notranslate"><span class="pre">PE32+</span></code> [64-bit])</p>
+<p>Actually, Technocoder’s bridge is just a fork of 0e4ef622’s original <a class="reference external" href="https://en.wikipedia.org/wiki/Proof_of_concept">POC</a> and the most important thing it changes is converting the 32-bit system calls to 64-bit system calls.</p>
+<p>So really, all we’d need to do in our <strong>32-bit</strong> Wineskin is to use the original <strong>32-bit</strong> executable, right?</p>
+<p>Unfortunately, while 0e4ef622’s bridge loaded, bringing up:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Pipe Server: Main thread awaiting client connection on <span class="se">\\\\</span>.<span class="se">\\</span>pipe<span class="se">\\</span>discord-ipc-0
+</pre></div>
+</div>
+<p>and <a class="reference external" href="https://github.com/koukuno/wine-discord-ipc-bridge">koukono’s fork</a> (which I compiled myself using <a class="reference external" href="http://mingw-w64.org/doku.php">mingw-w64</a>)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Opening discord-ipc-0 Windows pipe<span class="se">\</span>
+</pre></div>
+</div>
+<p>(which really are just the same section of the code - the mainloop that tries to create a pipe)</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-MGU0ZWY2MjI= docutils container">
+<div class="docutils container">
+<p>0e4ef622</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-a291a29ubw== docutils container">
+<div class="docutils container">
+<p>koukono</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-MGU0ZWY2MjI= active docutils container">
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="nf">_tmain</span><span class="p">(</span><span class="n">VOID</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">BOOL</span>   <span class="n">fConnected</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">;</span>
+    <span class="n">DWORD</span>  <span class="n">dwThreadId</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">HANDLE</span> <span class="n">hThread</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="n">LPCTSTR</span> <span class="n">lpszPipename</span> <span class="o">=</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\\\\</span><span class="s">.</span><span class="se">\\</span><span class="s">pipe</span><span class="se">\\</span><span class="s">discord-ipc-0&quot;</span><span class="p">);</span>
+
+    <span class="c1">// The main loop creates an instance of the named pipe and</span>
+    <span class="c1">// then waits for a client to connect to it. When the client</span>
+    <span class="c1">// connects, a thread is created to handle communications</span>
+    <span class="c1">// with that client, and this loop is free to wait for the</span>
+    <span class="c1">// next client connect request. It is an infinite loop.</span>
+
+    <span class="n">_tprintf</span><span class="p">(</span> <span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;Pipe Server: Main thread awaiting client connection on %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">),</span> <span class="n">lpszPipename</span><span class="p">);</span>
+    <span class="n">hPipe</span> <span class="o">=</span> <span class="n">CreateNamedPipe</span><span class="p">(</span>
+            <span class="n">lpszPipename</span><span class="p">,</span>             <span class="c1">// pipe name</span>
+            <span class="n">PIPE_ACCESS_DUPLEX</span><span class="p">,</span>       <span class="c1">// read/write access</span>
+            <span class="n">PIPE_TYPE_BYTE</span> <span class="o">|</span>       <span class="c1">// message type pipe</span>
+            <span class="n">PIPE_READMODE_BYTE</span> <span class="o">|</span>   <span class="c1">// message-read mode</span>
+            <span class="n">PIPE_WAIT</span><span class="p">,</span>                <span class="c1">// blocking mode</span>
+            <span class="mi">1</span><span class="p">,</span> <span class="c1">// max. instances</span>
+            <span class="n">BUFSIZE</span><span class="p">,</span>                  <span class="c1">// output buffer size</span>
+            <span class="n">BUFSIZE</span><span class="p">,</span>                  <span class="c1">// input buffer size</span>
+            <span class="mi">0</span><span class="p">,</span>                        <span class="c1">// client time-out</span>
+            <span class="nb">NULL</span><span class="p">);</span>                    <span class="c1">// default security attribute</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">hPipe</span> <span class="o">==</span> <span class="n">INVALID_HANDLE_VALUE</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_tprintf</span><span class="p">(</span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;CreateNamedPipe failed, GLE=%d.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">),</span> <span class="n">GetLastError</span><span class="p">());</span>
+        <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Wait for the client to connect; if it succeeds,</span>
+    <span class="c1">// the function returns a nonzero value. If the function</span>
+    <span class="c1">// returns zero, GetLastError returns ERROR_PIPE_CONNECTED.</span>
+
+    <span class="n">fConnected</span> <span class="o">=</span> <span class="n">ConnectNamedPipe</span><span class="p">(</span><span class="n">hPipe</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">)</span> <span class="o">?</span>
+        <span class="nl">TRUE</span> <span class="p">:</span> <span class="p">(</span><span class="n">GetLastError</span><span class="p">()</span> <span class="o">==</span> <span class="n">ERROR_PIPE_CONNECTED</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-a291a29ubw== docutils container">
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span>    <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">DWORD</span>  <span class="n">dwThreadId</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">HANDLE</span> <span class="n">hThread</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="n">HANDLE</span> <span class="n">wine_evt</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">((</span><span class="n">wine_evt</span> <span class="o">=</span> <span class="n">make_wine_system_process</span><span class="p">())</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// The main loop creates an instance of the named pipe and</span>
+    <span class="c1">// then waits for a client to connect to it. When the client</span>
+    <span class="c1">// connects, a thread is created to handle communications</span>
+    <span class="c1">// with that client, and this loop is free to wait for the</span>
+    <span class="c1">// next client connect request. It is an infinite loop.</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Opening discord-ipc-0 Windows pipe</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="n">hPipe</span> <span class="o">=</span> <span class="n">CreateNamedPipeW</span><span class="p">(</span>
+            <span class="sa">L</span><span class="s">&quot;</span><span class="se">\\\\</span><span class="s">.</span><span class="se">\\</span><span class="s">pipe</span><span class="se">\\</span><span class="s">discord-ipc-0&quot;</span><span class="p">,</span>             <span class="c1">// pipe name</span>
+            <span class="n">PIPE_ACCESS_DUPLEX</span><span class="p">,</span>       <span class="c1">// read/write access</span>
+            <span class="n">PIPE_TYPE_BYTE</span> <span class="o">|</span>       <span class="c1">// message type pipe</span>
+            <span class="n">PIPE_READMODE_BYTE</span> <span class="o">|</span>   <span class="c1">// message-read mode</span>
+            <span class="n">PIPE_WAIT</span><span class="p">,</span>                <span class="c1">// blocking mode</span>
+            <span class="mi">1</span><span class="p">,</span> <span class="c1">// max. instances</span>
+            <span class="n">BUFSIZE</span><span class="p">,</span>                  <span class="c1">// output buffer size</span>
+            <span class="n">BUFSIZE</span><span class="p">,</span>                  <span class="c1">// input buffer size</span>
+            <span class="mi">0</span><span class="p">,</span>                        <span class="c1">// client time-out</span>
+            <span class="nb">NULL</span><span class="p">);</span>                    <span class="c1">// default security attribute</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">hPipe</span> <span class="o">==</span> <span class="n">INVALID_HANDLE_VALUE</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;CreateNamedPipe failed, GLE=%lu.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">GetLastError</span><span class="p">());</span>
+        <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">conn_evt</span> <span class="o">=</span> <span class="n">CreateEventW</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">CloseHandle</span><span class="p">(</span><span class="n">CreateThread</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">wait_for_client</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">));</span>
+    <span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+        <span class="n">HANDLE</span> <span class="n">events</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="n">wine_evt</span><span class="p">,</span> <span class="n">conn_evt</span> <span class="p">};</span>
+        <span class="n">DWORD</span> <span class="n">result</span> <span class="o">=</span> <span class="n">WaitForMultipleObjectsEx</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">events</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">==</span> <span class="n">WAIT_TIMEOUT</span><span class="p">)</span>
+        <span class="k">continue</span><span class="p">;</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">result</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Bridge exiting, wine closing</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>they both couldn’t make a connection with the client (except for 0e4ef622’s bridge which immediately crashed upon <code class="docutils literal notranslate"><span class="pre">Client</span> <span class="pre">connected.</span></code>)</p>
+<p>I would have loved to delve into this and see why it wasn’t working - maybe it could be something to do with the <code class="docutils literal notranslate"><span class="pre">WINEPREFIX</span></code> or something else entirely, however, I’ve already spent enough time trying to get Discord RPC working and my research ends here. But I think this discussion, even if it <em>is</em> overcomplicated and probably unnecessary, could help other people trying to get Rich Presence properly working under Wine (at least with the existing bridges) and these are basically just my research notes for if I ever want to work on this again.</p>
+<p>As an FYI, it seems that <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1046150">other people have been having issues too</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you feel that you have something to add - feel free to make a PR on <a class="reference external" href="https://github.com/aidswidjaja/osu-mac">GitHub</a>.</p>
+</div>
+</div>
+<div class="section" id="licensing-information">
+<h2>Licensing information<a class="headerlink" href="#licensing-information" title="Permalink to this headline">¶</a></h2>
+<p>No license was provided with the above code samples from 0e4ef622 and koukono, therefore all rights reserved. However, I hope my usage is okay (and information about DMCA, Copyright and Licensing can be viewed in <a class="reference external" href="../about/license.html">License</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../about/resources.html" class="btn btn-neutral float-right" title="Other resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="discord-10-15.html" class="btn btn-neutral float-left" title="Discord Rich Presence (10.15+)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright aidswidjaja and other osu!mac contributors. Licensed under the FreeBSD Documentation License, available at https://www.freebsd.org/copyright/freebsd-doc-license.html
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x1030c8190>
+<br><br>
+<div class="customfooter">
+    <strong>
+        <p>Visit more <a href="../about/resources.html">community resources</a> to help you get osu! running on macOS.</p>
+        <p>View our <a href="../issues/index.html">Issues</a> section for tips on how to <a href="../issues/troubleshooting.html">troubleshoot</a> your problems, or see how to diagnose common issues other users have experienced in the paat.</p>
+        <p>Make these docs better by <a href="../about/contributing.html">contributing to osu!mac</a> on <a href="https://github.com/aidswidjaja/osu-mac">GitHub</a>.
+        <p>Visit the <a href="https://osu.ppy.sh/community/forums/5">osu! forums</a> if you're stuck with anything at all!
+        </p>
+    </strong>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
