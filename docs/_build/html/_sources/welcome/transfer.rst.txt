@@ -30,6 +30,10 @@ Transferring from a different osu! Wineskin
 
 *Well this is about to get meta*
 
+.. danger::
+
+	These steps will **not** transfer over replays and scores.
+
 To transfer Songs or Skins from another osu! Wineskin:
 
 1. In your **old osu! Wineskin**, find your ``Songs`` or ``Skins`` directory
@@ -127,7 +131,7 @@ You should `import your beatmaps and skins manually instead <import.html>`_.
 
 .. note::
 
-    Well I guess it is actually sort of possible rn.
+    Well I guess it is actually *sort of* possible.
 
     For someone who plays more on lazer than stable, having a beatmap importer that could import files from lazer to stable sure would be useful!
 

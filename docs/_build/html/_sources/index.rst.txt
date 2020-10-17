@@ -29,8 +29,8 @@ Getting started
 
 These community-developed osu-stable `Wineskins <http://wineskin.urgesoftware.com/tiki-index.php>`_ are the best way to play osu! ranked on your Mac.
 
-- `Get osu! on macOS 10.15 Catalina and newer <10.15/index.html>`_ 
-- `Get osu! on macOS 10.14 Mojave and earlier <10.14/index.html>`_
+- `Get Technocoder's osu! Wineskin with support for macOS Catalina 10.15 and later <install/10-15.html>`_ 
+- `Get slc's osu! Wineskin for macOS 10.14 Mojave and earlier <install/10-14.html>`_
 
 Not sure which version of macOS you're using? Check out this `Apple support article <https://support.apple.com/en-au/HT201260>`_ to find out.
 
@@ -48,7 +48,7 @@ Disclaimers
 
 .. warning::
 
-   This information is supplied by volunteers in good faith. However, **no-one is not responsible if it doesn't work, your computer sets on fire, or you start the next nuclear war.** We do our best to make sure the information here is safe for you, your osu! account and your computer, but _**you proceed at your own risk.**_
+   This information is supplied by volunteers in good faith. However, **no-one is not responsible if it doesn't work, your computer sets on fire, or you start the next nuclear war.** We do our best to make sure the information here is safe for you, your osu! account and your computer, but **you proceed at your own risk.**
 
 .. warning::
 
