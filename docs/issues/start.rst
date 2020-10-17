@@ -5,7 +5,7 @@ osu! runs perfectly, but it has some trouble when starting up
 .. rst-class:: wineskin-version
     
     | This article is applicable to the following wrappers:
-    | • `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/topics/1106057>`_
+    | • `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Experimental Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/posts/7367239>`_
 
 ****
 
@@ -32,6 +32,12 @@ Resolution
 ****************************************
 
 You can bypass the startup sequence entirely. Technocoder found a `workaround <https://osu.ppy.sh/community/forums/topics/682197?start=7443024>`_ that will hopefully mitigate your startup troubles:
+
+.. warning::
+
+	**This section only applies to users using the** `experimental macOS Catalina Wineskin <https://osu.ppy.sh/community/forums/posts/7367239>`_.
+
+	You are recommended to use the `latest macOS Catalina Wineskin <https://osu.ppy.sh/community/forums/posts/7560723>`_ instead.
 
 ::
 

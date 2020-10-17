@@ -53,7 +53,7 @@ To import a beatmap into osu!, follow the following instructions:
 
 .. note::
 
-    Yes, my beatmap folder is very empty (but yours won't be! unless it is, ofc..)
+    Yes, my beatmap folder is very empty (but yours won't be! Unless it is, of course..)
 
 5. If you don't have osu! open already, open it now. Then in-game, press ``F5``
 
