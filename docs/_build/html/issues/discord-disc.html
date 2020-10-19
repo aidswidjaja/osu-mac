@@ -44,7 +44,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Other resources" href="../about/resources.html" />
-    <link rel="prev" title="Discord Rich Presence (10.15+)" href="discord-10-15.html" /> 
+    <link rel="prev" title="Discord Rich Presence (WS11 WineskinServer)" href="discord-10-15.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -109,8 +109,8 @@
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (&lt;10.14)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (10.15+)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (non-WS11 WineskinServer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (WS11 WineskinServer)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (Discussion)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#understanding-discord-rich-presence">Understanding Discord Rich Presence</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#osu-s-implementation-of-gamesdk">osu!’s implementation of GameSDK</a></li>
@@ -407,6 +407,7 @@ Adrian@192-168-1-102 ~&gt; file <span class="s1">&#39;/Users/Adrian/Desktop/osu!
 <p>they both couldn’t make a connection with the client (except for 0e4ef622’s bridge which immediately crashed upon <code class="docutils literal notranslate"><span class="pre">Client</span> <span class="pre">connected.</span></code>)</p>
 <p>I would have loved to delve into this and see why it wasn’t working - maybe it could be something to do with the <code class="docutils literal notranslate"><span class="pre">WINEPREFIX</span></code> or something else entirely, however, I’ve already spent enough time trying to get Discord RPC working and my research ends here. But I think this discussion, even if it <em>is</em> overcomplicated and probably unnecessary, could help other people trying to get Rich Presence properly working under Wine (at least with the existing bridges) and these are basically just my research notes for if I ever want to work on this again.</p>
 <p>As an FYI, it seems that <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1046150">other people have been having issues too</a>.</p>
+<p><strong>EDIT (19 October 2020):</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7719711">Technocoder pointed out</a> that the original base fork from 0e4ef622 <strong>uses Linux namespaces, not macOS namespaces.</strong> So in order for Rich Presence to work on Mac, someone needs to create a fork that keeps the 32-bit calls of the original base fork, while changing to Linux namespaces like Techno’s fork.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you feel that you have something to add - feel free to make a PR on <a class="reference external" href="https://github.com/aidswidjaja/osu-mac">GitHub</a>.</p>
@@ -429,7 +430,7 @@ Adrian@192-168-1-102 ~&gt; file <span class="s1">&#39;/Users/Adrian/Desktop/osu!
         <a href="../about/resources.html" class="btn btn-neutral float-right" title="Other resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="discord-10-15.html" class="btn btn-neutral float-left" title="Discord Rich Presence (10.15+)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="discord-10-15.html" class="btn btn-neutral float-left" title="Discord Rich Presence (WS11 WineskinServer)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -450,7 +451,7 @@ Adrian@192-168-1-102 ~&gt; file <span class="s1">&#39;/Users/Adrian/Desktop/osu!
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10e0cf430>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10f9dfd30>
 <br><br>
 <div class="customfooter">
     <strong>

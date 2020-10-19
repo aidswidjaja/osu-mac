@@ -90,6 +90,7 @@ Sitemap
    issues/start
    issues/graphics
    issues/retina
+   issues/input
    issues/wontclose
    issues/malware
    issues/macos-agent

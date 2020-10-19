@@ -237,6 +237,8 @@ I would have loved to delve into this and see why it wasn't working - maybe it c
 
 As an FYI, it seems that `other people have been having issues too <https://osu.ppy.sh/community/forums/topics/1046150>`_.
 
+**EDIT (19 October 2020):** `Technocoder pointed out <https://osu.ppy.sh/community/forums/posts/7719711>`_ that the original base fork from 0e4ef622 **uses Linux namespaces, not macOS namespaces.** So in order for Rich Presence to work on Mac, someone needs to create a fork that keeps the 32-bit calls of the original base fork, while changing to Linux namespaces like Techno's fork.
+
 .. note::
 
     If you feel that you have something to add - feel free to make a PR on `GitHub <https://github.com/aidswidjaja/osu-mac>`_.

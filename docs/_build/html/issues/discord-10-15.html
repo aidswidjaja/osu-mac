@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discord Rich Presence (10.15+) &mdash; osu!mac</title>
+  <title>Discord Rich Presence (WS11 WineskinServer) &mdash; osu!mac</title>
   
 
   
@@ -42,7 +42,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Discord Rich Presence (Discussion)" href="discord-disc.html" />
-    <link rel="prev" title="Discord Rich Presence (&lt;10.14)" href="discord-10-14.html" /> 
+    <link rel="prev" title="Discord Rich Presence (non-WS11 WineskinServer)" href="discord-10-14.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -107,8 +107,8 @@
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (&lt;10.14)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (10.15+)</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (non-WS11 WineskinServer)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (WS11 WineskinServer)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
 </ul>
@@ -168,7 +168,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Discord Rich Presence (10.15+)</li>
+      <li>Discord Rich Presence (WS11 WineskinServer)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -187,17 +187,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="discord-rich-presence-10-15">
-<h1>Discord Rich Presence (10.15+)<a class="headerlink" href="#discord-rich-presence-10-15" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="discord-rich-presence-ws11-wineskinserver">
+<h1>Discord Rich Presence (WS11 WineskinServer)<a class="headerlink" href="#discord-rich-presence-ws11-wineskinserver" title="Permalink to this headline">¶</a></h1>
 <div class="wineskin-version line-block">
 <div class="line">This article is applicable to the following wrappers:</div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This section is for users on macOS 10.15 and later. For information about Rich Presence on 10.14 and earlier, click <a class="reference external" href="discord-10-14.html">here</a></p>
+<p>This section is for users using Wineskins which use the <strong>WS11WineCX19.0.1-1</strong> or <strong>WS11WineCX64Bit19.0.1-1</strong> Wine engine from`Gcenx &lt;<a class="reference external" href="https://github.com/Gcenx/WineskinServer">https://github.com/Gcenx/WineskinServer</a>&gt;`_. <strong>To find your Wineskin version:</strong></p>
+<ol class="arabic simple">
+<li><p>Locate where <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> is installed</p></li>
+<li><p>Right click on it and select <strong>Show Package Contents</strong></p></li>
+<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code></p></li>
+<li><p>A window should pop up. Click <strong>Advanced</strong></p></li>
+<li><p>It will be displayed under the <strong>Associated Extensions</strong> column, as shown below.</p></li>
+</ol>
+<img alt="Wineskin Advanced, highlighting the engine version number:" src="../_images/wineskin-engine-version.png" />
+<p>If you’re <strong>not</strong> using one of the two <strong>WS11</strong> engines mentioned above, then the process behind Discord Rich Presence is slightly different - <a class="reference external" href="discord-10-14.html">you will encounter difficulties with getting Discord Rich Presence to work on macOS</a>.</p>
 </div>
-<p>The <strong>macOS 10.15 Catalina and later</strong> Wineskin already has Discord Rich Presence installed.</p>
+<p>The <strong>Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</strong> Wineskin already has Discord Rich Presence installed.</p>
 <p>If for some reason it isn’t working, follow these steps.</p>
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
@@ -242,7 +251,7 @@
         <a href="discord-disc.html" class="btn btn-neutral float-right" title="Discord Rich Presence (Discussion)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="discord-10-14.html" class="btn btn-neutral float-left" title="Discord Rich Presence (&lt;10.14)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="discord-10-14.html" class="btn btn-neutral float-left" title="Discord Rich Presence (non-WS11 WineskinServer)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -263,7 +272,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10e38f520>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10f9142b0>
 <br><br>
 <div class="customfooter">
     <strong>

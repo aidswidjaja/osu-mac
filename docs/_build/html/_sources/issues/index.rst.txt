@@ -16,11 +16,12 @@ Here's a repository of common issues (and potential fixes) other users have expe
 - `osu! runs perfectly, but it has some trouble when starting up <start.html>`_
 - `osu! was unable to obtain a graphics context <graphics.html>`_
 - `Enabling Retina Mode <retina.html>`_
+- `osu! mouse/trackpad input feels unstable <input.html>`_
 - `osu! won't close (update loop or otherwise) <wontclose.html>`_
 - `osu! is being detected as malware <malware.html>`_
 - `Pointing osu!macOS Agent to your osu! install location <macos-agent.html>`_
-- `Discord Rich Presence (<10.14) <discord-10-14.html>`_
-- `Discord Rich Presence (10.15+) <discord-10-15.html>`_
+- `Discord Rich Presence (non-WS11 WineskinServer) <discord-10-14.html>`_
+- `Discord Rich Presence (WS11 WineskinServer) <discord-10-15.html>`_
 - `Discord Rich Presence (Discussion) <discord-disc.html>`_
    
 The original troubleshooting guide is available on the `osu! forums <https://osu.ppy.sh/community/forums/topics/679205>`_.

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discord Rich Presence (non-WS11 WineskinServer) &mdash; osu!mac</title>
+  <title>osu! mouse/trackpad input feels unstable &mdash; osu!mac</title>
   
 
   
@@ -40,9 +40,7 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Discord Rich Presence (WS11 WineskinServer)" href="discord-10-15.html" />
-    <link rel="prev" title="Pointing osu!macOS Agent to your osu! install location" href="macos-agent.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,7 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../welcome/transfer.html">Transferring data from another osu! installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Common issues</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
@@ -107,12 +105,7 @@
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (non-WS11 WineskinServer)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
 </ul>
@@ -169,13 +162,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Discord Rich Presence (non-WS11 WineskinServer)</li>
+      <li>osu! mouse/trackpad input feels unstable</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/issues/discord-10-14.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/issues/input.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -188,46 +181,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="discord-rich-presence-non-ws11-wineskinserver">
-<h1>Discord Rich Presence (non-WS11 WineskinServer)<a class="headerlink" href="#discord-rich-presence-non-ws11-wineskinserver" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="osu-mouse-trackpad-input-feels-unstable">
+<h1>osu! mouse/trackpad input feels unstable<a class="headerlink" href="#osu-mouse-trackpad-input-feels-unstable" title="Permalink to this headline">¶</a></h1>
 <div class="wineskin-version line-block">
 <div class="line">This article is applicable to the following wrappers:</div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This section is for users using Wineskins that don’t have either the <strong>WS11WineCX19.0.1-1</strong> or <strong>WS11WineCX64Bit19.0.1-1</strong> Wine engine from`Gcenx &lt;<a class="reference external" href="https://github.com/Gcenx/WineskinServer">https://github.com/Gcenx/WineskinServer</a>&gt;`_. <strong>To find your Wineskin version:</strong></p>
-<ol class="arabic simple">
-<li><p>Locate where <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> is installed</p></li>
-<li><p>Right click on it and select <strong>Show Package Contents</strong></p></li>
-<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code></p></li>
-<li><p>A window should pop up. Click <strong>Advanced</strong></p></li>
-<li><p>It will be displayed under the <strong>Associated Extensions</strong> column, as shown below.</p></li>
-</ol>
-<img alt="Wineskin Advanced, highlighting the engine version number:" src="../_images/wineskin-engine-version.png" />
-<p>If you’re using one of the two <strong>WS11</strong> engines mentioned above, then the process behind Discord Rich Presence is slightly different - <a class="reference external" href="discord-10-15.html">you actually can enable Discord Rich Presence with relative ease</a>.</p>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197">unofficial Wineskin for macOS 10.14 Mojave and earlier</a></div>
 </div>
 <hr class="docutils" />
 <div class="section" id="behaviour">
 <h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
-<p>osu! is not detected by Discord in the Game Activity menu, nor is it displayed on your profile.</p>
-<img alt="../_images/discord-rpc.png" src="../_images/discord-rpc.png" />
+<p>osu! mouse or trackpad movement feels unstable, the cursor may jump, be extremely inprecise, or otherwise be unusable.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="cause">
 <h2>Cause<a class="headerlink" href="#cause" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="discord-disc.html">It’s complicated.</a></p>
-<p><strong>tl:dr</strong> currently available Discord Rich Presence solutions rely on using a 64-bit Wineskin engine, whereas some of the older wrappers use a 32-bit engine.</p>
+<p>The cause of this issue is unknown, but it could be something to do with how Wine translates macOS cursor movements to Windows API calls (since osu! doesn’t use the standard macOS cursor like other Wine programs).</p>
+<p>Generally speaking, you might like to avoid increasing mouse sensitivity inside osu!, especially if you’re playing in a window. Instead, change your mouse sensitivity through macOS System Preferences &gt; Mouse (or Trackpad).</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
-<p>Currently, Discord Rich Presence is not possible on older Wineskins that don’t utilise the 64-bit WS11 WineskinServer. This includes <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a>. Noone has made a successful Discord Rich Presence solution running under a 32-bit Wineskin. If you want Discord Rich Presence to work, you need to use a 64-bit Wineskin such as <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a> in order to get it up and running.</p>
-<p>You can read my <a class="reference external" href="discord-disc.html">Discord Rich Presence discussion article</a> to learn about why I had some trouble with getting Rich Presence to work on my Wineskin.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Do you have anything to add? See our <a class="reference external" href="../about/contributing.html">Contributing</a> to see how you can contribute to these docs.</p>
+<ol class="arabic simple">
+<li><p>Open the in-game settings menu inside osu! using the <code class="docutils literal notranslate"><span class="pre">Ctrl-O</span></code> shortcut</p></li>
+<li><p>Find the <strong>Mouse</strong> section.</p></li>
+<li><p>Enable <strong>Raw input</strong> and <strong>Map absolute raw input to osu! window</strong></p></li>
+</ol>
+<img alt="osu! in-game settings, showing the input menu." src="../_images/osu-input-settings.png" />
 </div>
+<hr class="docutils" />
+<div class="section" id="if-that-didn-t-work">
+<h2>If that didn’t work<a class="headerlink" href="#if-that-didn-t-work" title="Permalink to this headline">¶</a></h2>
+<p>There could be something else going on here, and performing <a class="reference external" href="troubleshooting.html">basic troubleshooting</a> should help you get to the bottom of it.</p>
+<p>If you’re not sure what’s going on here, copy any osu! crash logs as well as <a class="reference external" href="troubleshooting.html#generating-a-report-with-osu-macos-agent">generating a report with osu!macOS Agent</a>, and let us know on the forums.</p>
 </div>
 </div>
 
@@ -236,15 +223,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="discord-10-15.html" class="btn btn-neutral float-right" title="Discord Rich Presence (WS11 WineskinServer)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="macos-agent.html" class="btn btn-neutral float-left" title="Pointing osu!macOS Agent to your osu! install location" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -263,7 +241,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10f9d3bb0>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10f8369d0>
 <br><br>
 <div class="customfooter">
     <strong>

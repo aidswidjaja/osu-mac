@@ -2,19 +2,18 @@
 To-do
 ########################################
 
-last updated 14 October 2020 AEST
-
 ****************************************
 Work in Progress
 ****************************************
 
-? install/10-15.html - osu! Forum thread link needs to be fixed
-- image alts:
-	- malware
-	- retina
-	- install/10-14
-	- install/10-15
-	- welcome/import
+- Need to mention osu!macOS Agent imports 
+- Fullscreen capture workaround - issues/dualmonitor
+- replays/scores
+- backups
+- Transfer scores + replays
+- Mac driver - minimising
+- updating wineskin/engine
+- https://osu-mac.readthedocs.io/en/latest/welcome/transfer.html#transferring-from-osu-lazer - |||
 
 ****************************************
 Possible future additions
