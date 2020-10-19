@@ -1,5 +1,5 @@
 #############################################
-Discord Rich Presence (10.15+)
+Discord Rich Presence (WS11 WineskinServer)
 #############################################
 
 .. rst-class:: wineskin-version
@@ -9,9 +9,21 @@ Discord Rich Presence (10.15+)
 
 .. note::
 
-    This section is for users on macOS 10.15 and later. For information about Rich Presence on 10.14 and earlier, click `here <discord-10-14.html>`_
+    This section is for users using Wineskins which use the **WS11WineCX19.0.1-1** or **WS11WineCX64Bit19.0.1-1** Wine engine from`Gcenx <https://github.com/Gcenx/WineskinServer>`_. **To find your Wineskin version:**
 
-The **macOS 10.15 Catalina and later** Wineskin already has Discord Rich Presence installed.
+    1. Locate where ``osu!.app`` is installed
+    2. Right click on it and select **Show Package Contents**
+    3. You should now see three files/folders: ``Contents``, ``drive_c`` and ``Wineskin``. Click ``Wineskin``
+    4. A window should pop up. Click **Advanced**
+    5. It will be displayed under the **Associated Extensions** column, as shown below.
+
+    .. image:: ../assets/wineskin-engine-version.png
+        :alt: Wineskin Advanced, highlighting the engine version number:
+    
+    If you're **not** using one of the two **WS11** engines mentioned above, then the process behind Discord Rich Presence is slightly different - `you will encounter difficulties with getting Discord Rich Presence to work on macOS <discord-10-14.html>`_.
+
+
+The **Technocoder's Wineskin with support for macOS 10.15 Catalina and later** Wineskin already has Discord Rich Presence installed.
 
 If for some reason it isn't working, follow these steps.
 
