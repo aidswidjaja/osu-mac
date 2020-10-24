@@ -120,9 +120,9 @@ This is because the filetypes used by osu-stable and osu!lazer are very differen
 .. image:: ../assets/osu-lazer-filedir.png
     :alt: osu!lazer file directory setup.
 
-| (above) osu!lazer file directory setup.
-| (below) osu-stable fle directory setup.
-| yes I know I only have one beatmap ``.osz`` in my stable install..
+    | (above) osu!lazer file directory setup.
+    | (below) osu-stable fle directory setup.
+    | yes I know I only have one beatmap ``.osz`` in my stable install.
 
 .. image:: ../assets/osu-stable-filedir.png
     :alt: osu-stable file directory setup.
@@ -141,5 +141,5 @@ You should `import your beatmaps and skins manually instead <import.html>`_.
 
     Unfortunately, it only works on Windows, and while I could probably make it work on macOS, and as previously mentioned, like most of the things in my life I don't have a lot of time on my hands right now :(
 
-        If you're wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the Apache-2. License) and work on making a port to macOS.
+    If you're wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the Apache-2. License) and work on making a port to macOS.
 
