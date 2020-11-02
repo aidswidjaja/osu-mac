@@ -15,6 +15,7 @@ Here's a repository of common issues (and potential fixes) other users have expe
 - `osu! cannot be opened because the developer cannot be verified <unidentified.html>`_
 - `osu! runs perfectly, but it has some trouble when starting up <start.html>`_
 - `osu! was unable to obtain a graphics context <graphics.html>`_
+- `osu! captures my monitor/my second monitor is black <dualmonitor.html>`_
 - `Enabling Retina Mode <retina.html>`_
 - `osu! mouse/trackpad input feels unstable <input.html>`_
 - `osu! won't close (update loop or otherwise) <wontclose.html>`_

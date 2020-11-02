@@ -140,9 +140,9 @@ This is because the filetypes used by osu-stable and osu!lazer are very differen
 .. image:: ../assets/osu-lazer-filedir.png
     :alt: osu!lazer file directory setup.
 
-    | (above) osu!lazer file directory setup.
-    | (below) osu-stable fle directory setup.
-    | yes I know I only have one beatmap ``.osz`` in my stable install.
+| (above) osu!lazer file directory setup.
+| (below) osu-stable fle directory setup.
+| yes I know I only have one beatmap ``.osz`` in my stable install.
 
 .. image:: ../assets/osu-stable-filedir.png
     :alt: osu-stable file directory setup.

@@ -1,5 +1,5 @@
 #############################################
-Discord Rich Presence (WS11 WineskinServer)
+Discord Rich Presence (64-bit Wineskins)
 #############################################
 
 .. rst-class:: wineskin-version

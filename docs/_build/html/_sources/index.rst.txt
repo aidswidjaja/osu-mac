@@ -89,6 +89,7 @@ Sitemap
    issues/unidentified
    issues/start
    issues/graphics
+   issues/dualmonitor
    issues/retina
    issues/input
    issues/wontclose

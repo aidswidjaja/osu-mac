@@ -24,41 +24,57 @@ Transferring data from another osu! installation
 
         You should remove all screen-resolution related properties as this may crash your game (see `Common issues: osu! was unable to obtain a graphics context. <../issues/graphics.html>`_) - be careful out there!
 
+.. danger::
+
+    Before transferring and deleting osu! data off your old osu! installation, **back it up!** Backing osu! files up is as easy as copying the entire osu! folder onto an external hard drive - and this is something all osu! players should do anyway!
+
+.. danger::
+
+    Noone is responsible if you lose all your data - back up your data and take extreme care if you have particularly special osu! game files.
+
 ****************************************************
 Transferring from a different osu! Wineskin
 ****************************************************
 
 *Well this is about to get meta*
 
-.. danger::
-
-	These steps will **not** transfer over replays and scores.
+======================================
+Beatmaps, Skins, Songs & Skins
+======================================
 
 To transfer Songs or Skins from another osu! Wineskin:
 
-1. In your **old osu! Wineskin**, find your ``Songs`` or ``Skins`` directory
+1. In your **old osu! Wineskin**, locate your ``Songs`` directory, ``Skins`` directory, ``Scores.db`` file and ``Data/r`` directory.
 
     - Locate where your **old** ``osu!.app`` (your Wineskin) is installed
     - Right click on it and select ``Show Package Contents``
     - You should now see three files/folders: ``Contents``, ``drive_c`` and ``Wineskin``. Click ``drive_c``.
-    - From here, click ``osu!``.
-    - From here, locate ``Songs`` or ``Skins``
+    - From here, click ``osu!``
+    - From here, locate the directories listed above.
 
-2. Then, in your **new** osu! Wineskin, find your ``Songs`` or ``Skins`` directory
+2. Then, in your **new** osu! Wineskin, locate the same directories from before, that's your ``Songs`` directory, ``Skins`` directory, ``Scores.db`` file and ``Data/r`` directory.
 
     - Locate where your **new** ``osu!.app`` (your Wineskin) is installed
     - Right click on it and select ``Show Package Contents``
     - You should now see three files/folders: ``Contents``, ``drive_c`` and ``Wineskin``. Click ``drive_c``.
-    - From here, click ``osu!``.
-    - From here, locate ``Songs`` or ``Skins``
+    - From here, click ``osu!``
+    - From here, locate the directories listed above.
 
-3. Replace the directories in your **new** osu! Wineskin with that from your **old** osu! Wineskin
+3. Replace the corresponding files and directories in your **new** osu! Wineskin with that from your **old** osu! Wineskin.
+
+.. danger::
+
+    Don't delete your osu! game data from your old osu! Wineskin until you're absolutely certain everything works fine, and make a backup of your osu! game data periodically.
 
 ****
 
 ****************************************************
 Transferring from Windows
 ****************************************************
+
+======================================
+Beatmaps, Skins, Replays & Scores
+======================================
 
 To transfer Songs or Skins from an osu! installation on Windows:
 
@@ -74,16 +90,20 @@ To transfer Songs or Skins from an osu! installation on Windows:
 .. image:: ../assets/osu-directory-windows.png
     :alt: osu! installation directory on Windows.
 
-5. Here are your ``Songs`` and ``Skins`` directories. Put this on a USB drive or someplace which you can access from your Mac later on.
-6. On your Mac, locate your osu! Wineskin and find your ``Songs`` or ``Skins`` directory
+5. Highlighted are your ``Songs`` and ``Skins`` directories, but this folder also contains your ``Scores.db`` file and your ``Data\r`` (replays) folder. Put this on a USB drive or someplace which you can access from your Mac later on.
+6. On your Mac, locate your osu! Wineskin and locate your ``Songs`` directory, ``Skins`` directory, ``Scores.db`` file and ``Data/r`` directory.
 
     - Locate where your **new** ``osu!.app`` (your Wineskin) is installed
     - Right click on it and select ``Show Package Contents``
     - You should now see three files/folders: ``Contents``, ``drive_c`` and ``Wineskin``. Click ``drive_c``.
     - From here, click ``osu!``.
-    - From here, locate ``Songs`` or ``Skins``
+    - From here, locate the directories listed above.
 
-7. Replace the directories in your **new** osu! Wineskin with that from your **Windows** install of osu!.
+7. Replace the corresponding files and directories in your **new** osu! Wineskin with that from your **Windows** install of osu!.
+
+.. danger::
+
+    Don't delete your osu! game data from your Windows installation until you're absolutely certain everything works fine, and make a backup of your osu! game data periodically.
 
 ****
 
@@ -101,7 +121,7 @@ Feel free to `contribute though to the development of osu!lazer and get a custom
 
 .. note::
 
-    Actually this isn't entirely true.
+    Technically, it is possible to transfer game data to osu!lazer, but there is no available end user solution at this time.
 
     `jorolf <https://osu.ppy.sh/users/7004641>`_'s `osu-lazer-beatmap-importer <https://github.com/jorolf/osu-lazer-beatmap-importer>`_ allows you to zip your osu-stable (under Wine) files and then open them with osu!lazer. But it's Windows only, and while I could probably make it work on macOS, like most of the things in my life I don't have a lot of time on my hands right now.
 
@@ -122,7 +142,7 @@ This is because the filetypes used by osu-stable and osu!lazer are very differen
 
 | (above) osu!lazer file directory setup.
 | (below) osu-stable fle directory setup.
-| yes I know I only have one beatmap ``.osz`` in my stable install..
+| yes I know I only have one beatmap ``.osz`` in my stable install.
 
 .. image:: ../assets/osu-stable-filedir.png
     :alt: osu-stable file directory setup.
@@ -131,7 +151,7 @@ You should `import your beatmaps and skins manually instead <import.html>`_.
 
 .. note::
 
-    Well I guess it is actually *sort of* possible.
+    Technically, it is possible to transfer game data from osu!lazer, but there is no available end user solution at this time.
 
     For someone who plays more on lazer than stable, having a beatmap importer that could import files from lazer to stable sure would be useful!
 
@@ -141,5 +161,5 @@ You should `import your beatmaps and skins manually instead <import.html>`_.
 
     Unfortunately, it only works on Windows, and while I could probably make it work on macOS, and as previously mentioned, like most of the things in my life I don't have a lot of time on my hands right now :(
 
-        If you're wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the Apache-2. License) and work on making a port to macOS.
+    If you're wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the Apache-2. License) and work on making a port to macOS.
 

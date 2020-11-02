@@ -18,6 +18,10 @@ Importing beatmaps and skins
     - `Adding beatmapsets on osu! knowledge base <https://osu.ppy.sh/help/wiki/Installation#adding-beatmapsets>`_
     - `Skinning FAQ on osu! knowledge base <https://osu.ppy.sh/help/wiki/Skinning/FAQ>`_
 
+.. note::
+
+    osu!macOS Agent can automatically move beatmaps and skins from your Downloads folder. Just make sure to enable the checkboxes inside osu!macOS Agent settings.
+
 ***************************************
 Importing beatmaps
 ***************************************

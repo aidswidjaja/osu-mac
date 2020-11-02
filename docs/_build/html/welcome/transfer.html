@@ -95,8 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="screen.html">Setting up your screen options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="import.html">Importing beatmaps and skins</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Transferring data from another osu! installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#transferring-from-a-different-osu-wineskin">Transferring from a different osu! Wineskin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#transferring-from-windows">Transferring from Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transferring-from-a-different-osu-wineskin">Transferring from a different osu! Wineskin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#beatmaps-skins-songs-skins">Beatmaps, Skins, Songs &amp; Skins</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#transferring-from-windows">Transferring from Windows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#beatmaps-skins-replays-scores">Beatmaps, Skins, Replays &amp; Scores</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#transferring-to-osu-lazer">Transferring to osu!lazer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#transferring-from-osu-lazer">Transferring from osu!lazer</a></li>
 </ul>
@@ -109,13 +115,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/retina.html">Enabling Retina Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/input.html">osu! mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (non-WS11 WineskinServer)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (WS11 WineskinServer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
 </ul>
 <p class="caption"><span class="caption-text">About this project</span></p>
@@ -209,43 +216,56 @@
 <p>You should remove all screen-resolution related properties as this may crash your game (see <a class="reference external" href="../issues/graphics.html">Common issues: osu! was unable to obtain a graphics context.</a>) - be careful out there!</p>
 </div>
 </div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Before transferring and deleting osu! data off your old osu! installation, <strong>back it up!</strong> Backing osu! files up is as easy as copying the entire osu! folder onto an external hard drive - and this is something all osu! players should do anyway!</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Noone is responsible if you lose all your data - back up your data and take extreme care if you have particularly special osu! game files.</p>
+</div>
 <div class="section" id="transferring-from-a-different-osu-wineskin">
 <h2>Transferring from a different osu! Wineskin<a class="headerlink" href="#transferring-from-a-different-osu-wineskin" title="Permalink to this headline">¶</a></h2>
 <p><em>Well this is about to get meta</em></p>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>These steps will <strong>not</strong> transfer over replays and scores.</p>
-</div>
+<div class="section" id="beatmaps-skins-songs-skins">
+<h3>Beatmaps, Skins, Songs &amp; Skins<a class="headerlink" href="#beatmaps-skins-songs-skins" title="Permalink to this headline">¶</a></h3>
 <p>To transfer Songs or Skins from another osu! Wineskin:</p>
 <ol class="arabic">
-<li><p>In your <strong>old osu! Wineskin</strong>, find your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory</p>
+<li><p>In your <strong>old osu! Wineskin</strong>, locate your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Scores.db</span></code> file and <code class="docutils literal notranslate"><span class="pre">Data/r</span></code> directory.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Locate where your <strong>old</strong> <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
 <li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
 <li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">drive_c</span></code>.</p></li>
-<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code>.</p></li>
-<li><p>From here, locate <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code></p></li>
+<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code></p></li>
+<li><p>From here, locate the directories listed above.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Then, in your <strong>new</strong> osu! Wineskin, find your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory</p>
+<li><p>Then, in your <strong>new</strong> osu! Wineskin, locate the same directories from before, that’s your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Scores.db</span></code> file and <code class="docutils literal notranslate"><span class="pre">Data/r</span></code> directory.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Locate where your <strong>new</strong> <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
 <li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
 <li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">drive_c</span></code>.</p></li>
-<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code>.</p></li>
-<li><p>From here, locate <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code></p></li>
+<li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code></p></li>
+<li><p>From here, locate the directories listed above.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Replace the directories in your <strong>new</strong> osu! Wineskin with that from your <strong>old</strong> osu! Wineskin</p></li>
+<li><p>Replace the corresponding files and directories in your <strong>new</strong> osu! Wineskin with that from your <strong>old</strong> osu! Wineskin.</p></li>
 </ol>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Don’t delete your osu! game data from your old osu! Wineskin until you’re absolutely certain everything works fine, and make a backup of your osu! game data periodically.</p>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="transferring-from-windows">
 <h2>Transferring from Windows<a class="headerlink" href="#transferring-from-windows" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="beatmaps-skins-replays-scores">
+<h3>Beatmaps, Skins, Replays &amp; Scores<a class="headerlink" href="#beatmaps-skins-replays-scores" title="Permalink to this headline">¶</a></h3>
 <p>To transfer Songs or Skins from an osu! installation on Windows:</p>
 <ol class="arabic simple">
 <li><p>In Windows, open <strong>osu!</strong></p></li>
@@ -258,20 +278,25 @@
 </ol>
 <img alt="osu! installation directory on Windows." src="../_images/osu-directory-windows.png" />
 <ol class="arabic" start="5">
-<li><p>Here are your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> and <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directories. Put this on a USB drive or someplace which you can access from your Mac later on.</p></li>
-<li><p>On your Mac, locate your osu! Wineskin and find your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory</p>
+<li><p>Highlighted are your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> and <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directories, but this folder also contains your <code class="docutils literal notranslate"><span class="pre">Scores.db</span></code> file and your <code class="docutils literal notranslate"><span class="pre">Data\r</span></code> (replays) folder. Put this on a USB drive or someplace which you can access from your Mac later on.</p></li>
+<li><p>On your Mac, locate your osu! Wineskin and locate your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Scores.db</span></code> file and <code class="docutils literal notranslate"><span class="pre">Data/r</span></code> directory.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Locate where your <strong>new</strong> <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> (your Wineskin) is installed</p></li>
 <li><p>Right click on it and select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Package</span> <span class="pre">Contents</span></code></p></li>
 <li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">drive_c</span></code>.</p></li>
 <li><p>From here, click <code class="docutils literal notranslate"><span class="pre">osu!</span></code>.</p></li>
-<li><p>From here, locate <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code></p></li>
+<li><p>From here, locate the directories listed above.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Replace the directories in your <strong>new</strong> osu! Wineskin with that from your <strong>Windows</strong> install of osu!.</p></li>
+<li><p>Replace the corresponding files and directories in your <strong>new</strong> osu! Wineskin with that from your <strong>Windows</strong> install of osu!.</p></li>
 </ol>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Don’t delete your osu! game data from your Windows installation until you’re absolutely certain everything works fine, and make a backup of your osu! game data periodically.</p>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="transferring-to-osu-lazer">
@@ -282,7 +307,7 @@
 <p>Feel free to <a class="reference external" href="https://github.com/ppy/osu/issues/1907">contribute though to the development of osu!lazer and get a custom install path function set up</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Actually this isn’t entirely true.</p>
+<p>Technically, it is possible to transfer game data to osu!lazer, but there is no available end user solution at this time.</p>
 <p><a class="reference external" href="https://osu.ppy.sh/users/7004641">jorolf</a>’s <a class="reference external" href="https://github.com/jorolf/osu-lazer-beatmap-importer">osu-lazer-beatmap-importer</a> allows you to zip your osu-stable (under Wine) files and then open them with osu!lazer. But it’s Windows only, and while I could probably make it work on macOS, like most of the things in my life I don’t have a lot of time on my hands right now.</p>
 <p>If you’re wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the MIT License) and work on making a port to macOS.</p>
 </div>
@@ -296,20 +321,18 @@
 <div class="line-block">
 <div class="line">(above) osu!lazer file directory setup.</div>
 <div class="line">(below) osu-stable fle directory setup.</div>
-<div class="line">yes I know I only have one beatmap <code class="docutils literal notranslate"><span class="pre">.osz</span></code> in my stable install..</div>
+<div class="line">yes I know I only have one beatmap <code class="docutils literal notranslate"><span class="pre">.osz</span></code> in my stable install.</div>
 </div>
 <img alt="osu-stable file directory setup." src="../_images/osu-stable-filedir.png" />
 <p>You should <a class="reference external" href="import.html">import your beatmaps and skins manually instead</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Well I guess it is actually <em>sort of</em> possible.</p>
+<p>Technically, it is possible to transfer game data from osu!lazer, but there is no available end user solution at this time.</p>
 <p>For someone who plays more on lazer than stable, having a beatmap importer that could import files from lazer to stable sure would be useful!</p>
 <p>And actually, that already exists.</p>
 <p><a class="reference external" href="https://osu.ppy.sh/users/9507946">Ringosham</a>’s <a class="reference external" href="https://github.com/ringosham/Lazer-exporter/">Lazer exporter</a> has a number of features that make importing and exporting beatmaps on osu!lazer quite easy, including <strong>being able to export Lazer beatmaps</strong> to <code class="docutils literal notranslate"><span class="pre">.osz</span></code>. Naisu.</p>
 <p>Unfortunately, it only works on Windows, and while I could probably make it work on macOS, and as previously mentioned, like most of the things in my life I don’t have a lot of time on my hands right now :(</p>
-<blockquote>
-<div><p>If you’re wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the Apache-2. License) and work on making a port to macOS.</p>
-</div></blockquote>
+<p>If you’re wlling to mess around a bit with some code, feel free to fork the repo (which is licensed under the Apache-2. License) and work on making a port to macOS.</p>
 </div>
 </div>
 </div>
@@ -346,7 +369,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x11047aaf0>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10486c670>
 <br><br>
 <div class="customfooter">
     <strong>

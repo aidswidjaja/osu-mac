@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>osu! mouse/trackpad input feels unstable &mdash; osu!mac</title>
+  <title>osu! captures my monitor/my second monitor is black &mdash; osu!mac</title>
   
 
   
@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="osu! won’t close" href="wontclose.html" />
-    <link rel="prev" title="Enabling Retina Mode" href="retina.html" /> 
+    <link rel="next" title="Enabling Retina Mode" href="retina.html" />
+    <link rel="prev" title="osu! was unable to obtain a graphics context" href="graphics.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -103,15 +103,15 @@
 <li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
-<li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">osu! mouse/trackpad input feels unstable</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">osu! captures my monitor/my second monitor is black</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input.html">osu! mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
@@ -172,13 +172,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>osu! mouse/trackpad input feels unstable</li>
+      <li>osu! captures my monitor/my second monitor is black</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/issues/input.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/issues/dualmonitor.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -191,8 +191,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="osu-mouse-trackpad-input-feels-unstable">
-<h1>osu! mouse/trackpad input feels unstable<a class="headerlink" href="#osu-mouse-trackpad-input-feels-unstable" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="osu-captures-my-monitor-my-second-monitor-is-black">
+<h1>osu! captures my monitor/my second monitor is black<a class="headerlink" href="#osu-captures-my-monitor-my-second-monitor-is-black" title="Permalink to this headline">¶</a></h1>
 <div class="wineskin-version line-block">
 <div class="line">This article is applicable to the following wrappers:</div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a></div>
@@ -202,23 +202,28 @@
 <hr class="docutils" />
 <div class="section" id="behaviour">
 <h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
-<p>osu! mouse or trackpad movement feels unstable, the cursor may jump, be extremely inprecise, or otherwise be unusable.</p>
+<p>osu! has made all other windows inaccessible, and if a secondary monitor is connected, only your primary one is available.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="cause">
 <h2>Cause<a class="headerlink" href="#cause" title="Permalink to this headline">¶</a></h2>
-<p>The cause of this issue is unknown, but it could be something to do with how Wine translates macOS cursor movements to Windows API calls (since osu! doesn’t use the standard macOS cursor like other Wine programs).</p>
-<p>Generally speaking, you might like to avoid increasing mouse sensitivity inside osu!, especially if you’re playing in a window. Instead, change your mouse sensitivity through macOS System Preferences &gt; Mouse (or Trackpad).</p>
+<p>When using the Mac driver with osu!, osu! will go into fullscreen mode and prevent other applications or system elements (like the volume control) from drawing on top of it. It’s great for performance, but can be annoying to play with osu! (especially since you won’t be able to drag and drop beatmaps into your Songs folder)</p>
+<p>Learn more <a href="#id2"><span class="problematic" id="id3">`at the Apple Developer Quartz documentation website.&lt;https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/QuartzDisplayServicesConceptual/Articles/DisplayCapture.html&gt;`_</span></a>.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Open the in-game settings menu inside osu! using the <code class="docutils literal notranslate"><span class="pre">Ctrl-O</span></code> shortcut</p></li>
-<li><p>Find the <strong>Mouse</strong> section.</p></li>
-<li><p>Enable <strong>Raw input</strong> and <strong>Map absolute raw input to osu! window</strong></p></li>
+<p>These instructions are directly taken from Technocoder’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/679205">macOS troubleshooting guide</a>.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Click “Registry Editor” (Under the “Tools” tab in Wineskin in the left column)</p></li>
+<li><p>Go to this registry folder: HKEY_CURRENT_USER &gt; Software &gt; Wine &gt; Mac Driver</p></li>
+<li><p>Double click on “CaptureDisplaysForFullscreen”</p></li>
+<li><p>Change “Y” to “n” in the text box</p></li>
+<li><p>Click “OK”</p></li>
+<li><p>Close the “Registry Editor” window</p></li>
 </ol>
-<img alt="osu! in-game settings, showing the input menu." src="../_images/osu-input-settings.png" />
+</div></blockquote>
 </div>
 <hr class="docutils" />
 <div class="section" id="if-that-didn-t-work">
@@ -236,10 +241,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="wontclose.html" class="btn btn-neutral float-right" title="osu! won’t close" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="retina.html" class="btn btn-neutral float-right" title="Enabling Retina Mode" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="retina.html" class="btn btn-neutral float-left" title="Enabling Retina Mode" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="graphics.html" class="btn btn-neutral float-left" title="osu! was unable to obtain a graphics context" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -260,7 +265,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10fbba3d0>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x110129cd0>
 <br><br>
 <div class="customfooter">
     <strong>
