@@ -48,4 +48,4 @@ If that didn't work
 
 There could be something else going on here, and performing `basic troubleshooting <troubleshooting.html>`_ should help you get to the bottom of it.
 
-If you're not sure what's going on here, copy any osu! crash logs as well as `generating a report with osu!macOS Agent <troubleshooting.html#generating-a-report-with-osu-macos-agent>`_, and let us know on the forums.
+If you're still not sure what's going on here, copy any osu! crash logs and `generate a report with osu!macOS Agent <troubleshooting.html#generating-a-report-with-osu-macos-agent>`_, then let us know on the forums with what we can help.
