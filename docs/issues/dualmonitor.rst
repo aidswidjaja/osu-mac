@@ -25,7 +25,7 @@ Cause
 
 When using the Mac driver with osu!, osu! will go into fullscreen mode and prevent other applications or system elements (like the volume control) from drawing on top of it. It's great for performance, but can be annoying to play with osu! (especially since you won't be able to drag and drop beatmaps into your Songs folder)
 
-Learn more `at the Apple Developer Quartz documentation website.<https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/QuartzDisplayServicesConceptual/Articles/DisplayCapture.html>`_.
+Learn more `at the Apple Developer Quartz documentation website. <https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/QuartzDisplayServicesConceptual/Articles/DisplayCapture.html>`_.
 
 ****
 
