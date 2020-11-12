@@ -115,7 +115,7 @@ We want to help you get osu! running on your macOS-powered device, so to make th
 
 - Provide information on when/why your issue happens (if you know)
 - Provide information about your computer specs and the wrapper you used
-- Attach screenshots and log files (from both `osu!macOS Agent <#generating-a-report-with-osu-macos-agent>`_ and `Wineskin <#generating-logs-for-wineskin>`
+- Attach screenshots and log files (from both `osu!macOS Agent <#generating-a-report-with-osu-macos-agent>`_ and `Wineskin <#generating-logs-for-wineskin>`_
 - Tell us what you've already tried to do
 
 The best place to report issues is on the `osu! forums <https://osu.ppy.sh/community/forums/5>`_ - make sure you put **macOS** in the title of your post (so other people know ofc).
