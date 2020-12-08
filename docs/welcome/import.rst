@@ -59,6 +59,10 @@ If osu! is full screen, you can use Mission Control (F4 key) to switch between w
 Click to import
 =======================================
 
+.. note::
+
+    Users have reported issues with this on `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/topics/1106057>`_, see `community/forums/posts/7805376 <https://osu.ppy.sh/community/forums/posts/7805376>`_.
+
 You can set up osu! to automatically open and import a beatmap or skin when you click on it in your Downloads folder or web browser.
 
 1. Download a random osu beatmap or skin (and get the osz file)
@@ -68,7 +72,7 @@ You can set up osu! to automatically open and import a beatmap or skin when you 
 4. Go back a few folders until you reach **Wineskin.app**, and click to pen it!
 5. Click **Advanced**. You should see a screen like the one below
 
-.. image:: wineskin-extension.png
+.. image:: assets/wineskin-extension.png
     :alt: Wineskin options showing Associated Extensions.
 
 Note the Associated Extensions section. If the ``osz2``, ``osr``, ``osz`` and ``osu`` extensions aren't there, add them using the + button.
@@ -80,7 +84,7 @@ To verify that this has all been set up correctly:
 8. Navigate to ``My Computer\osu!\Songs`` in the window that appears and locate the osz beatmap you just dropped
 9. Right click on the file, click **Properties** and verify it worked. It should look like the image below.
 
-.. image:: properties-extension.png
+.. image:: assets/properties-extension.png
     :alt: Wine Explorer showing Properties for osz extensions.
 
 .. note::
@@ -178,4 +182,4 @@ You can then select your skin as normal from the osu! in-game settings menu.
 Related links
 ***************************************
 
-- https://osu.ppy.sh/community/forums/topics/1106057?start=7756512
+- https://osu.ppy.sh/community/forums/posts/7756512
