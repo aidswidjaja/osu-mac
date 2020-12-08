@@ -71,7 +71,7 @@ You can set up osu! to automatically open and import a beatmap or skin when you 
 .. image:: wineskin-extension.png
     :alt: Wineskin options showing Associated Extensions.
 
-Note the Associated Extensions section. If the ``osz2``, ``os``r, ``osz`` and ``osu`` extensions aren't there, add them using the + button.
+Note the Associated Extensions section. If the ``osz2``, ``osr``, ``osz`` and ``osu`` extensions aren't there, add them using the + button.
 
 To verify that this has all been set up correctly:
 
