@@ -88,6 +88,7 @@ Sitemap
    issues/troubleshooting
    issues/unidentified
    issues/start
+   issues/wineskin
    issues/graphics
    issues/dualmonitor
    issues/retina

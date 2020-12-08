@@ -17,7 +17,7 @@ Behaviour
 
 When attempting to open the Wineskin.app application located inside your osu! wrapper, you receive a warning that reads the following message:
 
-Error while writting file: The folder “exec2088858072.bat” doesn’t exist.
+    Error while writting file: The folder “exec2088858072.bat” doesn’t exist.
 
 ****
 
