@@ -13,9 +13,10 @@ Here's a repository of common issues (and potential fixes) other users have expe
 
 - `Troubleshooting Basics <troubleshooting.html>`_
 - `osu! cannot be opened because the developer cannot be verified <unidentified.html>`_
-- `osu! runs perfectly, but it has some trouble when starting up <start.html>`_
+- `Bypass the osu! startup sequence to prevent startup issues <start.html>`_
+- `Wineskin.app doesn't open, even if osu! does <wineskin.html>`_
 - `osu! was unable to obtain a graphics context <graphics.html>`_
-- `osu! captures my monitor/my second monitor is black <dualmonitor.html>`_
+- `osu! captures my monitor/my second monitor is blacked out <dualmonitor.html>`_
 - `Enabling Retina Mode <retina.html>`_
 - `osu! mouse/trackpad input feels unstable <input.html>`_
 - `osu! won't close (update loop or otherwise) <wontclose.html>`_

@@ -50,7 +50,11 @@ To transfer Songs or Skins from another osu! Wineskin:
     - Right click on it and select ``Show Package Contents``
     - You should now see three files/folders: ``Contents``, ``drive_c`` and ``Wineskin``. Click ``drive_c``.
     - From here, click ``osu!``
-    - From here, locate the directories listed above.
+    - From here, locate the directories listed above. 
+    
+.. note::
+
+    Alternatively, you could try replacing the entire ``drive_c/osu!`` directory.
 
 2. Then, in your **new** osu! Wineskin, locate the same directories from before, that's your ``Songs`` directory, ``Skins`` directory, ``Scores.db`` file and ``Data/r`` directory.
 
@@ -58,13 +62,17 @@ To transfer Songs or Skins from another osu! Wineskin:
     - Right click on it and select ``Show Package Contents``
     - You should now see three files/folders: ``Contents``, ``drive_c`` and ``Wineskin``. Click ``drive_c``.
     - From here, click ``osu!``
-    - From here, locate the directories listed above.
+    - From here, locate the directories listed above. 
+    
+.. note::
+
+    If you are replacing the entire ``drive_c/osu!`` directory then make sure you replace appropriately.
 
 3. Replace the corresponding files and directories in your **new** osu! Wineskin with that from your **old** osu! Wineskin.
 
 .. danger::
 
-    Don't delete your osu! game data from your old osu! Wineskin until you're absolutely certain everything works fine, and make a backup of your osu! game data periodically.
+    Don't delete your osu! game data from your old osu! Wineskin until you're absolutely certain everything works fine, and **always make a backup** of your osu! game data periodically.
 
 ****
 
@@ -90,7 +98,12 @@ To transfer Songs or Skins from an osu! installation on Windows:
 .. image:: ../assets/osu-directory-windows.png
     :alt: osu! installation directory on Windows.
 
-5. Highlighted are your ``Songs`` and ``Skins`` directories, but this folder also contains your ``Scores.db`` file and your ``Data\r`` (replays) folder. Put this on a USB drive or someplace which you can access from your Mac later on.
+5. Highlighted are your ``Songs`` and ``Skins`` directories, but this folder also contains your ``Scores.db`` file and your ``Data\r`` (replays) folder. Put this on a USB drive or someplace which you can access from your Mac later on. 
+
+.. note::
+
+    Alternatively, you could try replacing the entire ``drive_c/osu!`` directory.
+
 6. On your Mac, locate your osu! Wineskin and locate your ``Songs`` directory, ``Skins`` directory, ``Scores.db`` file and ``Data/r`` directory.
 
     - Locate where your **new** ``osu!.app`` (your Wineskin) is installed
@@ -100,6 +113,10 @@ To transfer Songs or Skins from an osu! installation on Windows:
     - From here, locate the directories listed above.
 
 7. Replace the corresponding files and directories in your **new** osu! Wineskin with that from your **Windows** install of osu!.
+
+.. note::
+
+    If you are replacing the entire ``drive_c/osu!`` directory then make sure you replace appropriately.
 
 .. danger::
 

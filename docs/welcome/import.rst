@@ -20,15 +20,78 @@ Importing beatmaps and skins
 
 .. note::
 
-    osu!macOS Agent can automatically move beatmaps and skins from your Downloads folder. Just make sure to enable the checkboxes inside osu!macOS Agent settings.
+    osu!macOS Agent can automatically move beatmaps and skins from your Downloads folder. Just make sure to enable the checkboxes inside osu!macOS Agent settings. More information available below.
 
 ***************************************
-Importing beatmaps
+Importing beatmaps and skins
 ***************************************
 
-Importing beatmaps into osu! is quite easy, but you can't exactly drag and drop files into osu! like you can on Windows.
+Importing beatmaps into osu! is quite easy, and there's a number of ways you can get this to work with your osu! Wineskin.
 
-To import a beatmap into osu!, follow the following instructions:
+=======================================
+Using osu!macOS Agent
+=======================================
+
+You can have beatmaps automatically moved from your Downloads folder to osu!, with the help of `Technocoder <https://osu.ppy.sh/users/10338558>`_'s  `osu!macOS Agent <https://osu.ppy.sh/community/forums/topics/1036678>`_ program. To enable this:
+
+1. Open osu!macOS Agent
+2. In the **General** tab, locate the **Location:** field. Make sure this points to your osu! install (e.g ``/Users/Adrian/Desktop/osu!.app``)
+3. Enable the following checkboxes
+
+    - Automatically move beatmaps from Downloads
+    - Automatically move skins from Downloads
+
+You can also enable
+
+    - Automatically open replays from Downloads
+
+4. Leave osu!macOS Agent running. The next time you download a beatmap from the osu! website, it should automatically move to your osu! wrapper. Then just hit F5 (beatmaps) or Ctrl-Alt-Shift-S (skins) to refresh.
+
+=======================================
+Drag and drop
+=======================================
+
+You might also be able to drag and drop beatmaps and skins into osu! directly. In my personal experience this only works with `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/topics/1106057>`_.
+
+If osu! is full screen, you can use Mission Control (F4 key) to switch between windows.
+
+=======================================
+Click to import
+=======================================
+
+You can set up osu! to automatically open and import a beatmap or skin when you click on it in your Downloads folder or web browser.
+
+1. Download a random osu beatmap or skin (and get the osz file)
+2. Right click on **osu!.app**
+3. Click **Show Package Contents**
+4. Navigate to ``drive_c/osu!/Songs`` and drag & drop your ``osz`` or ``osk`` beatmap into there
+4. Go back a few folders until you reach **Wineskin.app**, and click to pen it!
+5. Click **Advanced**. You should see a screen like the one below
+
+.. image:: wineskin-extension.png
+    :alt: Wineskin options showing Associated Extensions.
+
+Note the Associated Extensions section. If the ``osz2``, ``os``r, ``osz`` and ``osu`` extensions aren't there, add them using the + button.
+
+To verify that this has all been set up correctly:
+
+6. Click **Tools**, then click **Command Line** (cmd). A console-like should open (it takes a while tho)
+7. Type ``explorer.exe``
+8. Navigate to ``My Computer\osu!\Songs`` in the window that appears and locate the osz beatmap you just dropped
+9. Right click on the file, click **Properties** and verify it worked. It should look like the image below.
+
+.. image:: properties-extension.png
+    :alt: Wine Explorer showing Properties for osz extensions.
+
+.. note::
+
+    This method tends to be more unreliable than the others listed and you may experience varying degrees of success.
+
+=======================================
+Manual import
+=======================================
+
+To manually import a beatmap into osu!, follow the following instructions:
 
 1. Find your ``Songs`` directory
 
@@ -109,3 +172,10 @@ You can then select your skin as normal from the osu! in-game settings menu.
 
     See the `osu! knowledge base <https://osu.ppy.sh/help/wiki/Installation#adding-skins>`_ for more info.
 
+****
+
+***************************************
+Related links
+***************************************
+
+- https://osu.ppy.sh/community/forums/topics/1106057?start=7756512
