@@ -163,7 +163,7 @@ To manually import a beatmap into osu!, follow the following instructions:
 ****
 
 ***************************************
-Importing skins
+A note about importing skins
 ***************************************
 
 Importing skins is largely the same process, except instead of the ``Songs`` directory, use the ``Skins`` directory, and to reload osu! use ``Ctrl-Alt-Shift-S`` instead of ``F5``.
