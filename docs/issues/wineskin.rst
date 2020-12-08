@@ -52,17 +52,19 @@ You still need to do this step on your osu! wrapper, even if osu! itself runs fi
 
 If you tried all of that and Wineskin.app still won't open, you can try replacing Wineskin.app with a known working version.
 
-1. Download the Wineskin.app replacement from https://drive.google.com/drive/folders/1Gz5Y0M4WoMxTTwb5aHUccebO5AlVm3SN?usp=sharing
-2. Click **DOWNLOAD ALL** in the top-right corner of the screen
-3. Google Drive will download this as a zip file. Extract the zip file until you just have the Wineskin.app file
-4. Inside **osu!.app** (Right click > Show Package Contents) locate **Wineskin.app** - make a backup of it (you can just rename it to say something like Wineskin.app.backup if you want)
-5. Replace the old **Wineskin.app** with the replacement version you downloaded from Google Drive
+1. Download the Wineskin.app replacement from https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aidswidjaja/osu-mac/tree/main/src/wineskin or https://drive.google.com/drive/folders/1Gz5Y0M4WoMxTTwb5aHUccebO5AlVm3SN?usp=sharing
+
+    - If using Google Drive, click **DOWNLOAD ALL** in the top-right corner of the screen
+
+2. The file will download this as a zip file. Extract the zip file until you just have the Wineskin.app file
+3. Inside **osu!.app** (Right click > Show Package Contents) locate **Wineskin.app** - make a backup of it (you can just rename it to say something like Wineskin.app.backup if you want)
+4. Replace the old **Wineskin.app** with the replacement version you downloaded from Google Drive
 
 Try and open it and see if everything works out.
 
 .. warning::
 
-    This is an experimental fix. Make sure you make a backup of your Wineskin.app before replacing it with this replacement version.
+    This is an experimental hotfix. Make sure you make a backup of your Wineskin.app before replacing it with this replacement version.
 
 ****
 
