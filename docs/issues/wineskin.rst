@@ -52,7 +52,7 @@ You still need to do this step on your osu! wrapper, even if osu! itself runs fi
 
 If you tried all of that and Wineskin.app still won't open, you can try replacing Wineskin.app with a known working version.
 
-1. Download the Wineskin.app replacement from https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aidswidjaja/osu-mac/tree/main/src/wineskin or https://drive.google.com/drive/folders/1Gz5Y0M4WoMxTTwb5aHUccebO5AlVm3SN?usp=sharing
+1. Download the Wineskin.app replacement from `https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aidswidjaja/osu-mac/tree/main/src/wineskin <https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aidswidjaja/osu-mac/tree/main/src/wineskin>`_ or https://drive.google.com/drive/folders/1Gz5Y0M4WoMxTTwb5aHUccebO5AlVm3SN?usp=sharing
 
     - If using Google Drive, click **DOWNLOAD ALL** in the top-right corner of the screen
 
