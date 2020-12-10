@@ -96,7 +96,7 @@ To generate a Wineskin log:
 
 Two plain-text files will appear. One contains information about your system and Wineskin, while the other provides a log of errors, warnings and events that were recorded while your Wineskin was operating. 
 
-Save both of these to a text file or someplace where you won't forget.
+Save both of these to a text file or someplace where you won't forget. If you're generating logs for another person, you can use a pastebin such as `paste.ubuntu.com <https://paste.ubuntu.com>`_ to share your log files with them.
 
 ****
 

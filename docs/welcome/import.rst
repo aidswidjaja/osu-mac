@@ -58,10 +58,10 @@ If osu! is full screen, you can use Mission Control (F4 key) to switch between w
 =======================================
 Click to import
 =======================================
-
+3
 .. note::
 
-    Users have reported issues with this on newer wrappers such as `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/topics/1106057>`_, see `community/forums/posts/7805376 <https://osu.ppy.sh/community/forums/posts/7805376>`_ and `Gcenx/WineskinServer/issues/47 <https://github.com/Gcenx/WineskinServer/issues/47>`_
+    Users have reported issues with this on newer wrappers such as `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/topics/1106057>`_, see `community/forums/posts/7805376 <https://osu.ppy.sh/community/forums/posts/7805376>`_ and `Gcenx/WineskinServer/issues/47 <https://github.com/Gcenx/WineskinServer/issues/47>`_. In the meantime, use an alternative import method.
 
 You can set up osu! to automatically open and import a beatmap or skin when you click on it in your Downloads folder or web browser.
 

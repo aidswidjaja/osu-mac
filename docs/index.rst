@@ -48,7 +48,7 @@ Disclaimers
 
 .. warning::
 
-   This information is supplied by volunteers in good faith. However, **no-one is not responsible if it doesn't work, your computer sets on fire, or you start the next nuclear war.** We do our best to make sure the information here is safe for you, your osu! account and your computer, but **you proceed at your own risk.**
+   This information is supplied by volunteers in good faith. However, **we are not responsible if it doesn't work, your computer sets on fire, or you start the next nuclear war.** We do our best to make sure the information here is safe for you, your osu! account and your computer, but **you proceed at your own risk.**
 
 .. warning::
 
