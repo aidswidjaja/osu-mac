@@ -59,7 +59,6 @@ Step 1: Download the Wineskin
 **Download the osu! Wineskin from Technocoder:**
 
 - **osu! forum thread:** `https://osu.ppy.sh/community/forums/posts/7560723 <https://osu.ppy.sh/community/forums/posts/7560723>`_
-- **Mega.NZ (468MB):** `https://mega.nz/file/... <https://mega.nz/file/54sgCaJB#nzuV4BNcOx7sJ-zx8elWwO9qgQCrHK763mIrTYyozZU>`_
 
 .. note::
 
@@ -72,8 +71,7 @@ Once it has downloaded, extract the ``.zip`` file.
 We also recommend downloading `Technocoder <https://osu.ppy.sh/users/10338558>`_'s osu!macOS Agent program, since it'll be used throughout this guide. In general, it's a great tool that every macOS osu-stable player on Wine should have. However, this is optional (though strongly encouraged) and alternative instructions are provided for those who are comfortable with digging deeper.
 
 - **osu! forum thread:** `community/forums/topics/1036678 <https://osu.ppy.sh/community/forums/topics/1036678>`_
-- **GitHub download link (7.61MB):** `<https://github.com/Techno-coder/... <https://github.com/Techno-coder/osu-macOS-Agent/releases/download/refs%2Fheads%2Fmaster/osu.macOS.Agent.zip>`_
-- **Mega.nz download link (7.61MB):** `https://mega.nz/... <https://mega.nz/file/Fw9UmIbK#tzI4XDO1aoDuDiQ35V1sy8XDWlB5p_0O2ovCBbo9feo>`_
+- **GitHub download link (7.61MB):** `https://github.com/Techno-coder/... <https://github.com/Techno-coder/osu-macOS-Agent/releases/download/refs%2Fheads%2Fmaster/osu.macOS.Agent.zip>`_
 
 ****
 
