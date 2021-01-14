@@ -13,7 +13,7 @@ Transferring data from another osu! installation
 
 .. note::
 
-    You can also use these same instructions to transfer your osu! configuration file (we've left it out to keep the instructions clean). Your osu! configuration file is entitled ``osu.yourcomputername.cfg``. For example, my configuration file is called osu!.Adrian.cfg`` and it looks like this:
+    You can also use these same instructions to transfer your osu! configuration file (we've left it out to keep the instructions clean). Your osu! configuration file is entitled ``osu.yourcomputername.cfg``. For example, my configuration file is called ``osu!.Adrian.cfg`` and it looks like this:
 
     .. image:: ../assets/osu-config.png
         :alt: osu! user configuration file.
