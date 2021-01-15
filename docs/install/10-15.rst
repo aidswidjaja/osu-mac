@@ -158,7 +158,7 @@ Below are some helpful tips if you're a bit lost, but if you know what you're do
     |
     | My Terminal will look slightly different to yours, but the concept (and the command!) remains the same.
 
-.. warning:: 
+.. danger:: 
 
     Unless you do something incredibly stupid, you probably won't completely stuff your computer. That being said, if you do something incredibly stupid, you'll stuff your computer. The ``sudo`` command allows your local user account to perform otherwise restricted actions, so please don't go around typing random things if something's not working - ask us a question instead!
 
