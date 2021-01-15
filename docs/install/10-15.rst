@@ -58,7 +58,7 @@ Step 1: Download the Wineskin
 
 **Download the osu! Wineskin from Technocoder:**
 
-- **osu! forum thread:** `https://osu.ppy.sh/community/forums/posts/7560723 <https://osu.ppy.sh/community/forums/posts/7560723>`_
+- **osu! forum thread:** `community/forums/posts/7560723 <https://osu.ppy.sh/community/forums/posts/7560723>`_
 
 .. note::
 
