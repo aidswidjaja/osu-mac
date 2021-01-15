@@ -142,11 +142,9 @@ Below are some helpful tips if you're a bit lost, but if you know what you're do
 
 .. note::
 
-    On older macOS versions, you may get a warning that looks like this. 
+    On older macOS versions, you may get a warning that reads this.
 
-        .. code-block:: bash
-
-            Improper use of the sudo command could lead to data loss or the deletion of important system files. Please double-check your typing when using sudo. Type "man sudo" for more information. To proceed, enter your password, or type Ctrl-C to abort.
+        Improper use of the sudo command could lead to data loss or the deletion of important system files. Please double-check your typing when using sudo. Type "man sudo" for more information. To proceed, enter your password, or type Ctrl-C to abort.
 
     Type your password as normal, as shown above.
 
