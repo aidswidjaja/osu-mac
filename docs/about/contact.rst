@@ -26,5 +26,4 @@ Email should only be used for DMCA/Copyright/other legal requests.
 
     The osu!mac documentation project is **not** affiliated with ppy, osu!, or any of the community members who developed the wrappers, unless otherwise indicated.
 
-Make `love <https://www.youtube.com/watch?v=MLdWbwQJWI0&feature=youtu.be>`_ not war
-Be nice to each other and hug your Pikachu
+`Be nice to each other <https://www.youtube.com/watch?v=MLdWbwQJWI0&feature=youtu.be>`_ `and hug your Pikachu <https://www.reddit.com/r/pokemongo/comments/ho5b4o/july_2016_in_nyc_id_do_anything_to_relive_it/>`_
