@@ -8,9 +8,9 @@ osu!mac uses the Sphinx documentation generator, and files are marked up using `
 
 .. note::
 
-     If you’re interested in contributing to osu!mac's documentation, there’s no need to write reStructuredText if you’re not so inclined; plain text contributions are more than welcome as well. Please open an issue on `GitHub <https:/github.com/aidswidjaja/osu-mac/issues>`_.
+     If you’re interested in contributing to osu!mac's documentation, there’s no need to write reStructuredText if you’re not so inclined; plain text contributions are more than welcome as well. Please open an issue on `GitHub <https://github.com/aidswidjaja/osu-mac/issues>`_.
 
-Most chatter related to osu!mac should be done by `opening an issue on GitHub <https:/github.com/aidswidjaja/osu-mac/issues>`_ - forums are not monitored. You can also use the contact details provided `here <contact.html>`_.
+Most chatter related to osu!mac should be done by `opening an issue on GitHub <https://github.com/aidswidjaja/osu-mac/issues>`_ - forums are not monitored. You can also use the contact details provided `here <contact.html>`_.
 
 Pull requests are welcome at any time, but it's probably a good idea to make an issue before getting started on it (I might already be working on it!).
 
