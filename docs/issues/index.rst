@@ -14,7 +14,7 @@ Here's a repository of common issues (and potential fixes) other users have expe
 - `Troubleshooting Basics <troubleshooting.html>`_
 - `osu! cannot be opened because the developer cannot be verified <unidentified.html>`_
 - `Bypass the osu! startup sequence to prevent startup issues <start.html>`_
-- `Wineskin.app doesn't open, even if osu! does <wineskin.html>`_
+- `Wineskin.app doesn't open, even if osu! does / exec[number].bat problem <wineskin.html>`_
 - `osu! was unable to obtain a graphics context <graphics.html>`_
 - `osu! captures my monitor/my second monitor is blacked out <dualmonitor.html>`_
 - `Enabling Retina Mode <retina.html>`_
