@@ -20,7 +20,6 @@ Step 1: Download the Wineskin
 **Download the osu! Wineskin from slc:**
 
 - **osu! forum thread:** `community/forums/topics/682197?start=6919344 <https://osu.ppy.sh/community/forums/topics/682197?start=6919344>`_
-- **Google Drive download link (248MB):** `https://drive.google.com/... <https://drive.google.com/uc?id=16lR87eCVYtpjiK6KKA4rNghfpimnj1aE&export=download>`_
 
 .. note::
 
@@ -126,7 +125,7 @@ Below are some helpful tips if you're a bit lost, but if you know what you're do
     |
     | My Terminal will look slightly different to yours, but the concept (and the command!) remains the same.
 
-.. warning:: 
+.. danger:: 
 
     Unless you do something incredibly stupid, you probably won't completely stuff your computer. That being said, if you do something incredibly stupid, you'll stuff your computer. The ``sudo`` command allows your local user account to perform otherwise restricted actions, so please don't go around typing random things if something's not working - ask us a question instead!
 
