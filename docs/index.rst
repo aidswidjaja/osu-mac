@@ -29,7 +29,7 @@ Getting started
 
 These community-developed osu-stable `Wineskins <http://wineskin.urgesoftware.com/tiki-index.php>`_ are the best way to play osu! ranked on your Mac.
 
-Not sure which wrapper you should get? Check out `install/choose.html`_
+Not sure which wrapper you should get? Check out `Which Wineskin should I get? <install/choose.html>`_
 
 - `Get Technocoder's osu! Wineskin with support for Apple Silicon running under Rosetta 2 <install/rosetta.html>`_ 
 - `Get Technocoder's osu! Wineskin with support for macOS Catalina 10.15 and later <install/10-15.html>`_ 
