@@ -11,7 +11,7 @@ The osu!mac documentation project would like to acknowledge (in no particular or
 - `0e4ef622 <https://github.com/0e4ef622>`_ for creating the Linux Discord Rich Presence bridge.
 - `Gcenx <https://github.com/Gcenx/WineskinServer>`_ and the rest of `Paul the Tall <https://www.paulthetall.com/>`_'s Porting Kit team for their work in creating and maintaining the WineskinServer fork, and their general work in the porting community, as well as the people who helped (as listed in the Credits of README.md).
 - `doh123 <https://sourceforge.net/u/doh123/profile/>`_ for their work in building the original Wineskin project. 
-- The entire osu! support team, but especially `Death <https://osu.ppy.sh/users/3242450>`_ and `Dntm8kmeeatu <https://osu.ppy.sh/users/5428812>`_ for helping users out when they get stuck (as noted by Technocoder in his `discussion thread <https://osu.ppy.sh/community/forums/topics/1106057>`_.
+- The entire osu! support team, but especially `Death <https://osu.ppy.sh/users/3242450>`_ and `Dntm8kmeeatu <https://osu.ppy.sh/users/5428812>`_ for helping users out when they get stuck (as noted by Technocoder in his `discussion thread <https://osu.ppy.sh/community/forums/topics/1106057>`_).
 - The `Wine <https://www.winehq.org/>`_ project for building the compatibility layer which enables osu! to run on Mac.
 - The `Godot Engine documentation <https://docs.godotengine.org/>`_ for licensing their `custom CSS stylesheet <https://github.com/godotengine/godot-docs/blob/master/_static/css/custom.css>`_ under the Creative Commons Attribution 3.0 Unported license.
 - `Read the Docs <https://readthedocs.org>`_ for hosting osu!mac on their servers.
