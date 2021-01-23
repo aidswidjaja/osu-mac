@@ -109,13 +109,16 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input.html">osu! mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (&lt;10.14)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (10.15+)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
 </ul>
 <p class="caption"><span class="caption-text">About this project</span></p>
@@ -266,7 +269,7 @@
 </ol>
 <img alt="../_images/wineskin-test-run-success.png" src="../_images/wineskin-test-run-success.png" />
 <p>Two plain-text files will appear. One contains information about your system and Wineskin, while the other provides a log of errors, warnings and events that were recorded while your Wineskin was operating.</p>
-<p>Save both of these to a text file or someplace where you won’t forget.</p>
+<p>Save both of these to a text file or someplace where you won’t forget. If you’re generating logs for another person, you can use a pastebin such as <a class="reference external" href="https://paste.ubuntu.com">paste.ubuntu.com</a> to share your log files with them.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="communicating-your-issues-with-other-people">
@@ -284,7 +287,7 @@
 </li>
 <li><p>Provide information on when/why your issue happens (if you know)</p></li>
 <li><p>Provide information about your computer specs and the wrapper you used</p></li>
-<li><p>Attach screenshots and log files (from both <a class="reference external" href="#generating-a-report-with-osu-macos-agent">osu!macOS Agent</a> and <cite>Wineskin &lt;#generating-logs-for-wineskin&gt;</cite></p></li>
+<li><p>Attach screenshots and log files (from both <a class="reference external" href="#generating-a-report-with-osu-macos-agent">osu!macOS Agent</a> and <a class="reference external" href="#generating-logs-for-wineskin">Wineskin</a></p></li>
 <li><p>Tell us what you’ve already tried to do</p></li>
 </ul>
 <p>The best place to report issues is on the <a class="reference external" href="https://osu.ppy.sh/community/forums/5">osu! forums</a> - make sure you put <strong>macOS</strong> in the title of your post (so other people know ofc).</p>
@@ -323,7 +326,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10e79e8e0>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x105459e20>
 <br><br>
 <div class="customfooter">
     <strong>

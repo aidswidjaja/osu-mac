@@ -86,6 +86,8 @@
             
               <p class="caption"><span class="caption-text">Installing osu!</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/choose.html">Which community-maintained osu! Wineskin should I get?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/silicon.html">Technocoder’s Wineskin with support for Apple Silicon under Rosetta 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install/10-15.html">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install/10-14.html">slc’s Wineskin for macOS 10.14 Mojave and earlier</a></li>
 </ul>
@@ -94,8 +96,15 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html">Welcome to osu!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="screen.html">Setting up your screen options</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Importing beatmaps and skins</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#importing-beatmaps">Importing beatmaps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#importing-skins">Importing skins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Importing beatmaps and skins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-osu-macos-agent">Using osu!macOS Agent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drag-and-drop">Drag and drop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#click-to-import">Click to import</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-import">Manual import</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#a-note-about-importing-skins">A note about importing skins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#related-links">Related links</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="transfer.html">Transferring data from another osu! installation</a></li>
@@ -106,6 +115,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/troubleshooting.html">Troubleshooting Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/retina.html">Enabling Retina Mode</a></li>
@@ -208,12 +218,75 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>osu!macOS Agent can automatically move beatmaps and skins from your Downloads folder. Just make sure to enable the checkboxes inside osu!macOS Agent settings.</p>
+<p>osu!macOS Agent can automatically move beatmaps and skins from your Downloads folder. Just make sure to enable the checkboxes inside osu!macOS Agent settings. More information available below.</p>
 </div>
-<div class="section" id="importing-beatmaps">
-<h2>Importing beatmaps<a class="headerlink" href="#importing-beatmaps" title="Permalink to this headline">¶</a></h2>
-<p>Importing beatmaps into osu! is quite easy, but you can’t exactly drag and drop files into osu! like you can on Windows.</p>
-<p>To import a beatmap into osu!, follow the following instructions:</p>
+<div class="section" id="id2">
+<h2>Importing beatmaps and skins<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Importing beatmaps into osu! is quite easy, and there’s a number of ways you can get this to work with your osu! Wineskin.</p>
+<div class="section" id="using-osu-macos-agent">
+<h3>Using osu!macOS Agent<a class="headerlink" href="#using-osu-macos-agent" title="Permalink to this headline">¶</a></h3>
+<p>You can have beatmaps automatically moved from your Downloads folder to osu!, with the help of <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s  <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">osu!macOS Agent</a> program. To enable this:</p>
+<ol class="arabic">
+<li><p>Open osu!macOS Agent</p></li>
+<li><p>In the <strong>General</strong> tab, locate the <strong>Location:</strong> field. Make sure this points to your osu! install (e.g <code class="docutils literal notranslate"><span class="pre">/Users/Adrian/Desktop/osu!.app</span></code>)</p></li>
+<li><p>Enable the following checkboxes</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Automatically move beatmaps from Downloads</p></li>
+<li><p>Automatically move skins from Downloads</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<p>You can also enable</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Automatically open replays from Downloads</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Leave osu!macOS Agent running. The next time you download a beatmap from the osu! website, it should automatically move to your osu! wrapper. Then just hit F5 (beatmaps) or Ctrl-Alt-Shift-S (skins) to refresh.</p></li>
+</ol>
+</div>
+<div class="section" id="drag-and-drop">
+<h3>Drag and drop<a class="headerlink" href="#drag-and-drop" title="Permalink to this headline">¶</a></h3>
+<p>You might also be able to drag and drop beatmaps and skins into osu! directly. In my personal experience this only works with <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a>.</p>
+<p>If osu! is full screen, you can use Mission Control (F4 key) to switch between windows.</p>
+</div>
+<div class="section" id="click-to-import">
+<h3>Click to import<a class="headerlink" href="#click-to-import" title="Permalink to this headline">¶</a></h3>
+<p>3
+.. note:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Users have reported issues with this on newer wrappers such as `Technocoder &lt;https://osu.ppy.sh/users/10338558&gt;`_&#39;s `Wineskin with macOS Catalina 10.15 support &lt;https://osu.ppy.sh/community/forums/topics/1106057&gt;`_, see `community/forums/posts/7805376 &lt;https://osu.ppy.sh/community/forums/posts/7805376&gt;`_ and `Gcenx/WineskinServer/issues/47 &lt;https://github.com/Gcenx/WineskinServer/issues/47&gt;`_. In the meantime, use an alternative import method.
+</pre></div>
+</div>
+<p>You can set up osu! to automatically open and import a beatmap or skin when you click on it in your Downloads folder or web browser.</p>
+<ol class="arabic simple">
+<li><p>Download a random osu beatmap or skin (and get the osz file)</p></li>
+<li><p>Right click on <strong>osu!.app</strong></p></li>
+<li><p>Click <strong>Show Package Contents</strong></p></li>
+</ol>
+<p>4. Navigate to <code class="docutils literal notranslate"><span class="pre">drive_c/osu!/Songs</span></code> and drag &amp; drop your <code class="docutils literal notranslate"><span class="pre">osz</span></code> or <code class="docutils literal notranslate"><span class="pre">osk</span></code> beatmap into there
+4. Go back a few folders until you reach <strong>Wineskin.app</strong>, and click to pen it!
+5. Click <strong>Advanced</strong>. You should see a screen like the one below</p>
+<img alt="Wineskin options showing Associated Extensions." src="welcome/assets/wineskin-extension.png" />
+<p>Note the Associated Extensions section. If the <code class="docutils literal notranslate"><span class="pre">osz2</span></code>, <code class="docutils literal notranslate"><span class="pre">osr</span></code>, <code class="docutils literal notranslate"><span class="pre">osz</span></code> and <code class="docutils literal notranslate"><span class="pre">osu</span></code> extensions aren’t there, add them using the + button.</p>
+<p>To verify that this has all been set up correctly:</p>
+<ol class="arabic simple" start="6">
+<li><p>Click <strong>Tools</strong>, then click <strong>Command Line</strong> (cmd). A console-like should open (it takes a while tho)</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">explorer.exe</span></code></p></li>
+<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Computer\osu!\Songs</span></code> in the window that appears and locate the osz beatmap you just dropped</p></li>
+<li><p>Right click on the file, click <strong>Properties</strong> and verify it worked. It should look like the image below.</p></li>
+</ol>
+<img alt="Wine Explorer showing Properties for osz extensions." src="welcome/assets/properties-extension.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method tends to be more unreliable than the others listed and you may experience varying degrees of success.</p>
+</div>
+</div>
+<div class="section" id="manual-import">
+<h3>Manual import<a class="headerlink" href="#manual-import" title="Permalink to this headline">¶</a></h3>
+<p>To manually import a beatmap into osu!, follow the following instructions:</p>
 <ol class="arabic">
 <li><p>Find your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> directory</p>
 <blockquote>
@@ -273,9 +346,10 @@
 <p>You can do all of this while leaving osu! running open in the background!</p>
 </div>
 </div>
+</div>
 <hr class="docutils" />
-<div class="section" id="importing-skins">
-<h2>Importing skins<a class="headerlink" href="#importing-skins" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-note-about-importing-skins">
+<h2>A note about importing skins<a class="headerlink" href="#a-note-about-importing-skins" title="Permalink to this headline">¶</a></h2>
 <p>Importing skins is largely the same process, except instead of the <code class="docutils literal notranslate"><span class="pre">Songs</span></code> directory, use the <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory, and to reload osu! use <code class="docutils literal notranslate"><span class="pre">Ctrl-Alt-Shift-S</span></code> instead of <code class="docutils literal notranslate"><span class="pre">F5</span></code>.</p>
 <p>You can then select your skin as normal from the osu! in-game settings menu.</p>
 <div class="admonition note">
@@ -283,6 +357,13 @@
 <p>Treat this as if you were working on a Windows system. If the skin is compressed, you’ll probably need to uncompress it. You can use something like <a class="reference external" href="https://theunarchiver.com/">The Unarchiver</a> or even your in-built Archive Utility to do this (though Archive Utility might not have so much fun with <code class="docutils literal notranslate"><span class="pre">.rar</span></code> or <code class="docutils literal notranslate"><span class="pre">.7zip</span></code> files)</p>
 <p>See the <a class="reference external" href="https://osu.ppy.sh/help/wiki/Installation#adding-skins">osu! knowledge base</a> for more info.</p>
 </div>
+</div>
+<hr class="docutils" />
+<div class="section" id="related-links">
+<h2>Related links<a class="headerlink" href="#related-links" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7756512">https://osu.ppy.sh/community/forums/posts/7756512</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -318,7 +399,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10ffeff70>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x106132100>
 <br><br>
 <div class="customfooter">
     <strong>

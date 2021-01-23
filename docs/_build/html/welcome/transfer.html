@@ -114,6 +114,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/troubleshooting.html">Troubleshooting Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/retina.html">Enabling Retina Mode</a></li>
@@ -208,7 +209,7 @@
 <hr class="docutils" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can also use these same instructions to transfer your osu! configuration file (we’ve left it out to keep the instructions clean). Your osu! configuration file is entitled <code class="docutils literal notranslate"><span class="pre">osu.yourcomputername.cfg</span></code>. For example, my configuration file is called osu!.Adrian.cfg`` and it looks like this:</p>
+<p>You can also use these same instructions to transfer your osu! configuration file (we’ve left it out to keep the instructions clean). Your osu! configuration file is entitled <code class="docutils literal notranslate"><span class="pre">osu.yourcomputername.cfg</span></code>. For example, my configuration file is called <code class="docutils literal notranslate"><span class="pre">osu!.Adrian.cfg</span></code> and it looks like this:</p>
 <img alt="osu! user configuration file." src="../_images/osu-config1.png" />
 <p>It is located in the same directory as your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> or <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directories.</p>
 <div class="admonition danger">
@@ -242,6 +243,12 @@
 </ul>
 </div></blockquote>
 </li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, you could try replacing the entire <code class="docutils literal notranslate"><span class="pre">drive_c/osu!</span></code> directory.</p>
+</div>
+<ol class="arabic" start="2">
 <li><p>Then, in your <strong>new</strong> osu! Wineskin, locate the same directories from before, that’s your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Scores.db</span></code> file and <code class="docutils literal notranslate"><span class="pre">Data/r</span></code> directory.</p>
 <blockquote>
 <div><ul class="simple">
@@ -253,11 +260,17 @@
 </ul>
 </div></blockquote>
 </li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are replacing the entire <code class="docutils literal notranslate"><span class="pre">drive_c/osu!</span></code> directory then make sure you replace appropriately.</p>
+</div>
+<ol class="arabic simple" start="3">
 <li><p>Replace the corresponding files and directories in your <strong>new</strong> osu! Wineskin with that from your <strong>old</strong> osu! Wineskin.</p></li>
 </ol>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>Don’t delete your osu! game data from your old osu! Wineskin until you’re absolutely certain everything works fine, and make a backup of your osu! game data periodically.</p>
+<p>Don’t delete your osu! game data from your old osu! Wineskin until you’re absolutely certain everything works fine, and <strong>always make a backup</strong> of your osu! game data periodically.</p>
 </div>
 </div>
 </div>
@@ -277,8 +290,14 @@
 <li><p>It should show you your osu! installation directory:</p></li>
 </ol>
 <img alt="osu! installation directory on Windows." src="../_images/osu-directory-windows.png" />
-<ol class="arabic" start="5">
+<ol class="arabic simple" start="5">
 <li><p>Highlighted are your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> and <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directories, but this folder also contains your <code class="docutils literal notranslate"><span class="pre">Scores.db</span></code> file and your <code class="docutils literal notranslate"><span class="pre">Data\r</span></code> (replays) folder. Put this on a USB drive or someplace which you can access from your Mac later on.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Alternatively, you could try replacing the entire <code class="docutils literal notranslate"><span class="pre">drive_c/osu!</span></code> directory.</p>
+</div>
+<ol class="arabic" start="6">
 <li><p>On your Mac, locate your osu! Wineskin and locate your <code class="docutils literal notranslate"><span class="pre">Songs</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Skins</span></code> directory, <code class="docutils literal notranslate"><span class="pre">Scores.db</span></code> file and <code class="docutils literal notranslate"><span class="pre">Data/r</span></code> directory.</p>
 <blockquote>
 <div><ul class="simple">
@@ -292,6 +311,10 @@
 </li>
 <li><p>Replace the corresponding files and directories in your <strong>new</strong> osu! Wineskin with that from your <strong>Windows</strong> install of osu!.</p></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are replacing the entire <code class="docutils literal notranslate"><span class="pre">drive_c/osu!</span></code> directory then make sure you replace appropriately.</p>
+</div>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p>Don’t delete your osu! game data from your Windows installation until you’re absolutely certain everything works fine, and make a backup of your osu! game data periodically.</p>
@@ -369,7 +392,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10486c670>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x105953cd0>
 <br><br>
 <div class="customfooter">
     <strong>

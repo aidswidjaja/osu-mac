@@ -1,13 +1,13 @@
 #######################################################################
-Technocoder's Wineskin with support for macOS 10.15 Catalina and later
+Technocoder's Wineskin with support for Apple Silicon under Rosetta 2
 #######################################################################
 
 .. rst-class:: wineskin-version
     
     | This article is applicable to the following wrappers:
-    | • `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/topics/1106057>`_
+    | • `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with Apple Silicon support <https://osu.ppy.sh/community/forums/topics/1106057>`_
 
-This guide will walk you through how to install `Technocoder <https://osu.ppy.sh/users/7978076>`_'s Wineskin with **macOS 10.15 Catalina support.** It should also work on all other modern versions of macOS too.
+This guide will walk you through how to install `Technocoder <https://osu.ppy.sh/users/7978076>`_'s Wineskin with **Apple Silicon support.** It should also work on all other modern versions of macOS too.
 
 .. raw:: html
 
@@ -58,21 +58,13 @@ Once you have SIP disabled, you're now set to start getting ready with osu!.
 
 ****
 
-.. warning::
-
-    `A newer Wineskin <silicon.html>`_ with support for M1 Macs (under Rosetta 2), as well as Intel x86 computers (on any modern macOS version) is now available. It brings new stability updates and bug fixes, and we'd encourage updating to this newer version.
-
-    You'll need to use this new version if you want to play on any Apple Silicon computer.
-
-
 ****************************************
 Step 1: Download the Wineskin
 ****************************************
 
 **Download the osu! Wineskin from Technocoder:**
 
-- **osu! forum thread:** `community/forums/posts/7560723 <https://osu.ppy.sh/community/forums/posts/7560723>`_
-- **mega.nz direct download (468.1M):** `https://mega.nz/file/... <https://mega.nz/file/54sgCaJB#nzuV4BNcOx7sJ-zx8elWwO9qgQCrHK763mIrTYyozZU>`_
+- **osu! forum thread:** `https://osu.ppy.sh/community/forums/posts/7560723 <https://osu.ppy.sh/community/forums/posts/7560723>`_
 
 .. note::
 
@@ -85,7 +77,7 @@ Once it has downloaded, extract the ``.zip`` file.
 We also recommend downloading `Technocoder <https://osu.ppy.sh/users/10338558>`_'s osu!macOS Agent program, since it'll be used throughout this guide. In general, it's a great tool that every macOS osu-stable player on Wine should have. However, this is optional (though strongly encouraged) and alternative instructions are provided for those who are comfortable with digging deeper.
 
 - **osu! forum thread:** `community/forums/topics/1036678 <https://osu.ppy.sh/community/forums/topics/1036678>`_
-- **GitHub download link (7.61MB):** `Techno-coder/osu-macOS-Agent... <https://github.com/Techno-coder/osu-macOS-Agent/releases/download/refs%2Fheads%2Fmaster/osu.macOS.Agent.zip>`_
+- **GitHub download link (7.61MB):** `https://github.com/Techno-coder/... <https://github.com/Techno-coder/osu-macOS-Agent/releases/download/refs%2Fheads%2Fmaster/osu.macOS.Agent.zip>`_
 
 .. warning::
 
@@ -110,7 +102,14 @@ If you try to open the Wineskin immediately, macOS will say that it's broken. Le
 If it was successful, you should see a **Fixed** indicator next to ``Quarantine attribute is present`` in the log.
 
 .. image:: ../assets/osu-agent-log.png
-    :alt: 'osu!.app is damaged and can't be opened. You should move it to the Bin.
+    :alt: 'osu!.app is damaged and can't be opened. You should move it to the Bin.'
+
+.. note::
+
+    When opening the Wineskin for the first time, you might be prompted to install Rosetta 2 on your M1 Mac if you haven't already. 
+
+    .. image:: ../assets/rosetta.jpg
+    :alt: 'To open "App", you need to install Rosetta. Do you want to install it now?'
 
 .. raw:: html
 

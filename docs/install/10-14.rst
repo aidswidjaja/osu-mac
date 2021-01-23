@@ -34,7 +34,10 @@ We also recommend downloading `Technocoder <https://osu.ppy.sh/users/10338558>`_
 
 - **osu! forum thread:** `community/forums/topics/1036678 <https://osu.ppy.sh/community/forums/topics/1036678>`_
 - **GitHub download link (7.61MB):** `<https://github.com/Techno-coder/... <https://github.com/Techno-coder/osu-macOS-Agent/releases/download/refs%2Fheads%2Fmaster/osu.macOS.Agent.zip>`_
-- **Mega.nz download link (7.61MB):** `https://mega.nz/... <https://mega.nz/file/Fw9UmIbK#tzI4XDO1aoDuDiQ35V1sy8XDWlB5p_0O2ovCBbo9feo>`_
+
+.. warning::
+
+    On 12 October 2020 a bug was introduced with an update for osu!macOS Agent. It caused Wineskin.app to display a error that left the settings menu unopenable. You'll need to `download the newest version of osu!macOS Agent <https://osu.ppy.sh/community/forums/topics/1036678>`_, which was updated on 23 January 2020. See `Wineskin.app doesn't open, even if osu! does / exec[number].bat problem <../issues/wineskin.html>`_.
 
 ****
 

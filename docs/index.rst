@@ -29,10 +29,14 @@ Getting started
 
 These community-developed osu-stable `Wineskins <http://wineskin.urgesoftware.com/tiki-index.php>`_ are the best way to play osu! ranked on your Mac.
 
+Not sure which wrapper you should get? Check out `install/choose.html`_
+
+- `Get Technocoder's osu! Wineskin with support for Apple Silicon running under Rosetta 2 <install/rosetta.html>`_ 
 - `Get Technocoder's osu! Wineskin with support for macOS Catalina 10.15 and later <install/10-15.html>`_ 
 - `Get slc's osu! Wineskin for macOS 10.14 Mojave and earlier <install/10-14.html>`_
 
 Not sure which version of macOS you're using? Check out this `Apple support article <https://support.apple.com/en-au/HT201260>`_ to find out.
+`Here is a list <https://support.apple.com/en-us/HT211814>`_ of Apple computer models that utilise the new ARM-based M1 chip.
 
 Other options
 =======================================
@@ -50,10 +54,6 @@ Disclaimers
 
    This information is supplied by volunteers in good faith. However, **we are not responsible if it doesn't work, your computer sets on fire, or you start the next nuclear war.** We do our best to make sure the information here is safe for you, your osu! account and your computer, but **you proceed at your own risk.**
 
-.. warning::
-
-   These docs are in beta - meaning they've just been recently released and there could be unfinished content and/or broken links. We encourage you to additionally refer to the `Resources <misc/resources.html>`_ page to get started with osu! on Mac. Bugs and issues can be reported on our `GitHub <https://github.com/aidswidjaja/osu-mac>`_.
-
 .. tip::
 
    Don't play osu! in maths class.
@@ -68,6 +68,8 @@ Sitemap
    :maxdepth: 1
    :caption: Installing osu!
 
+   install/choose
+   install/silicon
    install/10-15
    install/10-14
 

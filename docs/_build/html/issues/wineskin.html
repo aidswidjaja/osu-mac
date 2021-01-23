@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>osu! cannot be opened because the developer cannot be verified &mdash; osu!mac</title>
+  <title>Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem &mdash; osu!mac</title>
   
 
   
@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="osu! runs perfectly, but it has some trouble when starting up" href="start.html" />
-    <link rel="prev" title="Troubleshooting Basics" href="troubleshooting.html" /> 
+    <link rel="next" title="osu! was unable to obtain a graphics context" href="graphics.html" />
+    <link rel="prev" title="osu! runs perfectly, but it has some trouble when starting up" href="start.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,15 +100,16 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">osu! cannot be opened because the developer cannot be verified</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#related-links">Related links</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
@@ -173,13 +174,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>osu! cannot be opened because the developer cannot be verified</li>
+      <li>Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/issues/unidentified.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/issues/wineskin.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -192,51 +193,92 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="osu-cannot-be-opened-because-the-developer-cannot-be-verified">
-<h1>osu! cannot be opened because the developer cannot be verified<a class="headerlink" href="#osu-cannot-be-opened-because-the-developer-cannot-be-verified" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="wineskin-app-doesn-t-open-even-if-osu-does-exec-number-bat-problem">
+<h1>Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem<a class="headerlink" href="#wineskin-app-doesn-t-open-even-if-osu-does-exec-number-bat-problem" title="Permalink to this headline">¶</a></h1>
 <div class="wineskin-version line-block">
 <div class="line">This article is applicable to the following wrappers:</div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a></div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197">unofficial Wineskin for macOS 10.14 Mojave and earlier</a></div>
-<div class="line">as well as <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">osu!macOS Agent</a> program</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="behaviour">
 <h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
-<p>Your Mac displays a warning saying one of either two messages:</p>
-<ul class="simple">
-<li><p>“osu!.app” cannot be opened because the developer cannot be verified.</p></li>
-<li><p>“osu!.app” can’t be opened because it is from an unidentified developer.</p></li>
-</ul>
+<p>When attempting to open the Wineskin.app application located inside your osu! wrapper, you receive a warning that looks similar the following message:</p>
+<blockquote>
+<div><p>Error while writting file: The folder “exec2088858072.bat” doesn’t exist.</p>
+</div></blockquote>
+<p>The number preceding <code class="docutils literal notranslate"><span class="pre">.bat</span></code> might be different for different people.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="cause">
 <h2>Cause<a class="headerlink" href="#cause" title="Permalink to this headline">¶</a></h2>
-<p>To directly quote <a class="reference external" href="https://support.apple.com/en-au/guide/mac-help/mh40616/mac">Apple’s support article</a>:</p>
-<blockquote>
-<div><p>If you try to open an app that isn’t registered with Apple by an identified developer, you get a warning dialogue. This doesn’t necessarily mean that something’s wrong with the app. For example, some apps were written before developer ID registration began. However, the app has not been reviewed, and macOS can’t check whether the app has been modified or broken since it was released.</p>
-</div></blockquote>
+<p>On 12 October 2020 an <a class="reference external" href="https://github.com/Techno-coder/osu-macOS-Agent/commit/458dbcab3b32f15d81dd150626ecbc414edabd15">update</a> was pushed to osu!macOS Agent which had a bug that while repairing a wrapper, would only repair the executable, and not the Wineskin.app settings application inside it. <cite>This was fixed on 23 January 2021. &lt;https://osu.ppy.sh/community/forums/posts/7879865&gt;</cite></p>
+<p>If you downloaded osu!macOS Agent between 12 October 2020 and 23 January 2021 please <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">download the latest version</a>.</p>
+<p>If the above doesn’t apply to you, other causes may include:</p>
+<ul class="simple">
+<li><p>You haven’t ran the repair tool on your osu! wrapper yet</p></li>
+<li><p>You have a corrupted installation</p></li>
+<li><p>You used the in-built Archive Utility instead of The Unarchiver which carries some known issues</p></li>
+<li><p>Your anti-virus is removing files from your osu! wrapper without your knowledge</p></li>
+</ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Locate <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> in Finder</p></li>
-<li><p>Right-click (or hold the <cite>Control</cite> key while clicking) on <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code></p></li>
-<li><p>Click <strong>Open</strong></p></li>
-</ol>
-<p>On the dialog that reads:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>On 12 October 2020 an update issued for osu!macOS Agent caused Wineskin.app to display this error. See <a class="reference external" href="#cause">Cause</a>. You’ll need to <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">download the newest version of osu!macOS Agent</a>.</p>
+</div>
+<ol class="arabic">
+<li><p>If you haven’t already, run the osu!macOS Agent <strong>repair tool</strong> on your osu! wrapper by following these instructions:</p>
 <blockquote>
-<div><p>“osu!.app” is an application downloaded from the Internet. Are you sure you want to open it?</p>
+<div><ul class="simple">
+<li><p>Open osu!macOS Agent</p></li>
+<li><p>Go to the <strong>Troubleshoot</strong> tab</p></li>
+<li><p>Click <strong>Scan</strong></p></li>
+<li><p>Click <strong>Repair</strong></p></li>
+</ul>
 </div></blockquote>
-<p>Click <strong>Open</strong>.</p>
+</li>
+</ol>
+<p>You still need to do this step on your osu! wrapper, even if osu! itself runs fine.</p>
+<ol class="arabic simple" start="2">
+<li><p>Make sure your antivirus isn’t removing anything. Guidelines on how to do this are available <a class="reference external" href="malware.html#resolution">here</a>.</p></li>
+<li><p>Use <a class="reference external" href="https://theunarchiver.com/">The Unarchiver</a> instead of your in-built Archive Utility.</p></li>
+</ol>
+<p>If you tried all of that and Wineskin.app still won’t open, you can try replacing Wineskin.app with a known working version.</p>
+<ol class="arabic">
+<li><p>Download the Wineskin.app replacement from <a class="reference external" href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aidswidjaja/osu-mac/tree/main/src/wineskin">https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aidswidjaja/osu-mac/tree/main/src/wineskin</a> or <a class="reference external" href="https://drive.google.com/drive/folders/1Gz5Y0M4WoMxTTwb5aHUccebO5AlVm3SN?usp=sharing">https://drive.google.com/drive/folders/1Gz5Y0M4WoMxTTwb5aHUccebO5AlVm3SN?usp=sharing</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If using Google Drive, click <strong>DOWNLOAD ALL</strong> in the top-right corner of the screen</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The file will download this as a zip file. Extract the zip file until you just have the Wineskin.app file</p></li>
+<li><p>Inside <strong>osu!.app</strong> (Right click &gt; Show Package Contents) locate <strong>Wineskin.app</strong> - make a backup of it (you can just rename it to say something like Wineskin.app.backup if you want)</p></li>
+<li><p>Replace the old <strong>Wineskin.app</strong> with the replacement version you downloaded from Google Drive</p></li>
+</ol>
+<p>Try and open it and see if everything works out.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is an experimental hotfix. Make sure you make a backup of your Wineskin.app before replacing it with this replacement version.</p>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="if-that-didn-t-work">
 <h2>If that didn’t work<a class="headerlink" href="#if-that-didn-t-work" title="Permalink to this headline">¶</a></h2>
 <p>There could be something else going on here, and performing <a class="reference external" href="troubleshooting.html">basic troubleshooting</a> should help you get to the bottom of it.</p>
 <p>If you’re still not sure what’s going on here, copy any osu! crash logs and <a class="reference external" href="troubleshooting.html#generating-a-report-with-osu-macos-agent">generate a report with osu!macOS Agent</a>, then let us know on the forums with what we can help.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="related-links">
+<h2>Related links<a class="headerlink" href="#related-links" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7793479">https://osu.ppy.sh/community/forums/posts/7793479</a></p></li>
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7879865">https://osu.ppy.sh/community/forums/posts/7879865</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -248,10 +290,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="start.html" class="btn btn-neutral float-right" title="osu! runs perfectly, but it has some trouble when starting up" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="graphics.html" class="btn btn-neutral float-right" title="osu! was unable to obtain a graphics context" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="troubleshooting.html" class="btn btn-neutral float-left" title="Troubleshooting Basics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="start.html" class="btn btn-neutral float-left" title="osu! runs perfectly, but it has some trouble when starting up" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -272,7 +314,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x105731460>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x1057b4b50>
 <br><br>
 <div class="customfooter">
     <strong>

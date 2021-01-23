@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="osu! was unable to obtain a graphics context" href="graphics.html" />
+    <link rel="next" title="Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem" href="wineskin.html" />
     <link rel="prev" title="osu! cannot be opened because the developer cannot be verified" href="unidentified.html" /> 
 </head>
 
@@ -108,13 +108,16 @@
 <li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input.html">osu! mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (&lt;10.14)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (10.15+)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
 </ul>
 <p class="caption"><span class="caption-text">About this project</span></p>
@@ -213,18 +216,20 @@
 <p>You can bypass the startup sequence entirely. Technocoder found a <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=7443024">workaround</a> that will hopefully mitigate your startup troubles:</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>This section only applies to users using the</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7367239">experimental macOS Catalina Wineskin</a>.</p>
+<blockquote>
+<div><p><strong>This section only applies to users using the</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7367239">experimental macOS Catalina Wineskin</a>.</p>
 <p>You are recommended to use the <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7560723">latest macOS Catalina Wineskin</a> instead.</p>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1. Open the ``osu!`` folder (Right click osu! &gt; Show Package Contents &gt; drive_c &gt; osu!)
-2. Create a new file in this location named ``execute.bat`` (with .bat as the extension)
-3. Type in: ``start C:\osu!\osu!.exe -nosplash``
-4. Save ``execute.bat``
-5. Open **Wineskin** (Right click osu! &gt; Show Package Contents &gt; Wineskin)
-6. Click **Advanced**
-7. Change the **Windows EXE** field to: ``&quot;C:\osu!\execute.bat&quot;`` (including the outer quotes)
-8. Close Wineskin
-</pre></div>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">osu!</span></code> folder (Right click osu! &gt; Show Package Contents &gt; drive_c &gt; osu!)</p></li>
+<li><p>Create a new file in this location named <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code> (with .bat as the extension)</p></li>
+<li><p>Type in: <code class="docutils literal notranslate"><span class="pre">start</span> <span class="pre">C:\osu!\osu!.exe</span> <span class="pre">-nosplash</span></code></p></li>
+<li><p>Save <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code></p></li>
+<li><p>Open <strong>Wineskin</strong> (Right click osu! &gt; Show Package Contents &gt; Wineskin)</p></li>
+<li><p>Click <strong>Advanced</strong></p></li>
+<li><p>Change the <strong>Windows EXE</strong> field to: <code class="docutils literal notranslate"><span class="pre">&quot;C:\osu!\execute.bat&quot;</span></code> (including the outer quotes)</p></li>
+<li><p>Close Wineskin</p></li>
+</ol>
 </div>
 </div>
 <hr class="docutils" />
@@ -242,7 +247,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="graphics.html" class="btn btn-neutral float-right" title="osu! was unable to obtain a graphics context" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="wineskin.html" class="btn btn-neutral float-right" title="Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="unidentified.html" class="btn btn-neutral float-left" title="osu! cannot be opened because the developer cannot be verified" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -266,7 +271,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10e68eee0>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x1056d9d00>
 <br><br>
 <div class="customfooter">
     <strong>

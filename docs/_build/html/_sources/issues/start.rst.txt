@@ -39,8 +39,6 @@ You can bypass the startup sequence entirely. Technocoder found a `workaround <h
 
 	You are recommended to use the `latest macOS Catalina Wineskin <https://osu.ppy.sh/community/forums/posts/7560723>`_ instead.
 
-::
-
     1. Open the ``osu!`` folder (Right click osu! > Show Package Contents > drive_c > osu!)
     2. Create a new file in this location named ``execute.bat`` (with .bat as the extension)
     3. Type in: ``start C:\osu!\osu!.exe -nosplash``

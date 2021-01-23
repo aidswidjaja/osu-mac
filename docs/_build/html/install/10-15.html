@@ -42,7 +42,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="slc’s Wineskin for macOS 10.14 Mojave and earlier" href="10-14.html" />
-    <link rel="prev" title="osu!mac" href="../index.html" /> 
+    <link rel="prev" title="Technocoder’s Wineskin with support for Apple Silicon under Rosetta 2" href="silicon.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,8 +86,9 @@
             
               <p class="caption"><span class="caption-text">Installing osu!</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="choose.html">Which community-maintained osu! Wineskin should I get?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="silicon.html">Technocoder’s Wineskin with support for Apple Silicon under Rosetta 2</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#before-you-begin-macos-catalina-10-15-0-to-10-15-4-only">Before you begin (macOS Catalina 10.15.0 to 10.15.4 only)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-download-the-wineskin">Step 1: Download the Wineskin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-2-repair-the-wineskin">Step 2: Repair the Wineskin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-3-updating-osu">Step 3: Updating osu!</a></li>
@@ -109,13 +110,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/troubleshooting.html">Troubleshooting Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/input.html">osu! mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (&lt;10.14)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (10.15+)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
 </ul>
 <p class="caption"><span class="caption-text">About this project</span></p>
@@ -197,10 +201,9 @@
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
 </div>
 <p>This guide will walk you through how to install <a class="reference external" href="https://osu.ppy.sh/users/7978076">Technocoder</a>’s Wineskin with <strong>macOS 10.15 Catalina support.</strong> It should also work on all other modern versions of macOS too.</p>
-<hr class="docutils" />
-<div class="section" id="before-you-begin-macos-catalina-10-15-0-to-10-15-4-only">
-<h2>Before you begin (macOS Catalina 10.15.0 to 10.15.4 only)<a class="headerlink" href="#before-you-begin-macos-catalina-10-15-0-to-10-15-4-only" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
+<details>
+<summary><h4 style="display: inline;">Using macOS Catalina 10.15.0 to 10.15.4?</h4></summary>
+<br><div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>This section only applies to users who are using macOS Catalina 10.15.0 to 10.15.4</strong></p>
 <p>If you do not use macOS Catalina, or you are on macOS Catalina <strong>10.15.5 or later</strong>, you can skip this section!</p>
@@ -233,13 +236,19 @@
 </ol>
 </div></blockquote>
 <p>Once you have SIP disabled, you’re now set to start getting ready with osu!.</p>
+</details>
+<br><hr class="docutils" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><a class="reference external" href="silicon.html">A newer Wineskin</a> with support for M1 Macs (under Rosetta 2), as well as Intel x86 computers (on any modern macOS version) is now available. It brings new stability updates and bug fixes, and we’d encourage updating to this newer version.</p>
+<p>You’ll need to use this new version if you want to play on any Apple Silicon computer.</p>
 </div>
 <div class="section" id="step-1-download-the-wineskin">
 <h2>Step 1: Download the Wineskin<a class="headerlink" href="#step-1-download-the-wineskin" title="Permalink to this headline">¶</a></h2>
 <p><strong>Download the osu! Wineskin from Technocoder:</strong></p>
 <ul class="simple">
-<li><p><strong>osu! forum thread:</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7560723">https://osu.ppy.sh/community/forums/posts/7560723</a></p></li>
-<li><p><strong>Mega.NZ (468MB):</strong> <a class="reference external" href="https://mega.nz/file/54sgCaJB#nzuV4BNcOx7sJ-zx8elWwO9qgQCrHK763mIrTYyozZU">https://mega.nz/file/…</a></p></li>
+<li><p><strong>osu! forum thread:</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7560723">community/forums/posts/7560723</a></p></li>
+<li><p><strong>mega.nz direct download (468.1M):</strong> <a class="reference external" href="https://mega.nz/file/54sgCaJB#nzuV4BNcOx7sJ-zx8elWwO9qgQCrHK763mIrTYyozZU">https://mega.nz/file/…</a></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -250,9 +259,12 @@
 <p>We also recommend downloading <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s osu!macOS Agent program, since it’ll be used throughout this guide. In general, it’s a great tool that every macOS osu-stable player on Wine should have. However, this is optional (though strongly encouraged) and alternative instructions are provided for those who are comfortable with digging deeper.</p>
 <ul class="simple">
 <li><p><strong>osu! forum thread:</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">community/forums/topics/1036678</a></p></li>
-<li><p><strong>GitHub download link (7.61MB):</strong> <a class="reference external" href="https://github.com/Techno-coder/osu-macOS-Agent/releases/download/refs%2Fheads%2Fmaster/osu.macOS.Agent.zip">&lt;https://github.com/Techno-coder/…</a></p></li>
-<li><p><strong>Mega.nz download link (7.61MB):</strong> <a class="reference external" href="https://mega.nz/file/Fw9UmIbK#tzI4XDO1aoDuDiQ35V1sy8XDWlB5p_0O2ovCBbo9feo">https://mega.nz/…</a></p></li>
+<li><p><strong>GitHub download link (7.61MB):</strong> <a class="reference external" href="https://github.com/Techno-coder/osu-macOS-Agent/releases/download/refs%2Fheads%2Fmaster/osu.macOS.Agent.zip">Techno-coder/osu-macOS-Agent…</a></p></li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>On 12 October 2020 a bug was introduced with an update for osu!macOS Agent. It caused Wineskin.app to display a error that left the settings menu unopenable. You’ll need to <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">download the newest version of osu!macOS Agent</a>, which was updated on 23 January 2020. See <a class="reference external" href="../issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a>.</p>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="step-2-repair-the-wineskin">
@@ -379,7 +391,7 @@
         <a href="10-14.html" class="btn btn-neutral float-right" title="slc’s Wineskin for macOS 10.14 Mojave and earlier" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="osu!mac" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="silicon.html" class="btn btn-neutral float-left" title="Technocoder’s Wineskin with support for Apple Silicon under Rosetta 2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -400,7 +412,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10e6dbb20>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10b77b1c0>
 <br><br>
 <div class="customfooter">
     <strong>
