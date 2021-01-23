@@ -31,7 +31,7 @@ These community-developed osu-stable `Wineskins <http://wineskin.urgesoftware.co
 
 Not sure which wrapper you should get? Check out `Which Wineskin should I get? <install/choose.html>`_
 
-- `Get Technocoder's osu! Wineskin with support for Apple Silicon running under Rosetta 2 <install/rosetta.html>`_ 
+- `Get Technocoder's osu! Wineskin with support for Apple Silicon running under Rosetta 2 <install/silicon.html>`_ 
 - `Get Technocoder's osu! Wineskin with support for macOS Catalina 10.15 and later <install/10-15.html>`_ 
 - `Get slc's osu! Wineskin for macOS 10.14 Mojave and earlier <install/10-14.html>`_
 
