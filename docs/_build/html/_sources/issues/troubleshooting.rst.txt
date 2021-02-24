@@ -11,11 +11,69 @@ Troubleshooting Basics
 
 This article is designed to give you the basics in troubleshooting osu!mac issues. It contains information on how to generate a report, troubleshooting techniques specific to Wine, and tips for communicating with other people in the osu!mac community.
 
-****
+********************************************
+First steps
+********************************************
+
+To help us understand your issue a bit better, please perform the following initial troubleshooting & diagnostic steps as listed below. You can use this information to diagnose an issue yourself, or to `request support on the forums <https://osu.ppy.sh/community/forums/topics/1106057>`_.
+
+============================================
+Step 1: See Common Issues
+============================================
+
+Many issues already have solutions available to them. Check out the `installation guide <https://osu.ppy.sh/community/forums/posts/7560723>`_, `Common Issue section on osu!mac <https://osu-mac.readthedocs.io/en/latest/issues/index.html>`_ and the outdated `troubleshooting guide <https://osu.ppy.sh/community/forums/topics/679205>`_.
+
+Here are some common ones we've been experiencing recently.
+
+- `Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem <wineskin.html>`_
+- `osu! has graphical glitches, or isn't rendering icons/CJK fonts properly <gdiplus-cjkfonts.html>`_
+- `Apple Silicon / Big Sur issues <applesilicon-bigsur.html>`_
+- `Discord Rich Presence (32-bit Wineskins) <discord-10-14.html>`_
+
+===============================================
+Step 2: Report and repair using osu!macOS Agent
+===============================================
+
+1. Download the latest version of Technocoder's `osu!macOS Agent <https://osu.ppy.sh/community/forums/topics/1036678>`_ - older versions may have incompatibilities or bugs, especially with newer wrappers.
+2. Once it finishes downloading, open **osu!macOS Agent**.
+3. If you haven't already done so, click the **Select** button and browse to ``osu!.app's`` location. The text box should display its filepath (e.g ``~/Users/firefly/Desktop/osu!.app``) and Wine Engine (e.g ``WS11WineCX64Bit19.0.1-1``)
+4. Select the **Troubleshoot** tab, then click **Scan**.
+5. After the scan completes, click **Repair**.
+6. If this doesn't fix your issue, click **Copy Report**. Copy the contents into a reply to this thread and we'll do our best to help you out! Please don't forget to do a **Test Run** as outlined in the next step.
+
+.. tip::
+
+    osu!macOS Agent is a useful program every osu-stable player under Wine should have!
+
+==============================================
+Step 3: Generating a Test Run through Wineskin
+==============================================
+
+1. Locate your osu! installation.
+2. Right click on it, then select **Show Package Contents**.
+3. Open **Wineskin**.
+4. Click **Advanced**.
+5. Click **Test Run**. If osu! starts successfully (even with glitches), you can then close the program down.
+
+.. image:: ../assets/wineskin-test-run.png
+
+6. Once osu! has either closed or crashed, a dialog will pop up asking you whether you want to view **Test Run Logs**. Click **Yes**.
+
+.. image:: ../assets/wineskin-test-run-success.png
+
+7. Two plain-text files will appear. One contains information about your system and Wineskin, while the other provides a log of errors, warnings and events that were recorded while your Wineskin was operating. Copy the results of your **Test Run logs** to a pastebin such as `paste.ubuntu.com <https://paste.ubuntu.com>`_ set to never expire. It is now ready to share with others! Feel free to contact us on the `osu! on Mac forum thread <https://osu.ppy.sh/community/forums/topics/1106057>`_ if you need any help.
+
+***
 
 ********************************************
-Accessing the insides of your Wineskin
+Additional troubleshooting
 ********************************************
+
+Here are some additional troubleshooting tips that might help you diagnose and fix any issues you're experiencing.
+
+============================================
+Accessing the insides of your Wineskin
+============================================
 
 Generally speaking, you can access the Package Contents of your Wineskin by right clicking on ``osu!.app`` and selecting **Show Package Contents**. 
 
@@ -27,9 +85,9 @@ Three items should now appear:
 
 ****
 
-********************************************
+============================================
 Locating osu! crash logs
-********************************************
+============================================
 
 Just like on Windows, osu! will generate it's own crash logs that can be useful for troubleshooting.
 
@@ -100,14 +158,15 @@ Save both of these to a text file or someplace where you won't forget. If you're
 
 ****
 
-********************************************
+============================================
 Communicating your issues with other people
-********************************************
+============================================
 
 We want to help you get osu! running on your macOS-powered device, so to make the process as easy as possible for everyone involved, it's important to be clear and concise right from the get-go.
 
 **Please do:**
 
+- Work through the `First steps <#first-steps>`_ section before posting for help
 - See the `Common issues <index.html>`_ section to see if there's a fix you can try
 - Describe your issue in lots and lots of detail
 
@@ -118,7 +177,7 @@ We want to help you get osu! running on your macOS-powered device, so to make th
 - Attach screenshots and log files (from both `osu!macOS Agent <#generating-a-report-with-osu-macos-agent>`_ and `Wineskin <#generating-logs-for-wineskin>`_
 - Tell us what you've already tried to do
 
-The best place to report issues is on the `osu! forums <https://osu.ppy.sh/community/forums/5>`_ - make sure you put **macOS** in the title of your post (so other people know ofc).
+The best place to report issues is on the `osu! forums <https://osu.ppy.sh/community/forums/5>`_ and the `osu! for macOS support thread <https://osu.ppy.sh/community/forums/topics/1106057>`- make sure you put **macOS** in the title of your post (so other people know ofc). 
 
 
 

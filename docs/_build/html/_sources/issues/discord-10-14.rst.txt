@@ -24,6 +24,10 @@ Discord Rich Presence (32-bit Wineskins)
 
 ****
 
+.. note:: 
+
+    As of 15 February 2021, 32-bit Wineskins will no longer support Discord Rich Presence. Support for Discord Rich Presence will most likely **not** be provided in the future. See https://osu.ppy.sh/community/forums/posts/7922372 for details.
+
 ****************************************
 Behaviour
 ****************************************

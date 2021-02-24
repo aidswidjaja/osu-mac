@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discord Rich Presence (32-bit Wineskins) &mdash; osu!mac</title>
+  <title>osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly &mdash; osu!mac</title>
   
 
   
@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Discord Rich Presence (64-bit Wineskins)" href="discord-10-15.html" />
-    <link rel="prev" title="Pointing osu!macOS Agent to your osu! install location" href="macos-agent.html" /> 
+    <link rel="next" title="osu! cannot be opened because the developer cannot be verified" href="unidentified.html" />
+    <link rel="prev" title="Apple Silicon / Big Sur issues" href="applesilicon-bigsur.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -103,7 +103,18 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html">Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="applesilicon-bigsur.html">Apple Silicon / Big Sur issues</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#enabling-gdiplus">Enabling gdiplus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removing-gdiplus-keeping-cjkfonts">Removing gdiplus (&amp; keeping cjkfonts)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#related-links">Related links</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
@@ -114,12 +125,7 @@
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (32-bit Wineskins)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
 </ul>
@@ -177,13 +183,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Discord Rich Presence (32-bit Wineskins)</li>
+      <li>osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/issues/discord-10-14.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/issues/gdiplus-cjkfonts.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -196,50 +202,94 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="discord-rich-presence-32-bit-wineskins">
-<h1>Discord Rich Presence (32-bit Wineskins)<a class="headerlink" href="#discord-rich-presence-32-bit-wineskins" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="osu-has-graphical-glitches-or-isn-t-rendering-icons-cjk-fonts-properly">
+<h1>osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly<a class="headerlink" href="#osu-has-graphical-glitches-or-isn-t-rendering-icons-cjk-fonts-properly" title="Permalink to this headline">¶</a></h1>
 <div class="wineskin-version line-block">
 <div class="line">This article is applicable to the following wrappers:</div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This section is for users using Wineskins that don’t have either the <strong>WS11WineCX19.0.1-1</strong> or <strong>WS11WineCX64Bit19.0.1-1</strong> Wine engine from`Gcenx &lt;<a class="reference external" href="https://github.com/Gcenx/WineskinServer">https://github.com/Gcenx/WineskinServer</a>&gt;`_. <strong>To find your Wineskin version:</strong></p>
-<ol class="arabic simple">
-<li><p>Locate where <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> is installed</p></li>
-<li><p>Right click on it and select <strong>Show Package Contents</strong></p></li>
-<li><p>You should now see three files/folders: <code class="docutils literal notranslate"><span class="pre">Contents</span></code>, <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> and <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Wineskin</span></code></p></li>
-<li><p>A window should pop up. Click <strong>Advanced</strong></p></li>
-<li><p>It will be displayed under the <strong>Associated Extensions</strong> column, as shown below.</p></li>
-</ol>
-<img alt="Wineskin Advanced, highlighting the engine version number:" src="../_images/wineskin-engine-version.png" />
-<p>If you’re using one of the two <strong>WS11</strong> engines mentioned above, then the process behind Discord Rich Presence is slightly different - <a class="reference external" href="discord-10-15.html">you actually can enable Discord Rich Presence with relative ease</a>.</p>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197">Wineskin with Apple Silicon support</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197">unofficial Wineskin for macOS 10.14 Mojave and earlier</a></div>
 </div>
 <hr class="docutils" />
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>As of 15 February 2021, 32-bit Wineskins will no longer support Discord Rich Presence. Support for Discord Rich Presence will most likely <strong>not</strong> be provided in the future. See <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7922372">https://osu.ppy.sh/community/forums/posts/7922372</a> for details.</p>
-</div>
 <div class="section" id="behaviour">
 <h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
-<p>osu! is not detected by Discord in the Game Activity menu, nor is it displayed on your profile.</p>
-<img alt="../_images/discord-rpc.png" src="../_images/discord-rpc.png" />
+<p>You’re experiencing graphical glitches, including:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>black bars</p></li>
+<li><p>icons not loading</p></li>
+<li><p>Chinese/Japanese/Korean fonts being replaced with X’s or boxes</p></li>
+</ul>
+</div></blockquote>
 </div>
 <hr class="docutils" />
 <div class="section" id="cause">
 <h2>Cause<a class="headerlink" href="#cause" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="discord-disc.html">It’s complicated.</a></p>
-<p><strong>tl:dr</strong> currently available Discord Rich Presence solutions rely on using a 64-bit Wineskin engine, whereas some of the older wrappers use a 32-bit engine.</p>
+<p>This arises out of minor incompatibilities. Specifically,</p>
+<ul class="simple">
+<li><p>gdiplus is required to reduce graphical glitches. gdiplus is not included for stability and compatibility reasons.</p></li>
+<li><p>cjkfonts is included, but will not work under gdiplus.</p></li>
+<li><p>osu! generally experiences graphical glitches not linked to either one of the above dependencies.</p></li>
+</ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
-<p>Currently, Discord Rich Presence is not possible on older Wineskins that don’t utilise the 64-bit WS11 WineskinServer. This includes <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a>. Noone has made a successful Discord Rich Presence solution running under a 32-bit Wineskin. If you want Discord Rich Presence to work, you need to use a 64-bit Wineskin such as <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a> in order to get it up and running.</p>
-<p>You can read my <a class="reference external" href="discord-disc.html">Discord Rich Presence discussion article</a> to learn about why I had some trouble with getting Rich Presence to work on my Wineskin.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Do you have anything to add? See our <a class="reference external" href="../about/contributing.html">Contributing</a> to see how you can contribute to these docs.</p>
+<p>The best way to mitigate this issue is to adjust your in-game settings. Some users find that enabling native resolution, or changing the screen resolution, leads to a better experience. <strong>Do not enable Compatibility Mode as this will break your wrapper!!</strong></p>
+<p>If adjusting in-game graphics settings doesn’t work, options are provided below, but as stated, these are not advised and we do not recommend them.</p>
+<p>Generally we recommend not to mess with anything unless you’re sure what you’re doing. If the graphical glitches are affecting your experience, there is a way to remove them, but this will cause CJK fonts not to load, and potentially cause more instability.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>The following steps are not generally recommended. Perform at your own risk.</p>
 </div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>If, despite our advice, you choose to enable gdiplus, make a backup before performing anything below. Ideally, work on a duplicate version.</p>
+</div>
+<div class="section" id="enabling-gdiplus">
+<h3>Enabling gdiplus<a class="headerlink" href="#enabling-gdiplus" title="Permalink to this headline">¶</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>These steps will cause incompatibilities with cjkfonts.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Right click osu!.app</p></li>
+<li><p>Click <strong>Show Package Contents</strong></p></li>
+<li><p>Click <strong>Wineskin</strong></p></li>
+<li><p>Click <strong>Advanced</strong></p></li>
+<li><p>Click the <strong>Tools</strong> tab</p></li>
+<li><p>Click <strong>Winetricks</strong> under <strong>Utilities</strong></p></li>
+<li><p>Search for <strong>gdiplus</strong> which will be under the <code class="docutils literal notranslate"><span class="pre">dlls</span></code> section</p></li>
+<li><p>Enable the checkbox next to it</p></li>
+<li><p>Click the <strong>Run</strong> button, then the Yes in the dialog box that appears</p></li>
+<li><p>You can click <strong>Close</strong> once it has finished, then close Wineskin</p></li>
+</ol>
+</div>
+<div class="section" id="removing-gdiplus-keeping-cjkfonts">
+<h3>Removing gdiplus (&amp; keeping cjkfonts)<a class="headerlink" href="#removing-gdiplus-keeping-cjkfonts" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Right click osu!.app</p></li>
+<li><p>Click <strong>Show Package Contents</strong></p></li>
+<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">drive_c/windows/system32/gdiplus.dll</span></code></p></li>
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">gdiplus.dll</span></code> to <code class="docutils literal notranslate"><span class="pre">gdiplus.donotuse</span></code> so Wine can’t use it - make sure you change the file extension from <code class="docutils literal notranslate"><span class="pre">dll</span></code> to <code class="docutils literal notranslate"><span class="pre">donotuse</span></code></p></li>
+</ol>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="if-that-didn-t-work">
+<h2>If that didn’t work<a class="headerlink" href="#if-that-didn-t-work" title="Permalink to this headline">¶</a></h2>
+<p>There could be something else going on here, and performing <a class="reference external" href="troubleshooting.html">basic troubleshooting</a> should help you get to the bottom of it.</p>
+<p>If you’re still not sure what’s going on here, copy any osu! crash logs and <a class="reference external" href="troubleshooting.html#generating-a-report-with-osu-macos-agent">generate a report with osu!macOS Agent</a>, then let us know on the forums with what we can help.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="related-links">
+<h2>Related links<a class="headerlink" href="#related-links" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7929179">https://osu.ppy.sh/community/forums/posts/7929179</a></p></li>
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7921057">https://osu.ppy.sh/community/forums/posts/7921057</a></p></li>
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7922372">https://osu.ppy.sh/community/forums/posts/7922372</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -251,10 +301,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="discord-10-15.html" class="btn btn-neutral float-right" title="Discord Rich Presence (64-bit Wineskins)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="unidentified.html" class="btn btn-neutral float-right" title="osu! cannot be opened because the developer cannot be verified" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="macos-agent.html" class="btn btn-neutral float-left" title="Pointing osu!macOS Agent to your osu! install location" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="applesilicon-bigsur.html" class="btn btn-neutral float-left" title="Apple Silicon / Big Sur issues" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -275,7 +325,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x105f58f10>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x105dd80d0>
 <br><br>
 <div class="customfooter">
     <strong>

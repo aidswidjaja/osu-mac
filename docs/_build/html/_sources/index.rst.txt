@@ -88,6 +88,8 @@ Sitemap
 
    issues/index
    issues/troubleshooting
+   issues/applesilicon-bigsur
+   issues/gdiplus-cjkfonts
    issues/unidentified
    issues/start
    issues/wineskin
@@ -109,6 +111,7 @@ Sitemap
    :caption: About this project
 
    about/resources
+   about/templates
    about/contributing
    about/acknowledgements
    about/contact

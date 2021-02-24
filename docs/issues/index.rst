@@ -12,6 +12,8 @@ Contents
 Here's a repository of common issues (and potential fixes) other users have experienced in the past with getting osu! to run on Mac. If your problem is not listed here, feel free to `ask on the forums <troubleshooting.html>`_.
 
 - `Troubleshooting Basics <troubleshooting.html>`_
+- `Apple Silicon / Big Sur issues <applesilicon-bigsur.html>`_
+- `osu! has graphical glitches, or isn't rendering icons/CJK fonts properly <gdiplus-cjkfonts.html>`_
 - `osu! cannot be opened because the developer cannot be verified <unidentified.html>`_
 - `Bypass the osu! startup sequence to prevent startup issues <start.html>`_
 - `Wineskin.app doesn't open, even if osu! does / exec[number].bat problem <wineskin.html>`_
