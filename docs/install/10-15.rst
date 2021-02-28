@@ -72,7 +72,7 @@ Step 1: Download the Wineskin
 **Download the osu! Wineskin from Technocoder:**
 
 - **osu! forum thread:** `community/forums/posts/7560723 <https://osu.ppy.sh/community/forums/posts/7560723>`_
-- **mega.nz direct download (468.1M):** `https://mega.nz/file/... <https://mega.nz/file/54sgCaJB#nzuV4BNcOx7sJ-zx8elWwO9qgQCrHK763mIrTYyozZU>`_
+- **mega.nz direct download (468.1M):** `https://mega.nz/file/... <https://mega.nz/file/UpFTzQIa#Ss1ULtyt743Pqh-PjeLVxWJz9fyMiU6S8tzeXKwIrZg>`_
 
 .. note::
 
