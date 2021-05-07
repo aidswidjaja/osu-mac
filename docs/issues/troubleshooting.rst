@@ -63,7 +63,7 @@ Step 3: Generating a Test Run through Wineskin
 
 7. Two plain-text files will appear. One contains information about your system and Wineskin, while the other provides a log of errors, warnings and events that were recorded while your Wineskin was operating. Copy the results of your **Test Run logs** to a pastebin such as `paste.ubuntu.com <https://paste.ubuntu.com>`_ set to never expire. It is now ready to share with others! Feel free to contact us on the `osu! on Mac forum thread <https://osu.ppy.sh/community/forums/topics/1106057>`_ if you need any help.
 
-***
+****
 
 ********************************************
 Additional troubleshooting
