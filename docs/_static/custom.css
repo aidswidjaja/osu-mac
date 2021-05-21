@@ -17,11 +17,17 @@
     text-align: left;
 }
 
+
+.footerbullets {
+    list-style: disc;
+    list-style-position: inside;
+}
+
 .wineskin-version {
     font-weight: 700;
-    background-color: #333f67;
+    background-color: #C2DAF5;
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-    color: white;
+    color: black;
     max-width: 100%;
     position: relative;
     border-radius: 5px;
@@ -29,9 +35,9 @@
 }
 
 .screen-res {
-    background-color: #333f67;
+    background-color: #C2DAF5;
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-    color: white;
+    color: black;
     max-width: 100%;
     position: relative;
     border-radius: 5px;
@@ -40,20 +46,50 @@
 }
 
 .customfooter {
-    background-color: #333f67;
+    background-color: #C2DAF5;
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-    color: white;
+    color: black;
     max-width: 100%;
     position: relative;
     border-radius: 5px;
     padding: 10px;
 }
 
-.footerbullets {
-    list-style: disc;
-    list-style-position: inside;
+@media (prefers-color-scheme: dark) {
+	
+	.wineskin-version {
+	    font-weight: 700;
+	    background-color: #333f67;
+	    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+	    color: white;
+	    max-width: 100%;
+	    position: relative;
+	    border-radius: 5px;
+	    padding: 10px;
+	}
+	
+	.screen-res {
+	    background-color: #333f67;
+	    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+	    color: white;
+	    max-width: 100%;
+	    position: relative;
+	    border-radius: 5px;
+	    padding: 10px;
+	    font-family: monospace;
+	}
+	
+	.customfooter {
+	    background-color: #333f67;
+	    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+	    color: white;
+	    max-width: 100%;
+	    position: relative;
+	    border-radius: 5px;
+	    padding: 10px;
+	}
+	
 }
-
 
 /* Default (light) theme colors */
 

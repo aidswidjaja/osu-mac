@@ -109,7 +109,7 @@ If it was successful, you should see a **Fixed** indicator next to ``Quarantine 
     When opening the Wineskin for the first time, you might be prompted to install Rosetta 2 on your M1 Mac if you haven't already. 
 
     .. image:: ../assets/rosetta.jpg
-    :alt: 'To open "App", you need to install Rosetta. Do you want to install it now?'
+        :alt: 'To open "App", you need to install Rosetta. Do you want to install it now?'
 
 .. raw:: html
 

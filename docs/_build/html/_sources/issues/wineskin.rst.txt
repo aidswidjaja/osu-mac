@@ -27,7 +27,7 @@ The number preceding ``.bat`` might be different for different people.
 Cause
 ****************************************
 
-On 12 October 2020 an `update <https://github.com/Techno-coder/osu-macOS-Agent/commit/458dbcab3b32f15d81dd150626ecbc414edabd15>`_ was pushed to osu!macOS Agent which had a bug that while repairing a wrapper, would only repair the executable, and not the Wineskin.app settings application inside it. `This was fixed on 23 January 2021. <https://osu.ppy.sh/community/forums/posts/7879865>`
+On 12 October 2020 an `update <https://github.com/Techno-coder/osu-macOS-Agent/commit/458dbcab3b32f15d81dd150626ecbc414edabd15>`_ was pushed to osu!macOS Agent which had a bug that while repairing a wrapper, would only repair the executable, and not the Wineskin.app settings application inside it. `This was fixed on 23 January 2021. <https://osu.ppy.sh/community/forums/posts/7879865>`_
 
 If you downloaded osu!macOS Agent between 12 October 2020 and 23 January 2021 please `download the latest version <https://osu.ppy.sh/community/forums/topics/1036678>`_.
 
