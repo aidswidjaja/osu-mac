@@ -9,7 +9,7 @@ Discord Rich Presence (32-bit Wineskins)
 
 .. note::
 
-    This section is for users using Wineskins that don't have either the **WS11WineCX19.0.1-1** or **WS11WineCX64Bit19.0.1-1** Wine engine from`Gcenx <https://github.com/Gcenx/WineskinServer>`_. **To find your Wineskin version:**
+    This section is for users using Wineskins that don't have either the **WS11WineCX19.0.1-1** or **WS11WineCX64Bit19.0.1-1** Wine engine from `Gcenx <https://github.com/Gcenx/WineskinServer>`_. **To find your Wineskin version:**
 
     1. Locate where ``osu!.app`` is installed
     2. Right click on it and select **Show Package Contents**
