@@ -14,6 +14,7 @@ Behaviour
 ****************************************
 
 osu! has some trouble starting up, for example:
+
 - `it updates each time you open it <https://osu.ppy.sh/community/forums/topics/1036678?start=7540911>`_
 - `you need to launch the game twice, since the first time always crashes <https://osu.ppy.sh/community/forums/topics/1036678?start=7540911>`_
 
