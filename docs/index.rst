@@ -19,15 +19,12 @@ let's get you set up with osu! on your macOS-powered device!
 .. image:: assets/osu-mac.gif
    :alt: osu! running on macOS 10.14 Mojave.
 
-.. to-do: links need to be updated
-
-
 ****
 
 Getting started
 =======================================
 
-These community-developed osu-stable `Wineskins <http://wineskin.urgesoftware.com/tiki-index.php>`_ are the best way to play osu! ranked on your Mac.
+These community-developed osu! `Wineskins <http://wineskin.urgesoftware.com/tiki-index.php>`_ are the best way to play osu-stable on your Mac.
 
 Not sure which wrapper you should get? Check out `Which Wineskin should I get? <install/choose.html>`_
 
@@ -35,8 +32,21 @@ Not sure which wrapper you should get? Check out `Which Wineskin should I get? <
 - `Get Technocoder's osu! Wineskin with support for macOS Catalina 10.15 and later <install/10-15.html>`_ 
 - `Get slc's osu! Wineskin for macOS 10.14 Mojave and earlier <install/10-14.html>`_
 
-Not sure which version of macOS you're using? Check out this `Apple support article <https://support.apple.com/en-au/HT201260>`_ to find out.
-`Here is a list <https://support.apple.com/en-us/HT211814>`_ of Apple computer models that utilise the new ARM-based M1 chip.
+Some wrappers will only work on specific macOS versions or hardware specifications. Not sure which version of macOS you're using? Check out this `Apple support article <https://support.apple.com/en-au/HT201260>`_ to find out. Furthermore, `here is a list <https://support.apple.com/en-us/HT211814>`_ of Apple computer models that utilise the new ARM-based Apple Silicon chip technology.
+
+Need help?
+=======================================
+
+Getting Windows applications to run smoothly on macOS can be a challenge, and if you're experiencing issues feel free to reach out to the community. We're most active on the osu! community help forums. Visit us on the `macOS Wineskin thread <https://osu.ppy.sh/community/forums/topics/1106057>`_ or start your own in the `Help subforum <https://osu.ppy.sh/community/forums/5>`_. 
+
+- Along with a detailed description of your issue, attach your log files from `Troubleshooting <issues/troubleshooting.html>`_ in a never-expire pastebin such as `paste.ubuntu.com <https://paste.ubuntu.com/>`_ or `bpaste <https://bpa.st/>`_.
+- If creating a thread, put **macOS** and **Wineskin** in your thread title.
+- Our commmunity support members are volunteers, ranging from osu! support team members to people helping out in their free time. A response may take upwards to a week, although generally you should receive one within a day or two.
+
+Provide feedback on our docs
+=======================================
+
+We want our community documentation to become continually better. `Fill out this 5 question Google Form to let us know how we went. <https://docs.google.com/forms/d/e/1FAIpQLScytg73ab9KgzbLzDNqpyaiw6gQtHhZhEjGjZBBLqYML-SeXQ/viewform?usp=sf_link>`_.
 
 Other options
 =======================================
