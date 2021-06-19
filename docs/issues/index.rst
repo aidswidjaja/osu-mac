@@ -13,6 +13,7 @@ Here's a repository of common issues (and potential fixes) other users have expe
 
 - `Troubleshooting Basics <troubleshooting.html>`_
 - `Apple Silicon / Big Sur issues <applesilicon-bigsur.html>`_
+- `.NET runtime issues <dotnet.html>`_
 - `osu! has graphical glitches, or isn't rendering icons/CJK fonts properly <gdiplus-cjkfonts.html>`_
 - `osu! cannot be opened because the developer cannot be verified <unidentified.html>`_
 - `Bypass the osu! startup sequence to prevent startup issues <start.html>`_

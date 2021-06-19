@@ -1,5 +1,5 @@
 #############################################################
-osu! experiences .NET runtime issues
+.NET runtime issues
 #############################################################
 
 .. rst-class:: wineskin-version

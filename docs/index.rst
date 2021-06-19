@@ -99,6 +99,7 @@ Sitemap
    issues/index
    issues/troubleshooting
    issues/applesilicon-bigsur
+   issues/dotnet
    issues/gdiplus-cjkfonts
    issues/unidentified
    issues/start
