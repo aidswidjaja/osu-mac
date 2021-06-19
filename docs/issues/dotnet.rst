@@ -92,12 +92,12 @@ Updating the ``dotnet`` Winetricks may help solve issues with the .NET framework
 4. Click **Advanced**, then navigate to the **Tools** tab.
 5. Click **Winetricks** located under the Utilities heading.
 6. Search for ``dotnet452`` in the search bar.
-7. Open the `dlls` dropdown in the list which appears.
+7. Open the ``dlls`` dropdown in the list which appears.
 8. Click the checkmark besides ``dotnet452``.
 9. Click **Run**, then in the dialog which appears click **Yes**.
 10. Wait for the process to finish before closing the Wineskin configuration utility.
 
-.. image:: assets/dotnet-winetricks.png
+.. image:: ../assets/dotnet-winetricks.png
    :alt: Winetricks configuration showing dotnet452
 
 .. note::
