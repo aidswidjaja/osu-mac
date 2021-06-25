@@ -1,5 +1,5 @@
 #############################################
-osu! mouse/trackpad input feels unstable
+Mouse/trackpad input feels unstable
 #############################################
 
 .. rst-class:: wineskin-version
