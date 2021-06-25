@@ -1,6 +1,6 @@
-################################################
-Discord Rich Presence (32-bit Wineskins)
-################################################
+#####################################################################
+Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)
+#####################################################################
 
 .. rst-class:: wineskin-version
     
@@ -42,9 +42,11 @@ osu! is not detected by Discord in the Game Activity menu, nor is it displayed o
 Cause
 ****************************************
 
-`It's complicated. <discord-disc.html>`_ 
+To put it simply, currently available Discord Rich Presence solutions rely on using a 64-bit Wineskin engine, whereas some of the older wrappers use a 32-bit engine.
 
-**tl:dr** currently available Discord Rich Presence solutions rely on using a 64-bit Wineskin engine, whereas some of the older wrappers use a 32-bit engine.
+.. note::
+
+    `Looking for the technical explanation? <discord-disc.html>`_ 
 
 ****
 

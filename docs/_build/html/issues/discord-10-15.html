@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discord Rich Presence (64-bit Wineskins) &mdash; osu!mac</title>
+  <title>Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer) &mdash; osu!mac</title>
   
 
   
@@ -43,7 +43,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Discord Rich Presence (Discussion)" href="discord-disc.html" />
-    <link rel="prev" title="Discord Rich Presence (32-bit Wineskins)" href="discord-10-14.html" /> 
+    <link rel="prev" title="Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)" href="discord-10-14.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -104,19 +104,20 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html">Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="applesilicon-bigsur.html">Apple Silicon / Big Sur issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dotnet.html">.NET runtime issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
-<li class="toctree-l1"><a class="reference internal" href="start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="input.html">osu! mouse/trackpad input feels unstable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input.html">Mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (64-bit Wineskins)</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
 </ul>
@@ -177,7 +178,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Discord Rich Presence (64-bit Wineskins)</li>
+      <li>Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -196,15 +197,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="discord-rich-presence-64-bit-wineskins">
-<h1>Discord Rich Presence (64-bit Wineskins)<a class="headerlink" href="#discord-rich-presence-64-bit-wineskins" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="discord-rich-presence-64-bit-wineskins-ws-11-wineskinserver">
+<h1>Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)<a class="headerlink" href="#discord-rich-presence-64-bit-wineskins-ws-11-wineskinserver" title="Permalink to this headline">¶</a></h1>
 <div class="wineskin-version line-block">
 <div class="line">This article is applicable to the following wrappers:</div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This section is for users using Wineskins which use the <strong>WS11WineCX19.0.1-1</strong> or <strong>WS11WineCX64Bit19.0.1-1</strong> Wine engine from`Gcenx &lt;<a class="reference external" href="https://github.com/Gcenx/WineskinServer">https://github.com/Gcenx/WineskinServer</a>&gt;`_. <strong>To find your Wineskin version:</strong></p>
+<p>This section is for users using Wineskins which use the <strong>WS11WineCX19.0.1-1</strong> or <strong>WS11WineCX64Bit19.0.1-1</strong> Wine engine from <a class="reference external" href="https://github.com/Gcenx/WineskinServer">Gcenx</a>. <strong>To find your Wineskin version:</strong></p>
 <ol class="arabic simple">
 <li><p>Locate where <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code> is installed</p></li>
 <li><p>Right click on it and select <strong>Show Package Contents</strong></p></li>
@@ -215,36 +216,36 @@
 <img alt="Wineskin Advanced, highlighting the engine version number:" src="../_images/wineskin-engine-version.png" />
 <p>If you’re <strong>not</strong> using one of the two <strong>WS11</strong> engines mentioned above, then the process behind Discord Rich Presence is slightly different - <a class="reference external" href="discord-10-14.html">you will encounter difficulties with getting Discord Rich Presence to work on macOS</a>.</p>
 </div>
-<p>The <strong>Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</strong> Wineskin already has Discord Rich Presence installed.</p>
-<p>If for some reason it isn’t working, follow these steps.</p>
+<p><strong>Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</strong> Wineskin should already have Discord Rich Presence installed. Otherwise, follow the Resolution steps below.</p>
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
 <p>This is directly taken from Technocoder’s <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7560723">macOS Updated Wineskin Installation Guide (Catalina support)</a>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1. Download `bridge.exe &lt;https://github.com/Techno-coder/macOS-wine-bridge/raw/master/bridge.exe&gt;`_
-2. Right click **osu!** &gt; **Show Package Contents**
-3. Go to ``drive_c`` &gt; ``osu!``
-4. Drag the **bridge.exe** file into the osu! folder
-5. Create a new file in the ``osu!`` folder named ``execute.bat``
-6. Add these two lines to the ``execute.bat`` file:
-
-.. code-block::
-
-    start C:\osu!\bridge.exe
-    start C:\osu!\osu!.exe -nosplash
-
-7. Open **Wineskin** (next to the ``drive_c`` folder)
-8. Click **Advanced**
-9. Change the **Windows EXE field** to (including the outer quotes):
-
-.. code-block::
-
-    &quot;C:\osu!\execute.bat&quot;
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Download <a class="reference external" href="https://github.com/Techno-coder/macOS-wine-bridge/raw/master/bridge.exe">bridge.exe</a></p></li>
+<li><p>Right click <strong>osu!</strong> &gt; <strong>Show Package Contents</strong></p></li>
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">osu!</span></code></p></li>
+<li><p>Drag the <strong>bridge.exe</strong> file into the osu! folder</p></li>
+<li><p>Create a new file in the <code class="docutils literal notranslate"><span class="pre">osu!</span></code> folder named <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code></p></li>
+<li><p>Add these two lines to the <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code> file:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>start C:\osu!\bridge.exe
+start C:\osu!\osu!.exe -nosplash
 </pre></div>
 </div>
+<ol class="arabic simple" start="7">
+<li><p>Open <strong>Wineskin</strong> (next to the <code class="docutils literal notranslate"><span class="pre">drive_c</span></code> folder)</p></li>
+<li><p>Click <strong>Advanced</strong></p></li>
+<li><p>Change the <strong>Windows EXE field</strong> to (including the outer quotes):</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;C:\osu!\execute.bat&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
 </div>
 <div class="section" id="if-that-didn-t-work">
 <h2>If that didn’t work<a class="headerlink" href="#if-that-didn-t-work" title="Permalink to this headline">¶</a></h2>
-<p>Discord Rich Presence at the moment is a bit fiddly. As an FYI, it seems that <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1046150">other people have been having issues too</a>.</p>
+<p>Discord Rich Presence at the moment is a bit fiddly, and currently it seems that <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1046150">other people have been having issues too</a>.</p>
 <p>If you’re interested in the technical tidbits, see <a class="reference external" href="discord-disc.html">Discord Rich Presence: Discussion</a>.</p>
 </div>
 </div>
@@ -260,7 +261,7 @@
         <a href="discord-disc.html" class="btn btn-neutral float-right" title="Discord Rich Presence (Discussion)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="discord-10-14.html" class="btn btn-neutral float-left" title="Discord Rich Presence (32-bit Wineskins)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="discord-10-14.html" class="btn btn-neutral float-left" title="Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -281,7 +282,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10a01d340>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10f8161c0>
 <br><br>
 <div class="customfooter">
     <strong>

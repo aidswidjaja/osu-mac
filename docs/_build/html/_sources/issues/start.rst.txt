@@ -1,5 +1,5 @@
 #############################################################
-osu! runs perfectly, but it has some trouble when starting up
+Startup issues
 #############################################################
 
 .. rst-class:: wineskin-version
@@ -14,8 +14,12 @@ Behaviour
 ****************************************
 
 osu! has some trouble starting up, for example:
-- `it updates each time you open it <https://osu.ppy.sh/community/forums/topics/1036678?start=7540911>`_
-- `you need to launch the game twice, since the first time always crashes <https://osu.ppy.sh/community/forums/topics/1036678?start=7540911>`_
+
+- `It updates each time you open it <https://osu.ppy.sh/community/forums/topics/1036678?start=7540911>`_
+- `You need to launch the game twice, since the first time always crashes <https://osu.ppy.sh/community/forums/topics/1036678?start=7540911>`_
+- `Startup will take 1-2 minutes <https://osu.ppy.sh/community/forums/posts/8162613>`_
+
+or the game will refuse to start up at all.
 
 ****
 
@@ -23,7 +27,9 @@ osu! has some trouble starting up, for example:
 Cause
 ****************************************
 
-osu!'s startup sequence causes it to perform actions on startup that shouldn't happen, like it might occassionally crash or it does something annoying (usually because it's not entirely friendly with Wine).
+There could be a large number of factors causing this issue. The best way to understand what's going on is to diagnose it through basic `Troubleshooting Steps <troubleshooting.html>`_, especially an osu!macOS Agent Report and Wineskin Test Run.
+
+We are currently aware of a number of known issues that may be affecting your ability to start the game consistently, so let us know about your issues and troubleshooting steps on the `osu! forum thread <https://osu.ppy.sh/community/forums/topics/1106057>`_.
 
 ****
 
@@ -31,22 +37,36 @@ osu!'s startup sequence causes it to perform actions on startup that shouldn't h
 Resolution
 ****************************************
 
-You can bypass the startup sequence entirely. Technocoder found a `workaround <https://osu.ppy.sh/community/forums/topics/682197?start=7443024>`_ that will hopefully mitigate your startup troubles:
+Firstly, ensure that your Wineskin isn't corrupt by reinstalling it, and extracting the .zip file with `The Unarchiver <https://theunarchiver.com/>`_. You should also ensure that no anti-virus software is intefering with osu!, and try downloading a different Wineskin if one isn't working.
+
+========================================
+.NET runtime issues
+========================================
+
+Our `.NET runtime issues <dotnet.html>`_ troubleshooting page contains a number of steps you can attempt if you're explicitly having trouble with the .NET runtime behind osu!
+
+========================================
+Bypassing the startup sequence
+========================================
 
 .. warning::
 
 	**This section only applies to users using the** `experimental macOS Catalina Wineskin <https://osu.ppy.sh/community/forums/posts/7367239>`_.
 
-	You are recommended to use the `latest macOS Catalina Wineskin <https://osu.ppy.sh/community/forums/posts/7560723>`_ instead.
+	You are recommended to use the `latest Wineskin with Apple Silicon support <https://osu.ppy.sh/community/forums/posts/7560723>`_ instead.
 
-    1. Open the ``osu!`` folder (Right click osu! > Show Package Contents > drive_c > osu!)
-    2. Create a new file in this location named ``execute.bat`` (with .bat as the extension)
-    3. Type in: ``start C:\osu!\osu!.exe -nosplash``
-    4. Save ``execute.bat``
-    5. Open **Wineskin** (Right click osu! > Show Package Contents > Wineskin)
-    6. Click **Advanced**
-    7. Change the **Windows EXE** field to: ``"C:\osu!\execute.bat"`` (including the outer quotes)
-    8. Close Wineskin
+In older Wineskins, you can bypass the startup sequence entirely. Technocoder found a `workaround <https://osu.ppy.sh/community/forums/topics/682197?start=7443024>`_ that will hopefully mitigate your startup troubles:
+
+1. Open the ``osu!`` folder (Right click osu! > Show Package Contents > drive_c > osu!)
+2. Create a new file in this location named ``execute.bat`` (with .bat as the extension)
+3. Type in: ``start C:\osu!\osu!.exe -nosplash``
+4. Save ``execute.bat``
+5. Open **Wineskin** (Right click osu! > Show Package Contents > Wineskin)
+6. Click **Advanced**
+7. Change the **Windows EXE** field to: ``"C:\osu!\execute.bat"`` (including the outer quotes)
+8. Close Wineskin
+
+In newer Wineskins, this feature is already built in.
 
 ****
 

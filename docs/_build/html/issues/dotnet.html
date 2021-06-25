@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Startup issues &mdash; osu!mac</title>
+  <title>.NET runtime issues &mdash; osu!mac</title>
   
 
   
@@ -42,8 +42,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem" href="wineskin.html" />
-    <link rel="prev" title="osu! cannot be opened because the developer cannot be verified" href="unidentified.html" /> 
+    <link rel="next" title="osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly" href="gdiplus-cjkfonts.html" />
+    <link rel="prev" title="Apple Silicon / Big Sur issues" href="applesilicon-bigsur.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -104,20 +104,21 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html">Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="applesilicon-bigsur.html">Apple Silicon / Big Sur issues</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dotnet.html">.NET runtime issues</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Startup issues</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">.NET runtime issues</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#net-runtime-issues">.NET runtime issues</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bypassing-the-startup-sequence">Bypassing the startup sequence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-through-command-prompt">Running through Command Prompt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updating-dotnet">Updating dotnet</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#related-links">Related links</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
@@ -184,13 +185,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Startup issues</li>
+      <li>.NET runtime issues</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/issues/start.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/issues/dotnet.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -203,62 +204,102 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="startup-issues">
-<h1>Startup issues<a class="headerlink" href="#startup-issues" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="net-runtime-issues">
+<h1>.NET runtime issues<a class="headerlink" href="#net-runtime-issues" title="Permalink to this headline">¶</a></h1>
 <div class="wineskin-version line-block">
 <div class="line">This article is applicable to the following wrappers:</div>
 <div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7367239">Experimental Wineskin with macOS Catalina 10.15 support</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with Apple Silicon support</a></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are currently aware of this known issue that is affecting a considerable number of users, and currently there is no absolute fix. Track our progress and help us solve this issue by reporting about your experience on our <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">osu! forum thread</a>. Let us know what worked (and what didn’t!)</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="behaviour">
 <h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
-<p>osu! has some trouble starting up, for example:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678?start=7540911">It updates each time you open it</a></p></li>
-<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678?start=7540911">You need to launch the game twice, since the first time always crashes</a></p></li>
-<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/8162613">Startup will take 1-2 minutes</a></p></li>
-</ul>
-<p>or the game will refuse to start up at all.</p>
+<p>You experience issues with the .NET framework which osu! relies on.</p>
+<p>This is best diagnosed through a Wineskin <a class="reference external" href="troubleshooting.html#generating-logs-for-wineskin">Test Run</a>. If you’re experiencing .NET issues, you may receive one of the following console outputs:</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="cause">
 <h2>Cause<a class="headerlink" href="#cause" title="Permalink to this headline">¶</a></h2>
-<p>There could be a large number of factors causing this issue. The best way to understand what’s going on is to diagnose it through basic <a class="reference external" href="troubleshooting.html">Troubleshooting Steps</a>, especially an osu!macOS Agent Report and Wineskin Test Run.</p>
-<p>We are currently aware of a number of known issues that may be affecting your ability to start the game consistently, so let us know about your issues and troubleshooting steps on the <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">osu! forum thread</a>.</p>
+<p>Currently, we are experiencing a considerable number of issues in relation to getting osu! to work, including issues with the .NET framework. The exit code in a standard run indicates a low-level garbage collection issue, while running <code class="docutils literal notranslate"><span class="pre">osu!.exe</span></code> through Wine Command Prompt will return a binary translation error. However, we are still not entirely sure what is causing this issue and/or how to rectify it. You can try some of the Resolution steps below; success may vary.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
-<p>Firstly, ensure that your Wineskin isn’t corrupt by reinstalling it, and extracting the .zip file with <a class="reference external" href="https://theunarchiver.com/">The Unarchiver</a>. You should also ensure that no anti-virus software is intefering with osu!, and try downloading a different Wineskin if one isn’t working.</p>
-<div class="section" id="net-runtime-issues">
-<h3>.NET runtime issues<a class="headerlink" href="#net-runtime-issues" title="Permalink to this headline">¶</a></h3>
-<p>Our <a class="reference external" href="dotnet.html">.NET runtime issues</a> troubleshooting page contains a number of steps you can attempt if you’re explicitly having trouble with the .NET runtime behind osu!</p>
+<p>Firstly, make sure you’re using the latest Wineskin available, which you can get from <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">this thread</a>. If you’re on a Apple Silicon device, try running both the Rosetta and Intel Wineskins. They’ve been updated with beta WineskinServer versions from Gcenx, as part of our attempts to overcome this issue.</p>
+<p>If your Wineskin is still not working, ensure you are actually experiencing this issue by following our <a class="reference external" href="troubleshooting.html">Troubleshooting</a> steps.</p>
+<p>Still experiencing issues? In that case, we’ll need to dig deeper. Try each of the options below in order, and see if that fixes your issue. If it does, <strong>let us know</strong> on the <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">forum thread</a> so we can help you and other people better.</p>
+<div class="section" id="running-through-command-prompt">
+<h3>Running through Command Prompt<a class="headerlink" href="#running-through-command-prompt" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Locate your osu! installation.</p></li>
+<li><p>Right click on it, then select <strong>Show Package Contents</strong>.</p></li>
+<li><p>Open <strong>Wineskin</strong>.</p></li>
+<li><p>Click <strong>Advanced</strong>, then navigate to the <strong>Tools</strong> tab.</p></li>
+<li><p>Click <strong>Command Line (cmd)</strong> located under the Wine Tools heading.</p></li>
+<li><p>It’ll take some time for a console window to appear. Here, run the following command:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ../../osu!
+start osu!
+</pre></div>
 </div>
-<div class="section" id="bypassing-the-startup-sequence">
-<h3>Bypassing the startup sequence<a class="headerlink" href="#bypassing-the-startup-sequence" title="Permalink to this headline">¶</a></h3>
+<p>On a working installation, osu! should start (albeit with performance issues). If this command fails, please screenshot the output and let us know on the <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">forum thread</a>.</p>
+</div>
+<div class="section" id="updating-dotnet">
+<h3>Updating dotnet<a class="headerlink" href="#updating-dotnet" title="Permalink to this headline">¶</a></h3>
+<p>Updating the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> Winetricks may help solve issues with the .NET framework.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Before proceeding, <strong>back it up!</strong> Backing osu! files up is as easy as copying the entire osu! folder onto an external hard drive - and this is something all osu! players should do anyway!</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Noone is responsible if you lose all your data - back up your data and take extreme care, particular if you have important beatmaps and scores stored.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>This section only applies to users using the</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7367239">experimental macOS Catalina Wineskin</a>.</p>
-<p>You are recommended to use the <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7560723">latest Wineskin with Apple Silicon support</a> instead.</p>
+<p>On the bleeding edge? Once you update to <code class="docutils literal notranslate"><span class="pre">dotnet452</span></code>, you will not be able to immediately revert to an older version. You may need to completely uninstall <code class="docutils literal notranslate"><span class="pre">dotnet452</span></code> and then install an older version of dotnet, for which instructions are not provided here.</p>
 </div>
-<p>In older Wineskins, you can bypass the startup sequence entirely. Technocoder found a <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=7443024">workaround</a> that will hopefully mitigate your startup troubles:</p>
 <ol class="arabic simple">
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">osu!</span></code> folder (Right click osu! &gt; Show Package Contents &gt; drive_c &gt; osu!)</p></li>
-<li><p>Create a new file in this location named <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code> (with .bat as the extension)</p></li>
-<li><p>Type in: <code class="docutils literal notranslate"><span class="pre">start</span> <span class="pre">C:\osu!\osu!.exe</span> <span class="pre">-nosplash</span></code></p></li>
-<li><p>Save <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code></p></li>
-<li><p>Open <strong>Wineskin</strong> (Right click osu! &gt; Show Package Contents &gt; Wineskin)</p></li>
-<li><p>Click <strong>Advanced</strong></p></li>
-<li><p>Change the <strong>Windows EXE</strong> field to: <code class="docutils literal notranslate"><span class="pre">&quot;C:\osu!\execute.bat&quot;</span></code> (including the outer quotes)</p></li>
-<li><p>Close Wineskin</p></li>
+<li><p>Locate your osu! installation.</p></li>
+<li><p>Right click on it, then select <strong>Show Package Contents</strong>.</p></li>
+<li><p>Open <strong>Wineskin</strong>.</p></li>
+<li><p>Click <strong>Advanced</strong>, then navigate to the <strong>Tools</strong> tab.</p></li>
+<li><p>Click <strong>Winetricks</strong> located under the Utilities heading.</p></li>
+<li><p>Search for <code class="docutils literal notranslate"><span class="pre">dotnet452</span></code> in the search bar.</p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">dlls</span></code> dropdown in the list which appears.</p></li>
+<li><p>Click the checkmark besides <code class="docutils literal notranslate"><span class="pre">dotnet452</span></code>.</p></li>
+<li><p>Click <strong>Run</strong>, then in the dialog which appears click <strong>Yes</strong>.</p></li>
+<li><p>Wait for the process to finish before closing the Wineskin configuration utility.</p></li>
 </ol>
-<p>In newer Wineskins, this feature is already built in.</p>
+<img alt="Winetricks configuration showing dotnet452" src="../_images/dotnet-winetricks.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The osu! Wineskin uses <code class="docutils literal notranslate"><span class="pre">dotnet45</span></code> by default.</p>
+</div>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="if-that-didn-t-work">
 <h2>If that didn’t work<a class="headerlink" href="#if-that-didn-t-work" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=7443024">This method isn’t fullproof</a>, but it’s certainly the best one currently available. If you’re still having trouble, visit the <a class="reference external" href="troubleshooting.html">Troubleshooting</a> page and let us know on the <a class="reference external" href="https://osu.ppy.sh/community/forums/5">forums</a>.</p>
+<p>We continue to experience significant issues surrounding getting osu! to work for some users, particularly on macOS Big Sur and Apple Silicon devices. Check out our other Troubleshooting pages, including <a class="reference external" href="start.html">this one</a> to see if there are alternative fixes to your issue. If you’re still having trouble, please visit the <a class="reference external" href="troubleshooting.html">Troubleshooting</a> page and let us know about your issue on this <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">forum thread</a> - it greatly assists in helping us understand the issue further.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="related-links">
+<h2>Related links<a class="headerlink" href="#related-links" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7905487">https://osu.ppy.sh/community/forums/posts/7905487</a></p></li>
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1243072">https://osu.ppy.sh/community/forums/topics/1243072</a></p></li>
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7883281">https://osu.ppy.sh/community/forums/posts/7883281</a></p></li>
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7886781">https://osu.ppy.sh/community/forums/posts/7886781</a></p></li>
+<li><p><a class="reference external" href="https://forum.winehq.org/viewtopic.php?t=1093">WineHQ: URL_ParseURL errors</a></p></li>
+<li><p><a class="reference external" href="https://forum.winehq.org/viewtopic.php?t=33524&amp;p=126602">WineHQ: Reinstalling .NET</a></p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com/questions/4367664/application-crashes-with-internal-error-in-the-net-runtime">Stack Overflow: exit code 80131506</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Gcenx/WineskinServer/issues/103">Gcenx/WineskinServer on GitHub: dotnet4.5 install always fails</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -270,10 +311,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="wineskin.html" class="btn btn-neutral float-right" title="Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="gdiplus-cjkfonts.html" class="btn btn-neutral float-right" title="osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="unidentified.html" class="btn btn-neutral float-left" title="osu! cannot be opened because the developer cannot be verified" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="applesilicon-bigsur.html" class="btn btn-neutral float-left" title="Apple Silicon / Big Sur issues" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -294,7 +335,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x1086b8490>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10820fd00>
 <br><br>
 <div class="customfooter">
     <strong>

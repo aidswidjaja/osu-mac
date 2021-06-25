@@ -1,6 +1,6 @@
-#############################################
-Discord Rich Presence (64-bit Wineskins)
-#############################################
+#####################################################################
+Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)
+#####################################################################
 
 .. rst-class:: wineskin-version
     
@@ -9,7 +9,7 @@ Discord Rich Presence (64-bit Wineskins)
 
 .. note::
 
-    This section is for users using Wineskins which use the **WS11WineCX19.0.1-1** or **WS11WineCX64Bit19.0.1-1** Wine engine from`Gcenx <https://github.com/Gcenx/WineskinServer>`_. **To find your Wineskin version:**
+    This section is for users using Wineskins which use the **WS11WineCX19.0.1-1** or **WS11WineCX64Bit19.0.1-1** Wine engine from `Gcenx <https://github.com/Gcenx/WineskinServer>`_. **To find your Wineskin version:**
 
     1. Locate where ``osu!.app`` is installed
     2. Right click on it and select **Show Package Contents**
@@ -23,17 +23,13 @@ Discord Rich Presence (64-bit Wineskins)
     If you're **not** using one of the two **WS11** engines mentioned above, then the process behind Discord Rich Presence is slightly different - `you will encounter difficulties with getting Discord Rich Presence to work on macOS <discord-10-14.html>`_.
 
 
-The **Technocoder's Wineskin with support for macOS 10.15 Catalina and later** Wineskin already has Discord Rich Presence installed.
-
-If for some reason it isn't working, follow these steps.
+**Technocoder's Wineskin with support for macOS 10.15 Catalina and later** Wineskin should already have Discord Rich Presence installed. Otherwise, follow the Resolution steps below.
 
 ****************************************
 Resolution
 ****************************************
 
 This is directly taken from Technocoder's `macOS Updated Wineskin Installation Guide (Catalina support) <https://osu.ppy.sh/community/forums/posts/7560723>`_:
-
-::
 
     1. Download `bridge.exe <https://github.com/Techno-coder/macOS-wine-bridge/raw/master/bridge.exe>`_
     2. Right click **osu!** > **Show Package Contents**
@@ -59,6 +55,6 @@ This is directly taken from Technocoder's `macOS Updated Wineskin Installation G
 If that didn't work
 ****************************************
 
-Discord Rich Presence at the moment is a bit fiddly. As an FYI, it seems that `other people have been having issues too <https://osu.ppy.sh/community/forums/topics/1046150>`_.
+Discord Rich Presence at the moment is a bit fiddly, and currently it seems that `other people have been having issues too <https://osu.ppy.sh/community/forums/topics/1046150>`_.
 
 If you're interested in the technical tidbits, see `Discord Rich Presence: Discussion <discord-disc.html>`_.
