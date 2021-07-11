@@ -100,6 +100,7 @@ Sitemap
    issues/troubleshooting
    issues/applesilicon-bigsur
    issues/dotnet
+   issues/commandprompt
    issues/gdiplus-cjkfonts
    issues/unidentified
    issues/start
