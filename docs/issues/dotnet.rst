@@ -48,7 +48,11 @@ Currently, we are experiencing a considerable number of issues in relation to ge
 Resolution
 ****************************************
 
-Firstly, make sure you're using the latest Wineskin available, which you can get from `this thread <https://osu.ppy.sh/community/forums/topics/1106057>`_. If you're on a Apple Silicon device, try running both the Rosetta and Intel Wineskins. They've been updated with beta WineskinServer versions from Gcenx, as part of our attempts to overcome this issue.
+Firstly, make sure you're using the latest Wineskin available, which you can get from `this thread <https://osu.ppy.sh/community/forums/topics/1106057>`_. If you're on a Apple Silicon device, try running both the Rosetta and Intel Wineskins. They've been updated with beta WineskinServer versions from `Gcenx <https://github.com/Gcenx/>`_, as part of our attempts to overcome this issue. 
+
+.. note::
+
+    Sometimes, you may need to click the osu! icon more than once in order to begin the process.
 
 If your Wineskin is still not working, ensure you are actually experiencing this issue by following our `Troubleshooting <troubleshooting.html>`_ steps.
 
