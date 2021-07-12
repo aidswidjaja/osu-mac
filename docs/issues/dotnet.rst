@@ -67,12 +67,11 @@ Running through Command Prompt
 3. Open **Wineskin**.
 4. Click **Advanced**, then navigate to the **Tools** tab.
 5. Click **Command Line (cmd)** located under the Wine Tools heading.
-6. It'll take some time for a console window to appear. Here, run the following command:
+6. It'll take some time for a console window to appear. When it does, run the following command:
 
 .. code-block:: bash
 
-    cd ../../osu!
-    start osu!
+    start ../../osu!/osu!.exe
 
 On a working installation, osu! should start (albeit with performance issues). If this command fails, please screenshot the output and let us know on the `forum thread <https://osu.ppy.sh/community/forums/topics/1106057>`_.
 
