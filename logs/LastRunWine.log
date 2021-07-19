@@ -1,0 +1,350 @@
+000b:fixme:thread:create_user_shared_data_thread Creating user shared data update thread.
+000d:fixme:thread:create_user_shared_data_thread Creating user shared data update thread.
+0010:fixme:thread:create_user_shared_data_thread Creating user shared data update thread.
+0018:fixme:thread:create_user_shared_data_thread Creating user shared data update thread.
+001d:fixme:thread:create_user_shared_data_thread Creating user shared data update thread.
+0023:err:plugplay:process_IOService_Device object 0x3f03
+0023:err:plugplay:process_IOService_Device object 0x3c07
+0023:err:plugplay:process_IOService_Device object 0x5507
+0023:err:plugplay:process_IOService_Device object 0x5807
+0023:err:plugplay:process_IOService_Device object 0xa907
+0023:err:plugplay:process_IOService_Device object 0xa707
+0023:err:plugplay:process_IOService_Device object 0x5c03
+0009:fixme:exec:SHELL_execute flags ignored: 0x00000100
+002c:fixme:thread:create_user_shared_data_thread Creating user shared data update thread.
+0031:fixme:exec:SHELL_execute flags ignored: 0x00000100
+0033:fixme:thread:create_user_shared_data_thread Creating user shared data update thread.
+0035:fixme:exec:SHELL_execute flags ignored: 0x00000100
+0038:fixme:kernelbase:QuirkIsEnabled3 (0032F3A8, FFFFFFFF) stub!
+0038:fixme:process:GetNumaHighestNodeNumber (0x32fad0): semi-stub
+0038:fixme:thread:SetThreadStackGuarantee (0x32fab4): stub
+003a:err:ole:CoGetContextToken apartment not initialised
+0038:fixme:time:QueryThreadCycleTime (0xfffffffe,0x39f2550): stub!
+0038:fixme:ntdll:EtwEventRegister ({8e9f5090-2d75-4d03-8a81-e5afbf85daf1}, 0x3a102fe, 0x0, 0x1649bb4) stub.
+0038:fixme:path:parse_url failed to parse L"System.Windows.Forms"
+0038:fixme:path:parse_url failed to parse L"System.Drawing"
+0038:fixme:path:parse_url failed to parse L"System"
+0038:fixme:path:parse_url failed to parse L"System.Configuration"
+0038:fixme:path:parse_url failed to parse L"System.Xml"
+0038:fixme:path:parse_url failed to parse L"Accessibility"
+0038:fixme:path:parse_url failed to parse L"System.Security"
+0038:fixme:path:parse_url failed to parse L"System.Runtime.Serialization.Formatters.Soap"
+0038:fixme:path:parse_url failed to parse L"System.Deployment"
+0038:fixme:path:parse_url failed to parse L"System.Core"
+0038:fixme:path:parse_url failed to parse L"System.Drawing"
+0038:fixme:path:parse_url failed to parse L"System"
+0038:fixme:path:parse_url failed to parse L"System.Core"
+0038:fixme:path:parse_url failed to parse L"System.Numerics"
+0038:fixme:nls:get_dummy_preferred_ui_language (0x8 0x32db34 0x0 0x32db30) returning a dummy value (current locale)
+0038:fixme:nls:get_dummy_preferred_ui_language (0x8 0x32db34 0x1cc768 0x32db30) returning a dummy value (current locale)
+0038:fixme:path:parse_url failed to parse L"System.Runtime.Remoting"
+0038:fixme:path:parse_url failed to parse L"System.Web"
+0038:fixme:path:parse_url failed to parse L"System.DirectoryServices"
+0038:fixme:nls:LCMapStringEx unsupported lparam 51d3df8
+0038:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0038:fixme:thread:RtlCreateUserThread stack_reserve != 0 is unimplemented
+0038:fixme:winsock:set_dont_fragment IP_DONTFRAGMENT for IPv4 not supported in this platform
+0038:fixme:winsock:set_dont_fragment IP_DONTFRAGMENT for IPv6 not supported in this platform
+0038:fixme:path:parse_url failed to parse L"System.Configuration"
+0038:fixme:path:parse_url failed to parse L"System.Xml"
+0038:fixme:path:parse_url failed to parse L"System.Data.SqlXml"
+0038:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0038:err:winsock:WSAIoctl -> SIO_ADDRESS_LIST_CHANGE request failed with status 0x2733
+0038:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0038:err:winsock:WSAIoctl -> SIO_ADDRESS_LIST_CHANGE request failed with status 0x2733
+0038:fixme:ver:GetCurrentPackageId (0x32d274 0x0): stub
+0038:fixme:path:parse_url failed to parse L"osu!.resources"
+003d:fixme:path:parse_url failed to parse L"System.Web"
+0038:fixme:path:parse_url failed to parse L"osu!.resources"
+003d:fixme:path:parse_url failed to parse L"Microsoft.Build.Framework"
+003d:fixme:path:parse_url failed to parse L"Microsoft.Build.Utilities.v4.0"
+003d:fixme:path:parse_url failed to parse L"System.ComponentModel.DataAnnotations"
+003d:fixme:path:parse_url failed to parse L"System.Runtime.Caching"
+003d:fixme:path:parse_url failed to parse L"System.Data"
+003d:fixme:path:parse_url failed to parse L"System.Web.ApplicationServices"
+003d:fixme:path:parse_url failed to parse L"System.DirectoryServices.Protocols"
+003d:fixme:path:parse_url failed to parse L"System.EnterpriseServices"
+003d:fixme:path:parse_url failed to parse L"System.ServiceProcess"
+003d:fixme:path:parse_url failed to parse L"System.Web.Services"
+003d:fixme:path:parse_url failed to parse L"System.Design"
+003d:fixme:path:parse_url failed to parse L"Microsoft.Build.Tasks.v4.0"
+003d:fixme:path:parse_url failed to parse L"System.Web.RegularExpressions"
+003d:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 05277278 058EB9F4 058EC060 00000000
+003d:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 0527727C 058EBBD4 058EC240 00000000
+003d:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 0527727C 058EBBD4 058EC240 00000000
+0038:fixme:process:SetProcessPriorityBoost (0x2dc,0): stub
+0038:fixme:path:parse_url failed to parse L"OpenTK"
+003d:fixme:crypt:SystemFunction041 (0x52960d4, 10, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12e8c, 10, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12e8c, 10, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12e8c, 10, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12e8c, 10, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12e8c, 10, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12e8c, 10, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12e8c, 10, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12e8c, 10, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12e8c, 10, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12e8c, 10, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12e8c, 10, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12e8c, 10, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12e8c, 10, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12e8c, 10, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12e8c, 10, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x5295404, 20, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x5295404, 20, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x5295404, 20, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x5295404, 20, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x5295404, 20, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x5295404, 20, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x5295404, 20, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x5295404, 20, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x5295404, 20, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x5295404, 20, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x5295404, 20, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x5295404, 20, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x5295404, 20, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x5295404, 20, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x5295404, 20, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x5295404, 20, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12d94, 30, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12d94, 30, 0): stub [RtlEncryptMemory]
+003d:fixme:crypt:SystemFunction041 (0x7a12d94, 30, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12d94, 30, 0): stub [RtlEncryptMemory]
+0049:fixme:ras:RasEnumConnectionsW (052A5430,0816ED80,0816ED84),stub!
+0049:fixme:ras:RasEnumConnectionsW RAS support is not implemented! Configure program to use LAN connection/winsock instead!
+0049:err:winsock:WSAIoctl -> SIO_ADDRESS_LIST_CHANGE request failed with status 0x2733
+0049:err:winsock:WSAIoctl -> SIO_ADDRESS_LIST_CHANGE request failed with status 0x2733
+0049:fixme:ras:RasConnectionNotificationW (FFFFFFFF,000003C8,0x00000003),stub!
+0049:fixme:ntdll:EtwEventRegister ({38ed3633-5e3f-5989-bf25-f0b1b3318c9b}, 0x3a108a6, 0x0, 0x17a7d6c) stub.
+0049:fixme:winhttp:WinHttpDetectAutoProxyConfigUrl discovery via DHCP not supported
+0049:err:winsock:WSAIoctl -> SIO_ADDRESS_LIST_CHANGE request failed with status 0x2733
+0049:err:winsock:WSAIoctl -> SIO_ADDRESS_LIST_CHANGE request failed with status 0x2733
+0049:fixme:secur32:schan_get_cipher_algid Don't know CALG for encryption algorithm 2, returning 0
+0049:fixme:secur32:schan_imp_get_max_message_size Returning 1 << 14.
+0049:fixme:secur32:schan_get_cipher_algid Don't know CALG for encryption algorithm 2, returning 0
+0049:fixme:crypt:CertAddCertificateLinkToStore (0x52a7030, 0x7a1f6bc, 00000004, 0x0): semi-stub
+0049:fixme:nls:GetFileMUIPath stub: 0x10, L"C:\\windows\\system32\\tzres.dll", (null), 0x816e23c, 0x7a1f348, 0x816e240, 0x816e234
+0049:fixme:nls:GetFileMUIPath stub: 0x10, L"C:\\windows\\system32\\tzres.dll", (null), 0x816e23c, 0x7a1f348, 0x816e240, 0x816e234
+0049:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 05299DC0 0816CFF4 0816D660 00000000
+0049:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 05299DAC 0816D1D4 0816D840 00000000
+0049:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 05299DAC 0816D1D4 0816D840 00000000
+0049:fixme:path:parse_url failed to parse L"System.Numerics"
+0049:fixme:path:parse_url failed to parse L"System.Runtime.Serialization"
+0049:fixme:path:parse_url failed to parse L"SMDiagnostics"
+0049:fixme:path:parse_url failed to parse L"System.ServiceModel.Internals"
+0049:fixme:path:parse_url failed to parse L"System.Data"
+0049:fixme:path:parse_url failed to parse L"System.Transactions"
+0049:fixme:process:FlushProcessWriteBuffers : stub
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF9FC, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+0038:fixme:coreaudio:get_channel_mask Unknown speaker configuration: 16
+0038:fixme:coreaudio:get_channel_mask Unknown speaker configuration: 64
+0038:fixme:coreaudio:get_channel_mask Unknown speaker configuration: 16
+004c:fixme:path:parse_url failed to parse L"Microsoft.Ink"
+0038:fixme:coreaudio:get_channel_mask Unknown speaker configuration: 16
+0038:fixme:coreaudio:get_channel_mask Unknown speaker configuration: 16
+004c:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A4CBF4 0912CCF4 0912D360 00000000
+004c:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A4CBF4 0912CCF4 0912D360 00000000
+004c:fixme:path:parse_url failed to parse L"w.resources"
+004c:fixme:path:parse_url failed to parse L"w.resources"
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF9FC, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (05272388/0527238C)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+0038:fixme:coreaudio:get_channel_mask Unknown speaker configuration: 64
+0038:fixme:coreaudio:get_channel_mask Unknown speaker configuration: 16
+004f:fixme:avrt:AvSetMmThreadCharacteristicsW (L"Audio",0AF2FDF8): stub
+0053:fixme:ntdll:EtwEventRegister ({6906e6e1-f9cd-5b3b-c846-27578fd8d69e}, 0x3a10806, 0x0, 0x192e380) stub.
+0054:fixme:thread:RtlCreateUserThread stack_reserve != 0 is unimplemented
+0057:fixme:sync:SetWaitableTimerEx (0000046C, 0FDDFD84, 500, 00000000, 00000000, 00000000, 50) semi-stub
+0038:fixme:path:parse_url failed to parse L"osu!ui"
+0038:fixme:path:parse_url failed to parse L"osu!ui.resources"
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A60C4C 0032CD84 0032D3F0 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 05298410 0032CF64 0032D5D0 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 05298410 0032CF64 0032D5D0 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A60C4C 0032CF84 0032D5F0 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A60C4C 0032CF84 0032D5F0 00000000
+0038:fixme:win:RegisterTouchWindow (0x1006c 00000002): stub
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A609D0 0032B404 0032BA70 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 07A609BC 0032B5E4 0032BC50 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 07A609BC 0032B5E4 0032BC50 00000000
+0038:fixme:rawinput:RegisterRawInputDevices Unhandled flags 0x2100 for device 0.
+0038:fixme:rawinput:RegisterRawInputDevices Unhandled flags 0x2100 for device 1.
+0038:fixme:win:RegisterDeviceNotificationA (hwnd=0x1006c, filter=0x32d290,flags=0x00000000) returns a fake device notification handle!
+0038:fixme:ntdll:EtwEventRegister ({35167f8e-49b2-4b96-ab86-435b59336b5e}, 0x3a15cd6, 0x0, 0x1f304d0) stub.
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 5 07A65FAC 0032D0D4 0032D740 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A59CB8 0032D2B4 0032D920 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A59CB8 0032D2B4 0032D920 00000000
+0038:fixme:path:parse_url failed to parse L"osu!gameplay"
+0058:fixme:thread:RtlCreateUserThread stack_reserve != 0 is unimplemented
+0038:fixme:crypt:SystemFunction041 (0x7a12d94, 30, 0): stub [RtlDecryptMemory]
+0038:fixme:crypt:SystemFunction040 (0x7a12d94, 30, 0): stub [RtlEncryptMemory]
+0038:fixme:path:parse_url failed to parse L"osu!gameplay.resources"
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 4 07A4584C 0032D144 0032D7B0 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 07A45838 0032D324 0032D990 00000000
+0038:fixme:combase:RoGetParameterizedTypeInstanceIID stub: 3 07A45838 0032D324 0032D990 00000000
+003d:fixme:path:parse_url failed to parse L"System.Management"
+003d:fixme:path:parse_url failed to parse L"System.Configuration.Install"
+003d:fixme:path:parse_url failed to parse L"Microsoft.JScript"
+0042:fixme:path:parse_url failed to parse L"osu!gameplay.resources"
+0042:fixme:path:parse_url failed to parse L"osu!ui.resources"
+003d:fixme:ole:Context_QueryInterface interface not implemented {51372ae0-cae7-11cf-be81-00aa00a2fa25}
+003d:fixme:wmiutils:wmiutils_cf_QueryInterface interface {b196b28f-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:path_GetInfo some flags are not implemented
+003d:fixme:wmiutils:path_GetInfo some flags are not implemented
+003d:fixme:ole:Context_QueryInterface interface not implemented {51372ae0-cae7-11cf-be81-00aa00a2fa25}
+003d:fixme:wmiutils:wmiutils_cf_QueryInterface interface {b196b28f-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:ole:Context_QueryInterface interface not implemented {51372ae0-cae7-11cf-be81-00aa00a2fa25}
+003d:fixme:wmiutils:wmiutils_cf_QueryInterface interface {b196b28f-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:ole:Context_QueryInterface interface not implemented {51372ae0-cae7-11cf-be81-00aa00a2fa25}
+0045:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0054:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0054:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0054:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+003d:fixme:wbemprox:wbemprox_cf_QueryInterface interface {b196b28f-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wbemprox:wbem_locator_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wbemprox:wbem_locator_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wbemprox:wbem_locator_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wbemprox:wbem_locator_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wbemprox:wbem_locator_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:wbem_locator_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:wbem_locator_ConnectServer authentication not supported
+003d:fixme:wbemprox:wbem_locator_ConnectServer specific locale not supported
+003d:fixme:wbemprox:wbem_locator_ConnectServer unsupported flags
+003d:fixme:wbemprox:client_security_QueryBlanket 
+003d:fixme:wbemprox:client_security_Release 6795D6B8
+003d:fixme:wbemprox:client_security_SetBlanket 6795D6B8, 07A45C40, 4294967295, 0, L"<COLE_DEFAULT_PRINCIPAL>", 2, 3, 00000000, 0x00000020
+003d:fixme:wbemprox:client_security_Release 6795D6B8
+003d:fixme:wbemprox:wbem_services_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wbemprox:wbem_services_QueryInterface interface {b196b283-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wbemprox:wbem_services_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wbemprox:wbem_services_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wbemprox:wbem_services_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wbemprox:wbem_services_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:wbem_services_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+0015:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+0015:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+0015:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+0015:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+003d:fixme:ole:Context_QueryInterface interface not implemented {51372ae0-cae7-11cf-be81-00aa00a2fa25}
+003d:fixme:wmiutils:wmiutils_cf_QueryInterface interface {b196b28f-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:wbem_services_CreateInstanceEnum unsupported flags 0x00000011
+0015:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+0015:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+0015:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+0015:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+003d:fixme:wbemprox:client_security_QueryBlanket 
+003d:fixme:wbemprox:client_security_Release 6795D6B8
+003d:fixme:wbemprox:client_security_SetBlanket 6795D6B8, 07A84E00, 4294967295, 0, L"<COLE_DEFAULT_PRINCIPAL>", 2, 3, 00000000, 0x00000020
+003d:fixme:wbemprox:client_security_Release 6795D6B8
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {b196b283-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:client_security_QueryBlanket 
+003d:fixme:wbemprox:client_security_Release 6795D6B8
+003d:fixme:wbemprox:client_security_SetBlanket 6795D6B8, 07A45BA8, 4294967295, 0, L"<COLE_DEFAULT_PRINCIPAL>", 2, 3, 00000000, 0x00000020
+003d:fixme:wbemprox:client_security_Release 6795D6B8
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {b196b283-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:enum_class_object_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:class_object_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wbemprox:class_object_QueryInterface interface {b196b283-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wbemprox:class_object_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wbemprox:class_object_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wbemprox:class_object_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wbemprox:class_object_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wbemprox:class_object_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:ole:Context_QueryInterface interface not implemented {51372ae0-cae7-11cf-be81-00aa00a2fa25}
+003d:fixme:wmiutils:wmiutils_cf_QueryInterface interface {b196b28f-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:path_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:wmiutils_cf_QueryInterface interface {b196b28f-bab4-101a-b69c-00aa00341d07} not implemented
+003d:fixme:wmiutils:status_code_QueryInterface interface {c3fcc19e-a970-11d2-8b5a-00a0c9b7c9c4} not implemented
+003d:fixme:wmiutils:status_code_QueryInterface interface {af86e2e0-b12d-4c6a-9c5a-d7aa65101e90} not implemented
+003d:fixme:wmiutils:status_code_QueryInterface interface {ecc8691b-c1db-4dc0-855e-65f6c551af49} not implemented
+003d:fixme:wmiutils:status_code_QueryInterface interface {94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90} not implemented
+003d:fixme:wmiutils:status_code_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:status_code_QueryInterface interface {00000144-0000-0000-c000-000000000046} not implemented
+003d:fixme:wmiutils:status_code_GetErrorCodeText 07A833E0, 0x80041002, 0x0000, 0x00000001, 058EF488
+003d:fixme:crypt:SystemFunction041 (0x7a12d94, 30, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12d94, 30, 0): stub [RtlEncryptMemory]
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF9FC, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF81C, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003d:fixme:crypt:SystemFunction041 (0x7a12d94, 30, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12d94, 30, 0): stub [RtlEncryptMemory]
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF9FC, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003d:fixme:secur32:schan_get_cipher_algid Don't know CALG for encryption algorithm 2, returning 0
+003d:fixme:secur32:schan_imp_get_max_message_size Returning 1 << 14.
+003d:fixme:secur32:schan_get_cipher_algid Don't know CALG for encryption algorithm 2, returning 0
+003d:fixme:crypt:SystemFunction041 (0x7a12d94, 30, 0): stub [RtlDecryptMemory]
+003d:fixme:crypt:SystemFunction040 (0x7a12d94, 30, 0): stub [RtlEncryptMemory]
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF9FC, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF984, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+0060:fixme:secur32:schan_get_cipher_algid Don't know CALG for encryption algorithm 2, returning 0
+0060:fixme:secur32:schan_imp_get_max_message_size Returning 1 << 14.
+0060:fixme:secur32:schan_get_cipher_algid Don't know CALG for encryption algorithm 2, returning 0
+0045:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0058:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0058:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0058:fixme:thread:NtGetCurrentProcessorNumber need multicore support (4 processors)
+0038:fixme:crypt:SystemFunction041 (0x7a12d94, 30, 0): stub [RtlDecryptMemory]
+0038:fixme:crypt:SystemFunction040 (0x7a12d94, 30, 0): stub [RtlEncryptMemory]
+004f:fixme:avrt:AvRevertMmThreadCharacteristics (12345678): stub
+003a:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+003a:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+003a:fixme:win:UnregisterDeviceNotification (handle=0xcafecafe), STUB!
+003a:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+003a:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF644, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
+003a:fixme:ole:Context_CC_ContextCallback (07A7D880/07A7D884)->(00CD1218, 037DF5CC, {d7174f82-36b8-4aa8-800a-e963ab2dfab9}, 2, 00000000)
