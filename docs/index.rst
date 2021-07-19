@@ -76,7 +76,7 @@ Sitemap
 
 .. toctree::
    :maxdepth: 1
-   :caption: Installing osu!
+   :caption: Installation
 
    install/choose
    install/silicon
@@ -120,10 +120,11 @@ Sitemap
 
 .. toctree::
    :maxdepth: 1
-   :caption: About this project
+   :caption: About osu!mac
 
    about/resources
    about/templates
+   about/logs
    about/contributing
    about/acknowledgements
    about/contact
