@@ -36,7 +36,7 @@ Memory:	8 GB
 System Firmware Version:	429.120.4.0.0
 SMC Version (system):	2.36f102 
 
-Detailed CPU information available in [machdep.cpu.txt](machdep.cpu.txt)
+Detailed CPU information available in [machdep.cpu.log](machdep.cpu.log)
 
 ## Binary
 
