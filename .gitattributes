@@ -1,4 +1,2 @@
 # Properly detect languages on GitHub
-docs/*.rst linguist-detectable=true
-docs/*/*.rst linguist-detectable=true
-*.rst linguist-language=reStructuredText
+*.rst linguist-detectable=true
