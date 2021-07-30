@@ -1,3 +1,4 @@
 # Properly detect languages on GitHub
 *.rst linguist-detectable=true
 src/* linguist-vendored
+src/*/* linguist-vendored
