@@ -3,6 +3,3 @@
 docs/* linguist-documentation=false
 src/* linguist-vendored
 src/*/* linguist-vendored
-*.c linguist-detectable=false
-*.sh linguist-detectable=false
-Makeile linguist-detectable=false
