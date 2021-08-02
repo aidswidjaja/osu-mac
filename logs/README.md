@@ -2,7 +2,7 @@
 
 This folder contains examples of healthy log files that can be used as a reference point.
 
-## Wineskin
+## CX64Bit19.0.1-1 Wineskin
 
 Version 11.4 (Build 20F71)
 Engine: WS11WineCX64Bit19.0.1-1
@@ -16,6 +16,23 @@ Compatibility mode is disabled
 System Integrity Protection is enabled
 Engine version is supported
 Razer Synapse is absents
+Log file: update.log is absent
+No errors in: runtime.log
+
+## CX20.0.2 Wineskin
+
+Version 11.4 (Build 20F71)
+Engine: WS11WineCX20.0.2
+Wineskin 2.9.0.7-rc4
+Release: Stable40
+Quarantine attribute is absent (bundle)
+Quarantine attribute is absent (wrapper)
+Execute flag is present
+Detect Direct3D is disabled
+Compatibility mode is disabled
+System Integrity Protection is enabled
+Engine version is supported
+Razer Synapse is absent
 Log file: update.log is absent
 No errors in: runtime.log
 
