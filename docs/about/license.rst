@@ -35,7 +35,7 @@ It is our policy to respond to notices of alleged infringement that comply with 
 Infringement Notification
 =========================
 
-To file a notice of infringement with us, **please send an email** to `nstyvm@gmail.com <mailto:nstyvm@gmailcom?DMCA>`_.
+To file a notice of infringement with us, **please send an email** to `takedowns@adrian.id.au <mailto:takedowns@adrian.id.au?DMCA>`_.
 
 IMPORTANT: Misrepresentations made in your notice regarding whether material or activity is infringing may expose you to liability for damages (including costs and attorneys' fees). Courts have found that you must consider copyright defenses, limitations or exceptions before sending a notice. In one case involving online content, a company paid more than $100,000 in costs and attorneys fees after targeting content protected by the U.S. fair use doctrine. Accordingly, if you are not sure whether material available online infringes your copyright, we suggest that you first contact an attorney.
 
@@ -75,8 +75,6 @@ where under Part III, Division 4A, s47AB:
         (a)  incorporated in, or associated with, a computer program; and
         (b)  essential to the effective operation of a function of that
              computer program.
-
-As you can see, I've been doing Legal Studies at school, except we're doing employment law.
 
 ****
 
