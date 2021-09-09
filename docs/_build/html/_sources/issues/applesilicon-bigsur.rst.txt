@@ -17,7 +17,7 @@ Behaviour
 
 We are currently investigating reports of issues being experienced on Apple Silicon devices, as well as both Intel x86-powered and Apple Silicon devices running macOS Big Sur. Behaviour includes:
 
-- Command prompt window displaying for a few seconds, then the process crashing
+- `Command prompt window displaying for a few seconds, then the process crashing <commandprompt.rst>`_
 - osu! not starting when clicking
 - Low-level errors within Test Run logs, including .NET framework GC and binary translation errors
 

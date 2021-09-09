@@ -42,7 +42,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly" href="gdiplus-cjkfonts.html" />
+    <link rel="next" title="Command prompt window showing before osu! crashes" href="commandprompt.html" />
     <link rel="prev" title="Apple Silicon / Big Sur issues" href="applesilicon-bigsur.html" /> 
 </head>
 
@@ -85,7 +85,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">Installing osu!</span></p>
+              <p class="caption"><span class="caption-text">Installation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../install/choose.html">Which Wineskin should I get?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../install/silicon.html">Technocoder’s Wineskin with support for Apple Silicon under Rosetta 2</a></li>
@@ -116,6 +116,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#related-links">Related links</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="commandprompt.html">Command prompt window showing before osu! crashes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="start.html">Startup issues</a></li>
@@ -127,11 +128,11 @@
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">About this project</span></p>
+<p class="caption"><span class="caption-text">About osu!mac</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/templates.html">Support templates</a></li>
@@ -229,7 +230,11 @@
 <hr class="docutils" />
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
-<p>Firstly, make sure you’re using the latest Wineskin available, which you can get from <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">this thread</a>. If you’re on a Apple Silicon device, try running both the Rosetta and Intel Wineskins. They’ve been updated with beta WineskinServer versions from Gcenx, as part of our attempts to overcome this issue.</p>
+<p>Firstly, make sure you’re using the latest Wineskin available, which you can get from <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">this thread</a>. If you’re on a Apple Silicon device, try running both the Rosetta and Intel Wineskins. They’ve been updated with beta WineskinServer versions from <a class="reference external" href="https://github.com/Gcenx/">Gcenx</a>, as part of our attempts to overcome this issue.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sometimes, you may need to click the osu! icon more than once in order to begin the process.</p>
+</div>
 <p>If your Wineskin is still not working, ensure you are actually experiencing this issue by following our <a class="reference external" href="troubleshooting.html">Troubleshooting</a> steps.</p>
 <p>Still experiencing issues? In that case, we’ll need to dig deeper. Try each of the options below in order, and see if that fixes your issue. If it does, <strong>let us know</strong> on the <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">forum thread</a> so we can help you and other people better.</p>
 <div class="section" id="running-through-command-prompt">
@@ -240,10 +245,9 @@
 <li><p>Open <strong>Wineskin</strong>.</p></li>
 <li><p>Click <strong>Advanced</strong>, then navigate to the <strong>Tools</strong> tab.</p></li>
 <li><p>Click <strong>Command Line (cmd)</strong> located under the Wine Tools heading.</p></li>
-<li><p>It’ll take some time for a console window to appear. Here, run the following command:</p></li>
+<li><p>It’ll take some time for a console window to appear. When it does, run the following command:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ../../osu!
-start osu!
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>start ../../osu!/osu!.exe
 </pre></div>
 </div>
 <p>On a working installation, osu! should start (albeit with performance issues). If this command fails, please screenshot the output and let us know on the <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">forum thread</a>.</p>
@@ -311,7 +315,7 @@ start osu!
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="gdiplus-cjkfonts.html" class="btn btn-neutral float-right" title="osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="commandprompt.html" class="btn btn-neutral float-right" title="Command prompt window showing before osu! crashes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="applesilicon-bigsur.html" class="btn btn-neutral float-left" title="Apple Silicon / Big Sur issues" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -335,7 +339,7 @@ start osu!
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10820fd00>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10c0d3af0>
 <br><br>
 <div class="customfooter">
     <strong>
