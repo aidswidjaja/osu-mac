@@ -32,7 +32,7 @@ Report alleged copyright infringement
 
 It is our policy to respond to notices of alleged infringement that comply with the Digital Millennium Copyright Act (the text of which can be found at the U.S. Copyright Office Web Site, http://www.copyright.gov) and other applicable intellectual property laws. Our response may include removing or disabling access to material claimed to be the subject of infringing activity and/or terminating subscribers.
 
-Infringement Notification
+Infringement notification
 =========================
 
 To file a notice of infringement with us, **please send an email** to `takedowns@adrian.id.au <mailto:takedowns@adrian.id.au?DMCA>`_.
