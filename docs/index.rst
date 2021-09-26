@@ -118,6 +118,9 @@ Sitemap
    :maxdepth: 1
    :caption: Advanced troubleshooting
 
+   advanced/index
+   advanced/silentcrash
+
 .. toctree::
    :maxdepth: 1
    :caption: About osu!mac
