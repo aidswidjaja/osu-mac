@@ -49,6 +49,8 @@ In any case however, the osu! executable is an entirely valid PE32 executable. I
 
 However, WineHQ AppDB [bug 50111](https://bugs.winehq.org/show_bug.cgi?id=50111) does in fact show a regression introduced with the osu! executable as I had initially suspected. However, this regression was dated with osu-stable 20201110 and produced a Wine Mono error. Furthermore, notably osu! produces a crash error, which does not exist on our own user reports. Only `user report #2 <https://osu.ppy.sh/community/forums/posts/8221806>`_ mimics this behaviour.
 
+.. code-block:: bash
+
     0204:fixme:wmiutils:status_code_GetErrorCodeText 103EB910, 0x80041002, 0x0000, 0x00000001, 0C74F374
 
 User reports have mostly died down for now. Updating dotnet, which is the recommended resolution in 50111 (and the previously offered resolution), should continue to be recommended to users.
