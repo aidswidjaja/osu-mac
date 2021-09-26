@@ -40,8 +40,8 @@ Regression testing
 
 Considering this issue popped up with the first confirmed user report on 11 July 2021, it could have possibly been a regression within the osu! executable. The Wineskin was last updated on 15 February 2021, and the issue is persistent across both Apple Silicon and i386 Wineskins. Looking through the osu! changelogs from around this time, there is a particularly interesting `changelog update <https://osu.ppy.sh/home/changelog/stable40/20210519.3>`_ dated 19 May 2021.
 
-    **Improve reliability of beatmap detail fetches**
-    Fixes a startup race condition that could randomly cause beatmaps to get stuck in an "unknown" status rather than fetching their online details successfully. Any beatmaps already in this state will automatically check for new details each startup.
+    |**Improve reliability of beatmap detail fetches**
+    |Fixes a startup race condition that could randomly cause beatmaps to get stuck in an "unknown" status rather than fetching their online details successfully. Any beatmaps already in this state will automatically check for new details each startup.
 
 We don't have access to the source for stable, and we don't know how this logic was implemented. Searching the osu!dev Discord server brought about limited results too. 
 
@@ -49,9 +49,7 @@ In any case however, the osu! executable is an entirely valid PE32 executable. I
 
 However, WineHQ AppDB [bug 50111](https://bugs.winehq.org/show_bug.cgi?id=50111) does in fact show a regression introduced with the osu! executable as I had initially suspected. However, this regression was dated with osu-stable 20201110 and produced a Wine Mono error. Furthermore, notably osu! produces a crash error, which does not exist on our own user reports. Only `user report #2 <https://osu.ppy.sh/community/forums/posts/8221806>`_ mimics this behaviour.
 
-```
-0204:fixme:wmiutils:status_code_GetErrorCodeText 103EB910, 0x80041002, 0x0000, 0x00000001, 0C74F374
-```
+    0204:fixme:wmiutils:status_code_GetErrorCodeText 103EB910, 0x80041002, 0x0000, 0x00000001, 0C74F374
 
 User reports have mostly died down for now. Updating dotnet, which is the recommended resolution in 50111 (and the previously offered resolution), should continue to be recommended to users.
 
@@ -84,31 +82,32 @@ This program is currently under development.
 
     Requires lldb-340.4.119 (Xcode 7.2) or greater
 
-```bash
-   -b 
-   --batch 
-        Tells the debugger to running the commands from -s, -S, -o & -O,
-        and then quit.  However if any run command stopped due to a signal
-        or crash, the debugger will return to the interactive prompt at the
-        place of the crash.
+.. code-block:: bash
 
-   -o 
-   --one-line 
-        Tells the debugger to execute this one-line lldb command after any
-        file provided on the command line has been loaded.
+    -b 
+    --batch 
+            Tells the debugger to running the commands from -s, -S, -o & -O,
+            and then quit.  However if any run command stopped due to a signal
+            or crash, the debugger will return to the interactive prompt at the
+            place of the crash.
 
-   -k 
-   --one-line-on-crash 
-        When in batch mode, tells the debugger to execute this one-line
-        lldb command if the target crashes.
+    -o 
+    --one-line 
+            Tells the debugger to execute this one-line lldb command after any
+            file provided on the command line has been loaded.
 
-```
+    -k 
+    --one-line-on-crash 
+            When in batch mode, tells the debugger to execute this one-line
+            lldb command if the target crashes.
 
-   --one-line-on-crash 
+
 
 .. todo::
 
     Run immediate backtrace on startup - this is where the game is quitting for end-users. And you should run it on a M1 as well
+
+***
 
 ****************************************
 List of user reports
@@ -132,6 +131,8 @@ Other user issues
 .. todo::
 
     Need to add cpu core priority/affinity to end user troubleshooting
+
+***
 
 ****************************************
 Acknowledgements
