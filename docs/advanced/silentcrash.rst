@@ -109,7 +109,7 @@ This program is currently under development.
 
     Run immediate backtrace on startup - this is where the game is quitting for end-users. And you should run it on a M1 as well
 
-***
+*****
 
 ****************************************
 List of user reports
@@ -134,7 +134,7 @@ Other user issues
 
     Need to add cpu core priority/affinity to end user troubleshooting
 
-***
+*****
 
 ****************************************
 Acknowledgements
