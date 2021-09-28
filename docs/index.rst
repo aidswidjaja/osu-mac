@@ -108,6 +108,7 @@ Sitemap
    issues/wontclose
    issues/malware
    issues/macos-agent
+   issues/agent-crash
    issues/discord-10-14
    issues/discord-10-15
    issues/discord-disc

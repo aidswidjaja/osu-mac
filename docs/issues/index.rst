@@ -20,6 +20,7 @@ Here's a repository of common issues (and potential fixes) other users have expe
 - `osu! won't close (update loop or otherwise) <wontclose.html>`_
 - `osu! is being detected as malware <malware.html>`_
 - `Pointing osu!macOS Agent to your osu! install location <macos-agent.html>`_
+- `osu!macOS Agent crashes on startup <agent-crash.html>`_
 - `Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer) <discord-10-14.html>`_
 - `Discord Rich Presence (64-bit Wineskins / WS11 WineskinServer) <discord-10-15.html>`_
 - `Discord Rich Presence (Discussion) <discord-disc.html>`_
