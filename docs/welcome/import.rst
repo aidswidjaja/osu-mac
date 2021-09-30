@@ -69,10 +69,10 @@ You can set up osu! to automatically open and import a beatmap or skin when you 
 2. Right click on **osu!.app**
 3. Click **Show Package Contents**
 4. Navigate to ``drive_c/osu!/Songs`` and drag & drop your ``osz`` or ``osk`` beatmap into there
-4. Go back a few folders until you reach **Wineskin.app**, and click to pen it!
-5. Click **Advanced**. You should see a screen like the one below
+5. Go back a few folders until you reach **Wineskin.app**, and click to pen it!
+6. Click **Advanced**. You should see a screen like the one below
 
-.. image:: assets/wineskin-extension.png
+.. image:: ../assets/wineskin-extension.png
     :alt: Wineskin options showing Associated Extensions.
 
 Note the Associated Extensions section. If the ``osz2``, ``osr``, ``osz`` and ``osu`` extensions aren't there, add them using the + button.
@@ -84,7 +84,7 @@ To verify that this has all been set up correctly:
 8. Navigate to ``My Computer\osu!\Songs`` in the window that appears and locate the osz beatmap you just dropped
 9. Right click on the file, click **Properties** and verify it worked. It should look like the image below.
 
-.. image:: assets/properties-extension.png
+.. image:: ../assets/properties-extension.png
     :alt: Wine Explorer showing Properties for osz extensions.
 
 .. note::
