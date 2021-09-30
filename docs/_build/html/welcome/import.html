@@ -119,6 +119,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/commandprompt.html">Command prompt window showing before osu! crashes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/monterey.html">osu! doesn’t run on macOS Monterey</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
@@ -128,14 +129,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/agent-crash.html">osu!macOS Agent crashes on startup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/silentcrash.html">SilentCrash</a></li>
 </ul>
 <p class="caption"><span class="caption-text">About osu!mac</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/templates.html">Support templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/logs.html">Logs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/acknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/contact.html">Contact</a></li>
@@ -270,11 +278,11 @@
 <li><p>Download a random osu beatmap or skin (and get the osz file)</p></li>
 <li><p>Right click on <strong>osu!.app</strong></p></li>
 <li><p>Click <strong>Show Package Contents</strong></p></li>
+<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">drive_c/osu!/Songs</span></code> and drag &amp; drop your <code class="docutils literal notranslate"><span class="pre">osz</span></code> or <code class="docutils literal notranslate"><span class="pre">osk</span></code> beatmap into there</p></li>
+<li><p>Go back a few folders until you reach <strong>Wineskin.app</strong>, and click to pen it!</p></li>
+<li><p>Click <strong>Advanced</strong>. You should see a screen like the one below</p></li>
 </ol>
-<p>4. Navigate to <code class="docutils literal notranslate"><span class="pre">drive_c/osu!/Songs</span></code> and drag &amp; drop your <code class="docutils literal notranslate"><span class="pre">osz</span></code> or <code class="docutils literal notranslate"><span class="pre">osk</span></code> beatmap into there
-4. Go back a few folders until you reach <strong>Wineskin.app</strong>, and click to pen it!
-5. Click <strong>Advanced</strong>. You should see a screen like the one below</p>
-<img alt="Wineskin options showing Associated Extensions." src="welcome/assets/wineskin-extension.png" />
+<img alt="Wineskin options showing Associated Extensions." src="../_images/wineskin-extension.png" />
 <p>Note the Associated Extensions section. If the <code class="docutils literal notranslate"><span class="pre">osz2</span></code>, <code class="docutils literal notranslate"><span class="pre">osr</span></code>, <code class="docutils literal notranslate"><span class="pre">osz</span></code> and <code class="docutils literal notranslate"><span class="pre">osu</span></code> extensions aren’t there, add them using the + button.</p>
 <p>To verify that this has all been set up correctly:</p>
 <ol class="arabic simple" start="6">
@@ -283,7 +291,7 @@
 <li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Computer\osu!\Songs</span></code> in the window that appears and locate the osz beatmap you just dropped</p></li>
 <li><p>Right click on the file, click <strong>Properties</strong> and verify it worked. It should look like the image below.</p></li>
 </ol>
-<img alt="Wine Explorer showing Properties for osz extensions." src="welcome/assets/properties-extension.png" />
+<img alt="Wine Explorer showing Properties for osz extensions." src="../_images/properties-extension.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This method tends to be more unreliable than the others listed and you may experience varying degrees of success.</p>
@@ -404,7 +412,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10c2df250>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x106e6e370>
 <br><br>
 <div class="customfooter">
     <strong>

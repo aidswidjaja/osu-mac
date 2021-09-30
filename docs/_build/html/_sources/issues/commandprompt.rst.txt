@@ -14,4 +14,4 @@ When trying to start osu! you see a command prompt window like this one:
 .. image:: ../assets/osu-cmd-crash.png
     :alt: osu! showing command prompt window before terminating.
 
-This error message is safe to ignore (as it relates to incompatibilities within Discord Rich Presence) and is separate to any issue you may experience in trying to get the game to run. If you're experiencing this issue, you should check out our `.NET runtime issues <dotnet.html>`_ troubleshooting page instead.
+This error message is safe to ignore (as it relates to incompatibilities within Discord Rich Presence) and is separate to any issue you may experience in trying to get the game to run. If you're experiencing an issue with getting osu! to run, you should check out our `.NET runtime issues <dotnet.html>`_ troubleshooting page instead.

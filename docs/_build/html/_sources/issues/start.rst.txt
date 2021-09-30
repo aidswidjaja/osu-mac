@@ -37,7 +37,7 @@ We are currently aware of a number of known issues that may be affecting your ab
 Resolution
 ****************************************
 
-Firstly, ensure that your Wineskin isn't corrupt by reinstalling it, and extracting the .zip file with `The Unarchiver <https://theunarchiver.com/>`_. You should also ensure that no anti-virus software is intefering with osu!, and try downloading a different Wineskin if one isn't working.
+Firstly, ensure that your Wineskin isn't corrupt by reinstalling it, and extracting the .zip file with `The Unarchiver <https://theunarchiver.com/>`_. You should also ensure that no anti-virus software is intefering with osu!, and try downloading a different Wineskin if one isn't working. Kill any osu! or wine related processes in Activity Monitor in case they are hanging over after you shut down osu!.
 
 ========================================
 .NET runtime issues

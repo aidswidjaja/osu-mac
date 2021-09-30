@@ -119,6 +119,7 @@
 <li class="toctree-l1"><a class="reference internal" href="commandprompt.html">Command prompt window showing before osu! crashes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monterey.html">osu! doesn’t run on macOS Monterey</a></li>
 <li class="toctree-l1"><a class="reference internal" href="start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
@@ -128,14 +129,21 @@
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agent-crash.html">osu!macOS Agent crashes on startup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/silentcrash.html">SilentCrash</a></li>
 </ul>
 <p class="caption"><span class="caption-text">About osu!mac</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/templates.html">Support templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/logs.html">Logs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/acknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../about/contact.html">Contact</a></li>
@@ -220,7 +228,12 @@
 <div class="section" id="behaviour">
 <h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
 <p>You experience issues with the .NET framework which osu! relies on.</p>
-<p>This is best diagnosed through a Wineskin <a class="reference external" href="troubleshooting.html#generating-logs-for-wineskin">Test Run</a>. If you’re experiencing .NET issues, you may receive one of the following console outputs:</p>
+<p>This is best diagnosed through a Wineskin <a class="reference external" href="troubleshooting.html#generating-logs-for-wineskin">Test Run</a>. If you’re experiencing .NET issues, you may receive the following console output:</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="m">0033</span><span class="p">:</span><span class="n">fixme</span><span class="p">:</span><span class="n">advapi</span><span class="p">:</span><span class="n">RegisterEventSourceW</span> <span class="p">((</span><span class="k">null</span><span class="p">),</span><span class="n">L</span><span class="s">&quot;.NET Runtime&quot;</span><span class="p">):</span> <span class="n">stub</span>
+<span class="m">0033</span><span class="p">:</span><span class="n">fixme</span><span class="p">:</span><span class="n">advapi</span><span class="p">:</span><span class="n">ReportEventW</span> <span class="p">(</span><span class="m">0</span><span class="n">xcafe4242</span><span class="p">,</span><span class="m">0</span><span class="n">x0001</span><span class="p">,</span><span class="m">0</span><span class="n">x0000</span><span class="p">,</span><span class="m">0</span><span class="n">x000003ff</span><span class="p">,</span><span class="m">0</span><span class="n">x0</span><span class="p">,</span><span class="m">0</span><span class="n">x0001</span><span class="p">,</span><span class="m">0</span><span class="n">x00000000</span><span class="p">,</span><span class="m">0</span><span class="n">x31d64c</span><span class="p">,</span><span class="m">0</span><span class="n">x0</span><span class="p">):</span> <span class="n">stub</span>
+<span class="m">0033</span><span class="p">:</span><span class="n">err</span><span class="p">:</span><span class="n">eventlog</span><span class="p">:</span><span class="n">ReportEventW</span> <span class="n">L</span><span class="s">&quot;Application: osu!.exe\nFramework Version: v4.0.30319\nDescription: The process was terminated due to an internal error in the .NET Runtime at IP 00E03BED (00D90000) with exit code 80131506.\n&quot;</span>
+</pre></div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="cause">
@@ -339,7 +352,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10c0d3af0>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x1123434c0>
 <br><br>
 <div class="customfooter">
     <strong>

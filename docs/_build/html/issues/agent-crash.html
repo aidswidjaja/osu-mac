@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Startup issues &mdash; osu!mac</title>
+  <title>osu!macOS Agent crashes on startup &mdash; osu!mac</title>
   
 
   
@@ -42,8 +42,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem" href="wineskin.html" />
-    <link rel="prev" title="osu! doesn’t run on macOS Monterey" href="monterey.html" /> 
+    <link rel="next" title="Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)" href="discord-10-14.html" />
+    <link rel="prev" title="Pointing osu!macOS Agent to your osu! install location" href="macos-agent.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -109,17 +109,7 @@
 <li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
 <li class="toctree-l1"><a class="reference internal" href="monterey.html">osu! doesn’t run on macOS Monterey</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Startup issues</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#net-runtime-issues">.NET runtime issues</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bypassing-the-startup-sequence">Bypassing the startup sequence</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
@@ -128,7 +118,13 @@
 <li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="agent-crash.html">osu!macOS Agent crashes on startup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">osu!macOS Agent crashes on startup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#behaviour">Behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cause">Cause</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolution">Resolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#if-that-didn-t-work">If that didn’t work</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
@@ -192,13 +188,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Startup issues</li>
+      <li>osu!macOS Agent crashes on startup</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/issues/start.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/issues/agent-crash.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -211,62 +207,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="startup-issues">
-<h1>Startup issues<a class="headerlink" href="#startup-issues" title="Permalink to this headline">¶</a></h1>
+  <p><a class="reference external" href="https://github.com/Techno-coder/osu-macOS-Agent/commit/f722c9d6e0a933ed14c65025c182b8068407890f">https://github.com/Techno-coder/osu-macOS-Agent/commit/f722c9d6e0a933ed14c65025c182b8068407890f</a></p>
+<div class="section" id="osu-macos-agent-crashes-on-startup">
+<h1>osu!macOS Agent crashes on startup<a class="headerlink" href="#osu-macos-agent-crashes-on-startup" title="Permalink to this headline">¶</a></h1>
 <div class="wineskin-version line-block">
-<div class="line">This article is applicable to the following wrappers:</div>
-<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7367239">Experimental Wineskin with macOS Catalina 10.15 support</a></div>
+<div class="line">This article is applicable to:</div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">osu!macOS Agent</a></div>
 </div>
 <hr class="docutils" />
 <div class="section" id="behaviour">
 <h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
-<p>osu! has some trouble starting up, for example:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678?start=7540911">It updates each time you open it</a></p></li>
-<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678?start=7540911">You need to launch the game twice, since the first time always crashes</a></p></li>
-<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/8162613">Startup will take 1-2 minutes</a></p></li>
-</ul>
-<p>or the game will refuse to start up at all.</p>
+<p>osu!macOS Agent crashes when you attempt to start it.</p>
+<p>To diagnose the issue, move osu!macOS Agent to the Desktop and run the following command in Terminal.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>~/Desktop/osu\!macOS\ Agent.app/Contents/MacOS/osu\!macOS\ Agent
+</pre></div>
+</div>
+<p>Versions of osu!macOS Agent affected by this bug will receive the following output.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>zsh: killed ~/Desktop/osu!macOS\ Agent.app/Contents/MacOS/osu!macOS\ Agent
+</pre></div>
+</div>
 </div>
 <hr class="docutils" />
 <div class="section" id="cause">
 <h2>Cause<a class="headerlink" href="#cause" title="Permalink to this headline">¶</a></h2>
-<p>There could be a large number of factors causing this issue. The best way to understand what’s going on is to diagnose it through basic <a class="reference external" href="troubleshooting.html">Troubleshooting Steps</a>, especially an osu!macOS Agent Report and Wineskin Test Run.</p>
-<p>We are currently aware of a number of known issues that may be affecting your ability to start the game consistently, so let us know about your issues and troubleshooting steps on the <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">osu! forum thread</a>.</p>
+<p>Older versions of osu!macOS Agent may crash on newer versions of macOS due to a <a class="reference external" href="https://github.com/Techno-coder/osu-macOS-Agent/commit/f722c9d6e0a933ed14c65025c182b8068407890f">build environment variable</a>.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="resolution">
 <h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
-<p>Firstly, ensure that your Wineskin isn’t corrupt by reinstalling it, and extracting the .zip file with <a class="reference external" href="https://theunarchiver.com/">The Unarchiver</a>. You should also ensure that no anti-virus software is intefering with osu!, and try downloading a different Wineskin if one isn’t working. Kill any osu! or wine related processes in Activity Monitor in case they are hanging over after you shut down osu!.</p>
-<div class="section" id="net-runtime-issues">
-<h3>.NET runtime issues<a class="headerlink" href="#net-runtime-issues" title="Permalink to this headline">¶</a></h3>
-<p>Our <a class="reference external" href="dotnet.html">.NET runtime issues</a> troubleshooting page contains a number of steps you can attempt if you’re explicitly having trouble with the .NET runtime behind osu!</p>
-</div>
-<div class="section" id="bypassing-the-startup-sequence">
-<h3>Bypassing the startup sequence<a class="headerlink" href="#bypassing-the-startup-sequence" title="Permalink to this headline">¶</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>This section only applies to users using the</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7367239">experimental macOS Catalina Wineskin</a>.</p>
-<p>You are recommended to use the <a class="reference external" href="https://osu.ppy.sh/community/forums/posts/7560723">latest Wineskin with Apple Silicon support</a> instead.</p>
-</div>
-<p>In older Wineskins, you can bypass the startup sequence entirely. Technocoder found a <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=7443024">workaround</a> that will hopefully mitigate your startup troubles:</p>
-<ol class="arabic simple">
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">osu!</span></code> folder (Right click osu! &gt; Show Package Contents &gt; drive_c &gt; osu!)</p></li>
-<li><p>Create a new file in this location named <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code> (with .bat as the extension)</p></li>
-<li><p>Type in: <code class="docutils literal notranslate"><span class="pre">start</span> <span class="pre">C:\osu!\osu!.exe</span> <span class="pre">-nosplash</span></code></p></li>
-<li><p>Save <code class="docutils literal notranslate"><span class="pre">execute.bat</span></code></p></li>
-<li><p>Open <strong>Wineskin</strong> (Right click osu! &gt; Show Package Contents &gt; Wineskin)</p></li>
-<li><p>Click <strong>Advanced</strong></p></li>
-<li><p>Change the <strong>Windows EXE</strong> field to: <code class="docutils literal notranslate"><span class="pre">&quot;C:\osu!\execute.bat&quot;</span></code> (including the outer quotes)</p></li>
-<li><p>Close Wineskin</p></li>
-</ol>
-<p>In newer Wineskins, this feature is already built in.</p>
-</div>
+<p>Please download the latest version of osu!macOS Agent. This issue was fixed on 27 September 2021.</p>
+<ul class="simple">
+<li><p><strong>osu! forum thread:</strong> <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678?n=1">community/forums/topics/1036678</a></p></li>
+</ul>
 </div>
 <hr class="docutils" />
 <div class="section" id="if-that-didn-t-work">
 <h2>If that didn’t work<a class="headerlink" href="#if-that-didn-t-work" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=7443024">This method isn’t fullproof</a>, but it’s certainly the best one currently available. If you’re still having trouble, visit the <a class="reference external" href="troubleshooting.html">Troubleshooting</a> page and let us know on the <a class="reference external" href="https://osu.ppy.sh/community/forums/5">forums</a>.</p>
+<p>Please make a reply on <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1036678">this osu! forum thread</a> with a detailed explanation of your issue.</p>
 </div>
 </div>
 
@@ -278,10 +255,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="wineskin.html" class="btn btn-neutral float-right" title="Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="discord-10-14.html" class="btn btn-neutral float-right" title="Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="monterey.html" class="btn btn-neutral float-left" title="osu! doesn’t run on macOS Monterey" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="macos-agent.html" class="btn btn-neutral float-left" title="Pointing osu!macOS Agent to your osu! install location" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -302,7 +279,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x106d2ac70>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x107082fa0>
 <br><br>
 <div class="customfooter">
     <strong>

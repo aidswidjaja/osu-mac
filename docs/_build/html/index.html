@@ -107,6 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="issues/commandprompt.html">Command prompt window showing before osu! crashes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/monterey.html">osu! doesn’t run on macOS Monterey</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
@@ -116,14 +117,21 @@
 <li class="toctree-l1"><a class="reference internal" href="issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/agent-crash.html">osu!macOS Agent crashes on startup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced/index.html">Advanced troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/silentcrash.html">SilentCrash</a></li>
 </ul>
 <p class="caption"><span class="caption-text">About osu!mac</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="about/resources.html">Other resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about/templates.html">Support templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/logs.html">Logs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about/contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about/acknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about/contact.html">Contact</a></li>
@@ -219,10 +227,6 @@
 <li><p>Our commmunity support members are volunteers, ranging from osu! support team members to people helping out in their free time. A response may take upwards to a week, although generally you should receive one within a day or two.</p></li>
 </ul>
 </div>
-<div class="section" id="provide-feedback-on-our-docs">
-<h3>Provide feedback on our docs<a class="headerlink" href="#provide-feedback-on-our-docs" title="Permalink to this headline">¶</a></h3>
-<p>We want our community documentation to become continually better. <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLScytg73ab9KgzbLzDNqpyaiw6gQtHhZhEjGjZBBLqYML-SeXQ/viewform?usp=sf_link">Fill out this 5 question Google Form to let us know how we went.</a>.</p>
-</div>
 <div class="section" id="other-options">
 <h3>Other options<a class="headerlink" href="#other-options" title="Permalink to this headline">¶</a></h3>
 <p>If you prefer, other options are available, including the official (but abandoned) Wineskin from ppy, or other alternatives (that won’t let you play ranked). These docs won’t cover these options in great detail but they’re pretty straightforward to get started with.</p>
@@ -276,6 +280,7 @@
 <li class="toctree-l1"><a class="reference internal" href="issues/commandprompt.html">Command prompt window showing before osu! crashes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/monterey.html">osu! doesn’t run on macOS Monterey</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
@@ -285,9 +290,17 @@
 <li class="toctree-l1"><a class="reference internal" href="issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/agent-crash.html">osu!macOS Agent crashes on startup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Advanced troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced/index.html">Advanced troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced/silentcrash.html">SilentCrash</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
@@ -295,6 +308,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="about/resources.html">Other resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about/templates.html">Support templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/logs.html">Logs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about/contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about/acknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about/contact.html">Contact</a></li>
@@ -333,7 +347,7 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10c22c3a0>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x112199040>
 <br><br>
 <div class="customfooter">
     <strong>

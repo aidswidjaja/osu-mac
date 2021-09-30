@@ -4,6 +4,8 @@ Contact
 
 osu!mac is maintained by **aidswidjaja** and other community members.
 
+.. code-block::
+
     aidswidjaja
 
     GitHub:  	https://github.com/

@@ -43,11 +43,6 @@ Getting Windows applications to run smoothly on macOS can be a challenge, and if
 - If creating a thread, put **macOS** and **Wineskin** in your thread title.
 - Our commmunity support members are volunteers, ranging from osu! support team members to people helping out in their free time. A response may take upwards to a week, although generally you should receive one within a day or two.
 
-Provide feedback on our docs
-=======================================
-
-We want our community documentation to become continually better. `Fill out this 5 question Google Form to let us know how we went. <https://docs.google.com/forms/d/e/1FAIpQLScytg73ab9KgzbLzDNqpyaiw6gQtHhZhEjGjZBBLqYML-SeXQ/viewform?usp=sf_link>`_.
-
 Other options
 =======================================
 
@@ -103,6 +98,7 @@ Sitemap
    issues/commandprompt
    issues/gdiplus-cjkfonts
    issues/unidentified
+   issues/monterey
    issues/start
    issues/wineskin
    issues/graphics
@@ -112,11 +108,19 @@ Sitemap
    issues/wontclose
    issues/malware
    issues/macos-agent
+   issues/agent-crash
    issues/discord-10-14
    issues/discord-10-15
    issues/discord-disc
 
 .. don't forget to also update `issues/index.rst`
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Advanced troubleshooting
+
+   advanced/index
+   advanced/silentcrash
 
 .. toctree::
    :maxdepth: 1

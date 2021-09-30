@@ -108,6 +108,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/commandprompt.html">Command prompt window showing before osu! crashes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/monterey.html">osu! doesn’t run on macOS Monterey</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
@@ -117,9 +118,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/agent-crash.html">osu!macOS Agent crashes on startup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/silentcrash.html">SilentCrash</a></li>
 </ul>
 <p class="caption"><span class="caption-text">About osu!mac</span></p>
 <ul class="current">
@@ -197,16 +204,15 @@
   <div class="section" id="contact">
 <h1>Contact<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h1>
 <p>osu!mac is maintained by <strong>aidswidjaja</strong> and other community members.</p>
-<blockquote>
-<div><p>aidswidjaja</p>
-<dl class="simple">
-<dt>GitHub:     <a class="reference external" href="https://github.com/">https://github.com/</a></dt><dd><p>Discord:        aidswidjaja#2805
-osu!:           <a class="reference external" href="https://osu.ppy.sh/users/17763202">https://osu.ppy.sh/users/17763202</a></p>
-</dd>
-<dt>Email:      <a class="reference external" href="mailto:osu-mac&#37;&#52;&#48;adrian&#46;id&#46;au">osu-mac<span>&#64;</span>adrian<span>&#46;</span>id<span>&#46;</span>au</a></dt><dd><p>Takedowns:      <a class="reference external" href="mailto:takedowns&#37;&#52;&#48;adrian&#46;id&#46;au">takedowns<span>&#64;</span>adrian<span>&#46;</span>id<span>&#46;</span>au</a></p>
-</dd>
-</dl>
-</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>aidswidjaja
+
+GitHub:     https://github.com/
+    Discord:        aidswidjaja#2805
+    osu!:           https://osu.ppy.sh/users/17763202
+Email:      osu-mac@adrian.id.au
+    Takedowns:      takedowns@adrian.id.au
+</pre></div>
+</div>
 <p>The best way to contact me is through opening an issue on our GitHub repository at <a class="reference external" href="https://github.com/aidswidjaja/osu-mac/issues">aidswidjaja/osu-mac</a>.</p>
 <p>For legal and copyright notices, please see <a class="reference external" href="license">License</a>.</p>
 <div class="admonition note">
@@ -247,7 +253,7 @@ osu!:           <a class="reference external" href="https://osu.ppy.sh/users/177
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10bf84580>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10730aac0>
 <br><br>
 <div class="customfooter">
     <strong>
