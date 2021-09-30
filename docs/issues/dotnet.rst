@@ -20,15 +20,9 @@ Behaviour
 
 You experience issues with the .NET framework which osu! relies on.
 
-This is best diagnosed through a Wineskin `Test Run <troubleshooting.html#generating-logs-for-wineskin>`_. If you're experiencing .NET issues, you may receive one of the following console outputs:
+This is best diagnosed through a Wineskin `Test Run <troubleshooting.html#generating-logs-for-wineskin>`_. If you're experiencing .NET issues, you may receive the following console output:
 
-.. codeblock:: csharp
-    :lineson:
-
-    0033:fixme:path:parse_url failed to parse L"component-name-here"
-
-.. codeblock:: csharp
-    :lineson:
+.. code-block:: csharp
 
     0033:fixme:advapi:RegisterEventSourceW ((null),L".NET Runtime"): stub
     0033:fixme:advapi:ReportEventW (0xcafe4242,0x0001,0x0000,0x000003ff,0x0,0x0001,0x00000000,0x31d64c,0x0): stub
