@@ -21,6 +21,18 @@ let's get you set up with osu! on your macOS-powered device!
 
 ****
 
+.. note::
+
+	Thursday 21 October: 
+	
+	Due to a termination of service from MEGA, download links for some Wineskins are unavailable, while others have changed.
+	
+	- Download links for the [b]Rosetta[/b] Wineskin are currently available only through Google Drive
+	- Download links for Technocoder's Catalina and Intel Wineskins are [b]currently not available[/b]
+	- osu!macOS Agent can still be downloaded through GitHub but not MEGA
+	
+	Technocoder is continuing to work with MEGA to resolve this issue. For new download links and further updates, please visit the `macOS Wineskin thread <https://osu.ppy.sh/community/forums/topics/1106057>`_. 
+
 Getting started
 =======================================
 
