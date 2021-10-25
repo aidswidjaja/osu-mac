@@ -4,15 +4,11 @@ Contact
 
 osu!mac is maintained by **aidswidjaja** and other community members.
 
-.. code-block::
-
-    aidswidjaja
-
-    GitHub:  	https://github.com/
-	Discord: 	aidswidjaja#2805
-	osu!:    	https://osu.ppy.sh/users/17763202
-    Email:   	osu-mac@adrian.id.au
-	Takedowns:	takedowns@adrian.id.au
+- **GitHub:** https://github.com/aidswidjaja/osu-mac
+- **Discord:** aidswidjaja (hash) 2805
+- **osu!:** https://osu.ppy.sh/u/aidswidjaja
+- **Email:** osu-mac@adrian.id.au
+- **Takedowns:** takedowns@adrian.id.au
 
 The best way to contact me is through opening an issue on our GitHub repository at `aidswidjaja/osu-mac <https://github.com/aidswidjaja/osu-mac/issues>`_. 
 
