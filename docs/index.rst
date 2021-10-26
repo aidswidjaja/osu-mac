@@ -21,14 +21,6 @@ let's get you set up with osu! on your macOS-powered device!
 
 ****
 
-.. note::
-
-	**Monday 25 October:**
-	
-	Due to a termination of service from MEGA, download links for all Wineskins **now use Google Drive**. Please visit the `macOS Wineskin thread <https://osu.ppy.sh/community/forums/topics/1106057>`_ for new links. The installation process remains otherwise unchanged.
-	
-	Technocoder is continuing to work with MEGA to resolve this issue, and we hope this issue is resolved soon. We believe there is no legitimate reason for suspension and strongly encourage MEGA to reinstate Technocoder's account. For new download links and further updates, please visit the `macOS Wineskin thread <https://osu.ppy.sh/community/forums/topics/1106057>`_. 
-
 Getting started
 =======================================
 
