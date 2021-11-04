@@ -74,11 +74,13 @@ Most user reports detail a successful update sequence and osu! logo followed by 
 gdbidoof
 ========================================
 
-To overcome this, I am working on a small general-purpose debugging utility called gdbidoof. This would be used by end users to run a stack trace just before a crash, using the obscurely documented ``--batch`` mode brought to life by this `Stack Overflow comment by John <https://stackoverflow.com/a/36580453/6299634>`_.
+To overcome this, I am planning a small general-purpose debugging utility called gdbidoof. This would be used by end users to run a stack trace just before a crash, using the obscurely documented ``--batch`` mode brought to life by this `Stack Overflow comment by John <https://stackoverflow.com/a/36580453/6299634>`_.
 
 gdbidoof performs an end user-friendly version of the comment above with added features. Given that multiple processes are used by WINE, we'll instead ask the user to use a (0d) PID on Wineserver and all preloader processers. Failing or otherwise, we'll run backtraces on all threads (or the most recent core dump). This will help us narrow down what sort of instructions are being executed at a time of a crash (particularly a silent crash with no obvious errors).
 
-This program is currently under development.
+This program is in planning stages. Due to time constraints, development is expected to start late 2021/early 2022.
+
+In the meantime, technically competent users should be advised how to gain a lldb backtrace on particularly nasty issues which require it.
 
 .. note::
 
