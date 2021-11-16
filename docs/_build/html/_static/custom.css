@@ -1,3 +1,5 @@
+/* Custom CSS sourced from Godot (https://github.com/godotengine/godot-docs) */
+
 /**
  * Various tweaks to the Read the Docs theme to better conform with Godot's
  * visual identity. Many colors are also overridden to use CSS variables.
@@ -6,7 +8,7 @@
  */
 
 
-/* Adrian's modifications */
+/* Custom modifications */
 
 .index-align-center>h1,
 .index-align-center>h2 {
@@ -26,6 +28,17 @@
 .wineskin-version {
     font-weight: 700;
     background-color: #333f67;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    color: white;
+    max-width: 100%;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.archived-article {
+    font-weight: 700;
+    background-color: #0C0F18;
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
     color: white;
     max-width: 100%;
@@ -55,7 +68,7 @@
     padding: 10px;
 }
 
-/* Default (light) theme colors - disabled by Adrian */
+/* Default (light) theme colors - disabled */
 	
 /*
 

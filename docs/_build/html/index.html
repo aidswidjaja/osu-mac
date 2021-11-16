@@ -42,7 +42,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Which Wineskin should I get?" href="install/choose.html" /> 
+    <link rel="next" title="Installing osu!" href="install/install.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,10 +86,8 @@
             
               <p class="caption"><span class="caption-text">Installation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="install/choose.html">Which Wineskin should I get?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/silicon.html">Technocoder’s Wineskin with support for Apple Silicon under Rosetta 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/10-15.html">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/10-14.html">slc’s Wineskin for macOS 10.14 Mojave and earlier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/install.html">Installing osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/choose.html">Choosing a Wineskin</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Welcome to osu!</span></p>
 <ul>
@@ -100,8 +98,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Common issues</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="issues/index.html">Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/index.html">Common issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/troubleshooting.html">Troubleshooting Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/performance.html">Performance Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/applesilicon-bigsur.html">Apple Silicon / Big Sur issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/dotnet.html">.NET runtime issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/commandprompt.html">Command prompt window showing before osu! crashes</a></li>
@@ -112,12 +111,14 @@
 <li class="toctree-l1"><a class="reference internal" href="issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/mouse.html">Performance issues with high-polling rate mice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/retina.html">Enabling Retina Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/input.html">Mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/agent-crash.html">osu!macOS Agent crashes on startup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/using-terminal.html">Using the macOS Terminal to repair Wineskins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
@@ -209,20 +210,18 @@
 <hr class="docutils" />
 <div class="section" id="getting-started">
 <h3>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
-<p>These community-developed osu! <a class="reference external" href="http://wineskin.urgesoftware.com/tiki-index.php">Wineskins</a> are the best way to play osu-stable on your Mac.</p>
-<p>Not sure which wrapper you should get? Check out <a class="reference external" href="install/choose.html">Which Wineskin should I get?</a></p>
+<p>Community-developed osu! <a class="reference external" href="http://wineskin.urgesoftware.com/tiki-index.php">Wineskins</a> are the best way to play osu-stable on your Mac.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="install/silicon.html">Get Technocoder’s osu! Wineskin with support for Apple Silicon running under Rosetta 2</a></p></li>
-<li><p><a class="reference external" href="install/10-15.html">Get Technocoder’s osu! Wineskin with support for macOS Catalina 10.15 and later</a></p></li>
-<li><p><a class="reference external" href="install/10-14.html">Get slc’s osu! Wineskin for macOS 10.14 Mojave and earlier</a></p></li>
+<li><p>Install them using our <a class="reference external" href="install/choose.html">installation guide</a></p></li>
+<li><p>Get started with our <a class="reference external" href="welcome/index.html">new users section</a></p></li>
+<li><p>Find fixes to your issue using our <a class="reference external" href="issues/index.html">knowledge base</a></p></li>
 </ul>
-<p>Some wrappers will only work on specific macOS versions or hardware specifications. Not sure which version of macOS you’re using? Check out this <a class="reference external" href="https://support.apple.com/en-au/HT201260">Apple support article</a> to find out. Furthermore, <a class="reference external" href="https://support.apple.com/en-us/HT211814">here is a list</a> of Apple computer models that utilise the new ARM-based Apple Silicon chip technology.</p>
 </div>
 <div class="section" id="need-help">
 <h3>Need help?<a class="headerlink" href="#need-help" title="Permalink to this headline">¶</a></h3>
-<p>Getting Windows applications to run smoothly on macOS can be a challenge, and if you’re experiencing issues feel free to reach out to the community. We’re most active on the osu! community help forums. Visit us on the <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">macOS Wineskin thread</a> or start your own in the <a class="reference external" href="https://osu.ppy.sh/community/forums/5">Help subforum</a>.</p>
+<p>A small but dedicated volunteer support team is available. Visit us on the <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">macOS Wineskin thread</a> or start your own thread in the <a class="reference external" href="https://osu.ppy.sh/community/forums/5">Help subforum</a>.</p>
 <ul class="simple">
-<li><p>Along with a detailed description of your issue, attach your log files from <a class="reference external" href="issues/troubleshooting.html">Troubleshooting</a> in a never-expire pastebin such as <a class="reference external" href="https://paste.ubuntu.com/">paste.ubuntu.com</a> or <a class="reference external" href="https://bpa.st/">bpaste</a>.</p></li>
+<li><p>Along with a detailed description of your issue, attach your log files from <a class="reference external" href="issues/troubleshooting.html">Troubleshooting Basics</a> in a never-expire pastebin such as <a class="reference external" href="https://paste.gg">paste.gg</a></p></li>
 <li><p>If creating a thread, put <strong>macOS</strong> and <strong>Wineskin</strong> in your thread title.</p></li>
 <li><p>Our commmunity support members are volunteers, ranging from osu! support team members to people helping out in their free time. A response may take upwards to a week, although generally you should receive one within a day or two.</p></li>
 </ul>
@@ -240,7 +239,7 @@
 <h3>Disclaimers<a class="headerlink" href="#disclaimers" title="Permalink to this headline">¶</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>This information is supplied by volunteers in good faith. However, <strong>we are not responsible if it doesn’t work, your computer sets on fire, or you start the next nuclear war.</strong> We do our best to make sure the information here is safe for you, your osu! account and your computer, but <strong>you proceed at your own risk.</strong></p>
+<p>This information is supplied by volunteers in good faith. However, <strong>we are not responsible if it doesn’t work, your computer sets on fire, or you start the next thermonuclear war.</strong> We do our best to make sure the information here is safe for you, your osu! account and your computer, but <strong>you proceed at your own risk.</strong></p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -255,10 +254,8 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Installation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="install/choose.html">Which Wineskin should I get?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/silicon.html">Technocoder’s Wineskin with support for Apple Silicon under Rosetta 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/10-15.html">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install/10-14.html">slc’s Wineskin for macOS 10.14 Mojave and earlier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/install.html">Installing osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/choose.html">Choosing a Wineskin</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
@@ -273,8 +270,9 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Common issues</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="issues/index.html">Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/index.html">Common issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/troubleshooting.html">Troubleshooting Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/performance.html">Performance Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/applesilicon-bigsur.html">Apple Silicon / Big Sur issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/dotnet.html">.NET runtime issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/commandprompt.html">Command prompt window showing before osu! crashes</a></li>
@@ -285,12 +283,14 @@
 <li class="toctree-l1"><a class="reference internal" href="issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/mouse.html">Performance issues with high-polling rate mice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/retina.html">Enabling Retina Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/input.html">Mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/agent-crash.html">osu!macOS Agent crashes on startup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues/using-terminal.html">Using the macOS Terminal to repair Wineskins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
@@ -325,7 +325,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="install/choose.html" class="btn btn-neutral float-right" title="Which Wineskin should I get?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="install/install.html" class="btn btn-neutral float-right" title="Installing osu!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
@@ -347,8 +347,10 @@
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x112199040>
-<br><br>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x1083886a0>
+<br>
+<hr>
+<br>
 <div class="customfooter">
     <strong>
         <p>Visit more <a href="https://osu-mac.readthedocs.io/en/latest/about/resources.html">community resources</a> to help you get osu! running on macOS.</p>

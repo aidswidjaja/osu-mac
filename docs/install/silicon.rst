@@ -2,6 +2,10 @@
 Technocoder's Wineskin with support for Apple Silicon under Rosetta 2
 #######################################################################
 
+.. rst-class:: archived-article
+
+    This article is archived. `See the new installation guide. <../install/install.html>`_
+
 .. rst-class:: wineskin-version
     
     | This article is applicable to the following wrappers:

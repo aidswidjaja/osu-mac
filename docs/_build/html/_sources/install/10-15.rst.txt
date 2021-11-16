@@ -2,6 +2,10 @@
 Technocoder's Wineskin with support for macOS 10.15 Catalina and later
 #######################################################################
 
+.. rst-class:: archived-article
+
+    This article is archived. `See the new installation guide. <../install/install.html>`_
+    
 .. rst-class:: wineskin-version
     
     | This article is applicable to the following wrappers:

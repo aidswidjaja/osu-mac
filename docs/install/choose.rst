@@ -1,30 +1,28 @@
 ##########################################################################################
-Which Wineskin should I get?
+Choosing a Wineskin
 ##########################################################################################
 
 .. note::
 
     **What is a Wineskin?**
 
-    A Wineskin is a wrapper that bundles the compatibility layer `Wine <https://www.winehq.org/>`_ with Windows executables like osu!, to enable them to run on POSIX/Unix-based operating systems like macOS and Linux.
+    A **Wineskin** is a wrapper that bundles the compatibility layer `Wine <https://www.winehq.org/>`_ with Windows executables like osu!, to enable them to run on POSIX/Unix-based operating systems like macOS and Linux. A Wineskin allows a preconfigured version of Wine to be bundled as one app so that you can get right into the game without messing about with the settings.
 
-There's a bunch of community-maintained osu! Wineskins out there, and osu!mac documents three of them.
+There's a bunch of community-maintained osu! Wineskins out there, and osu!mac highlights three of them.
 
-- `Technocoder's osu! Wineskin with support for Apple Silicon running under Rosetta 2 <install/rosetta.html>`_ 
-- `Technocoder's osu! Wineskin with support for macOS Catalina 10.15 and later <install/10-15.html>`_ 
-- `slc's osu! Wineskin for macOS 10.14 Mojave and earlier <install/10-14.html>`_
+- `Technocoder's Rosetta Wineskin <https://osu.ppy.sh/community/forums/posts/7560723>`_
+- `Technocoder's Intel Wineskin <https://osu.ppy.sh/community/forums/posts/7560723>`_
+- `slc's Mojave Wineskin <https://osu.ppy.sh/community/forums/posts/6919344>`_
 
-There's also...
+Other Wineskins like the ones below also exist, but we don't provide documentation or support for them.
 
-- `peppy's official osu! Wineskin (2016) <https://github.com/ppy/osu-wine>`_
-- `Mic238's osu! for Mac Wineskin <https://github.com/Mic238/osu-for-Mac-Stable-Latest>`_
+- `peppy's official Wineskin (2016) <https://github.com/ppy/osu-wine>`_
+- `Mic238's Wineskin <https://github.com/Mic238/osu-for-Mac-Stable-Latest>`_
 
-However, we don't provide support for these Wineskins.
-
-For most users, we recommend using the latest Wineskin, which is **Technocoder's osu! Wineskin with support for Apple Silicon running under Rosetta 2**. It is the only Wineskin that will consistently get updates and support, and has support for almost any modern Mac computer, including:
+For most users, we recommend using the latest Wineskin, which is **Technocoder's Rosetta Wineskin**. It is the only Wineskin that will consistently get updates and support, and has support for almost any modern Mac computer, including:
 
 - Intel x86 based machines
 - ARM-based Apple Silicon machines, including the new M1 chip
 - Any modern version of macOS, including Mojave, Catalina, and Big Sur
 
-You should only use other Wineskins if you need them for compatibility reasons. They will be outdated and support may be limited than one of the currently-maintained wrappers.
+You should only use other Wineskins if you need them for compatibility or troubleshooting reasons. They will be outdated and support may be more limited.

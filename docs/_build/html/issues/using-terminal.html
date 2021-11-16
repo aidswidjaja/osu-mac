@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Using the macOS Terminal to repair Wineskins &mdash; osu!mac</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> osu!mac
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/install.html">Installing osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/choose.html">Choosing a Wineskin</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Welcome to osu!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/index.html">Welcome to osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/screen.html">Setting up your screen options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/import.html">Importing beatmaps and skins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/transfer.html">Transferring data from another osu! installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Common issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance.html">Performance Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applesilicon-bigsur.html">Apple Silicon / Big Sur issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dotnet.html">.NET runtime issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commandprompt.html">Command prompt window showing before osu! crashes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monterey.html">osu! doesn’t run on macOS Monterey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Startup issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mouse.html">Performance issues with high-polling rate mice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input.html">Mouse/trackpad input feels unstable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
+<li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agent-crash.html">osu!macOS Agent crashes on startup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/silentcrash.html">SilentCrash</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About osu!mac</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/templates.html">Support templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/logs.html">Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">osu!mac</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Using the macOS Terminal to repair Wineskins</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/issues/using-terminal.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="using-the-macos-terminal-to-repair-wineskins">
+<h1>Using the macOS Terminal to repair Wineskins<a class="headerlink" href="#using-the-macos-terminal-to-repair-wineskins" title="Permalink to this headline">¶</a></h1>
+<p>On the bleeding edge? You can also use the Terminal to repair your Wineskin.</p>
+<ol class="arabic simple">
+<li><p>Open Terminal. It should be in your <code class="docutils literal notranslate"><span class="pre">Applications/Utilities</span></code> folder.</p></li>
+<li><p>Type the following command.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo xattr -rd com.apple.quarantine <span class="s2">&quot;~/path/to/my/osu\!.app&quot;</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">~/path/to/my/osu\!.app</span></code> is the filepath to your osu! install.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Using the terminal with <code class="docutils literal notranslate"><span class="pre">sudo</span></code> will allow you to perform commands as admin. Improper use of the terminal can negatively affect your computer. Please don’t type something you don’t completely understand - ask us a question instead!</p>
+</div>
+<p>If you choose to use the macOS Terminal to repair Wineksins, then below are some helpful tips if you’re a bit lost.</p>
+<div class="section" id="escaping-characters">
+<h2>Escaping characters<a class="headerlink" href="#escaping-characters" title="Permalink to this headline">¶</a></h2>
+<p>For an application with the name <code class="docutils literal notranslate"><span class="pre">osu!.app</span></code>, the <code class="docutils literal notranslate"><span class="pre">!</span></code> will confuse the Terminal window. Therefore, you must <a class="reference external" href="https://en.wikipedia.org/wiki/Escape_character">escape</a> it by prefixing the <code class="docutils literal notranslate"><span class="pre">!</span></code> with a <code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash) to form <code class="docutils literal notranslate"><span class="pre">osu\!.app</span></code>. It is also recommended you enclose the filepath in quotation marks.</p>
+</div>
+<div class="section" id="entering-your-password">
+<h2>Entering your password<a class="headerlink" href="#entering-your-password" title="Permalink to this headline">¶</a></h2>
+<p>You may be asked for your password. While entering your password the cursor might blink but you won’t see any characters appear on the screen - this is normal! Just proceed to type your password as if there was a dialog box there, and hit <strong>Enter</strong> once you’re done. If you enter your password wrong, the prompt will re-appear and you can try again.</p>
+</div>
+<div class="section" id="permissions">
+<h2>Permissions<a class="headerlink" href="#permissions" title="Permalink to this headline">¶</a></h2>
+<p>If you get a <code class="docutils literal notranslate"><span class="pre">Permission</span> <span class="pre">denied</span></code> error it means you aren’t using an administrator account. In your Terminal window, type:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>su - administrator
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">administrator</span></code> is the name of your system’s admin account. When the <code class="docutils literal notranslate"><span class="pre">Password:</span></code> prompt appears, enter your password for <code class="docutils literal notranslate"><span class="pre">administrator</span></code> (or whatever your admin account is). Then try running the Terminal command (or to do this automatically, type <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">!!</span></code>).</p>
+<div class="section" id="finding-the-name-of-the-administrator-account">
+<h3>Finding the name of the administrator account<a class="headerlink" href="#finding-the-name-of-the-administrator-account" title="Permalink to this headline">¶</a></h3>
+<p>If you don’t know which account is your admin account (like if you use a family computer), go to the <code class="docutils literal notranslate"><span class="pre">Apple</span> <span class="pre">menu</span></code> (top-left corner of the screen) &gt; <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Preferences...</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Users</span> <span class="pre">&amp;</span> <span class="pre">Groups</span></code> and you should be able to see which account is your administrator account. You’ll still need the password to execute the command though.</p>
+</div>
+</div>
+<div class="section" id="sudo-warning">
+<h2>sudo warning<a class="headerlink" href="#sudo-warning" title="Permalink to this headline">¶</a></h2>
+<p>On older macOS versions, you may get a warning that looks like this.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Improper use of the sudo <span class="nb">command</span> could lead to data loss or the deletion of important system files. Please double-check your typing when using sudo. Type <span class="s2">&quot;man sudo&quot;</span> <span class="k">for</span> more information. To proceed, enter your password, or <span class="nb">type</span> Ctrl-C to abort.
+</pre></div>
+</div>
+<p>Type your password as normal, as shown above.</p>
+</div>
+<div class="section" id="finding-osu-s-filepath">
+<h2>Finding osu!’s filepath<a class="headerlink" href="#finding-osu-s-filepath" title="Permalink to this headline">¶</a></h2>
+<p>Having trouble finding the filepath of your osu! installation? You can drag and drop the file from your installation directory (or the Desktop) to get the path!</p>
+<img alt="Dragging and dropping osu!.app into the terminal" src="../_images/terminal-drag-and-drop1.gif" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright aidswidjaja and other osu!mac contributors. Licensed under the FreeBSD Documentation License, available at https://www.freebsd.org/copyright/freebsd-doc-license.html
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x107b677f0>
+<br>
+<hr>
+<br>
+<div class="customfooter">
+    <strong>
+        <p>Visit more <a href="https://osu-mac.readthedocs.io/en/latest/about/resources.html">community resources</a> to help you get osu! running on macOS.</p>
+        <p>View our <a href="https://osu-mac.readthedocs.io/en/latest/issues/index.html">Issues</a> section for tips on how to <a href="https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html">troubleshoot</a> your problems, or see how to diagnose common issues other users have experienced in the past.</p>
+        <p>Make these docs better by <a href="https://osu-mac.readthedocs.io/en/latest/about/contributing.html">contributing to osu!mac</a> on <a href="https://github.com/aidswidjaja/osu-mac">GitHub</a>.
+        <p>Visit the <a href="https://osu.ppy.sh/community/forums/5">osu! forums</a> if you're stuck with anything at all!
+        </p>
+    </strong>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

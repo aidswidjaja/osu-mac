@@ -2,14 +2,16 @@
 slc's Wineskin for macOS 10.14 Mojave and earlier
 ###########################################################
 
+.. rst-class:: archived-article
+
+    This article is archived. `See the new installation guide. <../install/install.html>`_
+
 .. rst-class:: wineskin-version
     
     | This article is applicable to the following wrappers:
     | • `slc <https://osu.ppy.sh/users/7978076>`_'s `Wineskin for macOS 10.14 Mojave and earlier <https://drive.google.com/uc?id=16lR87eCVYtpjiK6KKA4rNghfpimnj1aE&export=download>`_
 
 This guide will walk you through how to install `slc <https://osu.ppy.sh/users/7978076>`_'s Wineskin for **macOS 10.14 Mojave and earlier.** If you are using macOS Catalina 10.15 or later, view the `Catalina tutorial <10-15.html>`_ instead.
-
-.. to-do: Making Your Own Wrapper section ?
 
 ****
 

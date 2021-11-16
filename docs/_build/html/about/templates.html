@@ -42,7 +42,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="next" title="Logs" href="logs.html" />
     <link rel="prev" title="Other resources" href="resources.html" /> 
 </head>
 
@@ -85,12 +85,10 @@
               
             
             
-              <p class="caption"><span class="caption-text">Installing osu!</span></p>
+              <p class="caption"><span class="caption-text">Installation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install/choose.html">Which Wineskin should I get?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../install/silicon.html">Technocoder’s Wineskin with support for Apple Silicon under Rosetta 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../install/10-15.html">Technocoder’s Wineskin with support for macOS 10.15 Catalina and later</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../install/10-14.html">slc’s Wineskin for macOS 10.14 Mojave and earlier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/install.html">Installing osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/choose.html">Choosing a Wineskin</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Welcome to osu!</span></p>
 <ul>
@@ -104,30 +102,43 @@
 <li class="toctree-l1"><a class="reference internal" href="../issues/index.html">Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/troubleshooting.html">Troubleshooting Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/applesilicon-bigsur.html">Apple Silicon / Big Sur issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/dotnet.html">.NET runtime issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/commandprompt.html">Command prompt window showing before osu! crashes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../issues/start.html">osu! runs perfectly, but it has some trouble when starting up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/monterey.html">osu! doesn’t run on macOS Monterey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/start.html">Startup issues</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/graphics.html">osu! was unable to obtain a graphics context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/retina.html">Enabling Retina Mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../issues/input.html">osu! mouse/trackpad input feels unstable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/input.html">Mouse/trackpad input feels unstable</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/wontclose.html">osu! won’t close</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/malware.html">osu! is being detected as malware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/agent-crash.html">osu!macOS Agent crashes on startup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../issues/discord-disc.html">Discord Rich Presence (Discussion)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">About this project</span></p>
+<p class="caption"><span class="caption-text">Advanced troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/silentcrash.html">SilentCrash</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About osu!mac</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="resources.html">Other resources</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Support templates</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#initial-troubleshooting-and-diagnostics">Initial troubleshooting and diagnostics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#report-and-repair-with-osu-macos-agent">Report and repair with osu!macOS Agent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generating-a-test-run-through-wineskin">Generating a Test Run through Wineskin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-priority-and-affinity">Setting priority and affinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#osu-on-apple-silicon-and-big-sur">osu! on Apple Silicon and Big Sur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#exec-number-bat-issue">exec(number).bat issue</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="logs.html">Logs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
@@ -213,7 +224,7 @@ Many issues already have solutions available to them. Check out the [url=https:/
 
 If you&#39;re still unable to solve your issue, move onto the next step.
 
-[b]Step 2: Report and repair using osu!macOS Agent[/b]
+[b]Step 2: Report and repair with osu!macOS Agent[/b]
 [list=1]
 [*]Download the latest version of Technocoder&#39;s [url=https://osu.ppy.sh/community/forums/topics/1036678]osu!macOS Agent[/url] - older versions may have incompatibilities or bugs, especially with newer wrappers.
 [*]Once it finishes downloading, open [b]osu!macOS Agent[/b].
@@ -227,12 +238,65 @@ If you&#39;re still unable to solve your issue, move onto the next step.
 [*]Locate your osu! installation.
 [*]Right click on it, then select [b]Show Package Contents[/b].
 [*]Open [b]Wineskin[/b].
-[*]Click [b]Advanced[/b].
-[*]Click [b]Test Run[/b]. If osu! starts successfully (even with glitches), you can then close the program down. Once the program has either closed or crashed, a dialog will pop up asking you whether you want to view [b]Test Run Logs[/b]. Click [b]Yes[/b].
-[*]Copy the results of your Test Run logs to a pastebin such as [url=https://paste.ubuntu.com]paste.ubuntu.com[/url] set to never expire. Then attach the link in a reply to this thread, along with the report from osu!macOS Agent in Step 1.
+[*]Click [b]Advanced[/b] &gt; [b]Test Run[/b].
+[*]If osu! starts successfully (even with glitches), you can then close the program down. Once the program has either closed or crashed, a dialog will pop up asking you whether you want to view [b]Test Run Logs[/b]. Click [b]Yes[/b].
+[*]Copy the results of your Test Run logs to a pastebin such as [url=https://paste.gg]paste.gg[/url] set to never expire. Then attach the link in a reply to this thread, along with the report from osu!macOS Agent in Step 1.
 [/list]
-If you need any help with any of the steps outlined here, check out https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html or feel free to make a reply back here on the forum. Thanks!
+If you need any help with any of the steps outlined here, check out https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html or feel free to make a reply back here on the forums. Thanks!
 [/box]
+</pre></div>
+</div>
+</div>
+<div class="section" id="report-and-repair-with-osu-macos-agent">
+<h2>Report and repair with osu!macOS Agent<a class="headerlink" href="#report-and-repair-with-osu-macos-agent" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[box=Report and repair with osu!macOS Agent]
+[list=1]
+[*]Download the latest version of Technocoder&#39;s [url=https://osu.ppy.sh/community/forums/topics/1036678]osu!macOS Agent[/url] - older versions may have incompatibilities or bugs, especially with newer wrappers.
+[*]Once it finishes downloading, open [b]osu!macOS Agent[/b].
+[*]If you haven&#39;t already done so, click the [b]Select[/b] button and browse to osu!.app&#39;s location. The text box should display its filepath (e.g ~/Users/firefly/Desktop/osu!.app) and Wine Engine (e.g WS11WineCX64Bit19.0.1-1).
+[*]Select the [b]Troubleshoot[/b] tab, then click [b]Scan[/b].
+[*]After the scan completes, click [b]Repair[/b].
+[*]If this doesn&#39;t fix your issue, click [b]Copy Report[/b]. Copy the contents into a reply to this thread and we&#39;ll do our best to help you out! Please don&#39;t forget to do a [b]Test Run[/b] as outlined in the next step.
+[/list]
+If you need any help with any of the steps outlined here, check out https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html or feel free to make a reply back here on the forums. Thanks!
+[/box]
+</pre></div>
+</div>
+</div>
+<div class="section" id="generating-a-test-run-through-wineskin">
+<h2>Generating a Test Run through Wineskin<a class="headerlink" href="#generating-a-test-run-through-wineskin" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[box=Generating a Test Run through Wineskin]
+[list=1]
+[*]Locate your osu! installation.
+[*]Right click on osu!, then select [b]Show Package Contents[/b].
+[*]Open [b]Wineskin[/b] &gt; [b]Advanced[/b].
+[*]Click [b]Test Run[/b].
+        [*]If osu! starts successfully (even with glitches), you can then close the program down.
+        [*]Once the program has either closed or crashed, a dialog will pop up asking you whether you want to view [b]Test Run Logs[/b]. Click [b]Yes[/b].
+[*]Copy the results of your Test Run logs to a pastebin such as [url=https://paste.gg]paste.gg[/url] set to never expire. Then attach the link in a reply to this thread, along with the report from osu!macOS Agent in Step 1.
+[/list]
+If you need any help with any of the steps outlined here, check out https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html or feel free to make a reply back here on the forums. Thanks!
+[/box]
+</pre></div>
+</div>
+</div>
+<div class="section" id="setting-priority-and-affinity">
+<h2>Setting priority and affinity<a class="headerlink" href="#setting-priority-and-affinity" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[box=Setting priority and affinity]
+[list=1]
+[*]Make sure osu! is currently running
+[*]Locate your osu! installation
+[*]Right click on osu!, then select [b]Show Package Contents[/b]
+[*]Open [b]Wineskin[/b] &gt; [b]Advanced[/b] &gt; [b]Tools[/b]
+[*]Click on [b]Task Manager (taskmgr)[/b] - it may take some time before the window opens
+[*]Find osu!.exe in the list that appears.
+[*]To set priority, right click, then select [b]Set priority[/b].
+        [*]By default, osu! is on High. Ensure the option is selected to High.
+[*]To set affinity, right click, then select [b]Set affinity...[/b]
+        [*]In the window that appears, select the number of cores you would like to use
+        [*]More cores = greater performance (recommended)
+        [*]Less cores = greater stability in some specific situations
+        [*]Choosing specific cores may positively or negatively impact your game&#39;s performance or stability
 </pre></div>
 </div>
 </div>
@@ -260,7 +324,7 @@ If you need any help with any of the steps outlined here, check out https://osu-
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="logs.html" class="btn btn-neutral float-right" title="Logs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="resources.html" class="btn btn-neutral float-left" title="Other resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -284,8 +348,10 @@ If you need any help with any of the steps outlined here, check out https://osu-
     
     <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10a0462b0>
-<br><br>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x1061712b0>
+<br>
+<hr>
+<br>
 <div class="customfooter">
     <strong>
         <p>Visit more <a href="https://osu-mac.readthedocs.io/en/latest/about/resources.html">community resources</a> to help you get osu! running on macOS.</p>

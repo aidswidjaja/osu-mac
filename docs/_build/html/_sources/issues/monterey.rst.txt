@@ -23,7 +23,7 @@ macOS doesn't run on macOS Monterey 12.0.
 Cause
 ****************************************
 
-An upstream thread 0 exception from CodeWeavers and Apple is the cause of this bug. More information is available at `Gcenx/WineskinServer#139 <https://github.com/Gcenx/WineskinServer/issues/139>`_
+An upstream thread 0 exception is the cause of this bug, and is currently being looked at by CodeWeavers and Apple. More information is available at `Gcenx/WineskinServer#139 <https://github.com/Gcenx/WineskinServer/issues/139>`_
 
 ****
 
@@ -31,11 +31,9 @@ An upstream thread 0 exception from CodeWeavers and Apple is the cause of this b
 Resolution
 ****************************************
 
-macOS Monterey is currently not a supported platform, but there should be a fix coming soon when Monterey is publicly available. You may be able to create/update your own Wineskin `using this guide <https://osu.ppy.sh/community/forums/topics/679205?n=1>`_ with the latest version of WineskinServer, or contact us in the forums for a progress update.
+Update your version of macOS Monterey to any version after Beta 5.
 
-.. danger::
-
-    Updating or creating your own Wineskin is not supported. Please do so at your own risk.
+macOS Monterey is still considered to be _unsupported_. Although there are reports of WINE working on newer builds of macOS Monterey, we have not confirmed whether macOS Monterey works with osu! Wineskins.
 
 .. note::
 

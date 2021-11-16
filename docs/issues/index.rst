@@ -1,26 +1,5 @@
 ########################################
-Contents
+Common issues
 ########################################
 
-Here's a repository of common issues (and potential fixes) other users have experienced in the past with getting osu! to run on Mac. If your problem is not listed here, feel free to `ask on the forums <troubleshooting.html>`_.
-
-- `Troubleshooting Basics <troubleshooting.html>`_
-- `Apple Silicon / Big Sur issues <applesilicon-bigsur.html>`_
-- `.NET runtime issues <dotnet.html>`_
-- `Command prompt window showing before osu! crashes <commandprompt.html>`_
-- `osu! has graphical glitches, or isn't rendering icons/CJK fonts properly <gdiplus-cjkfonts.html>`_
-- `osu! cannot be opened because the developer cannot be verified <unidentified.html>`_
-- `osu! doesn't run on macOS Monterey <monterey.html>`_
-- `Startup issues <start.html>`_
-- `Wineskin.app doesn't open, even if osu! does / exec[number].bat problem <wineskin.html>`_
-- `osu! was unable to obtain a graphics context <graphics.html>`_
-- `osu! captures my monitor/my second monitor is blacked out <dualmonitor.html>`_
-- `Enabling Retina Mode <retina.html>`_
-- `Mouse/trackpad input feels unstable <input.html>`_
-- `osu! won't close (update loop or otherwise) <wontclose.html>`_
-- `osu! is being detected as malware <malware.html>`_
-- `Pointing osu!macOS Agent to your osu! install location <macos-agent.html>`_
-- `osu!macOS Agent crashes on startup <agent-crash.html>`_
-- `Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer) <discord-10-14.html>`_
-- `Discord Rich Presence (64-bit Wineskins / WS11 WineskinServer) <discord-10-15.html>`_
-- `Discord Rich Presence (Discussion) <discord-disc.html>`_
+This section is a repository of common issues (and potential fixes) other users have experienced in the past with getting osu! to run on Mac. If your problem is not listed here, feel free to `ask on the forums <troubleshooting.html>`_.

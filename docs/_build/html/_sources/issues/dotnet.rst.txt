@@ -7,11 +7,7 @@
     | This article is applicable to the following wrappers:
     | • `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Experimental Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/posts/7367239>`_
     | • `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with Apple Silicon support <https://osu.ppy.sh/community/forums/topics/1106057>`_
-
-.. note::
-
-    We are currently aware of this known issue that is affecting a considerable number of users, and currently there is no absolute fix. Track our progress and help us solve this issue by reporting about your experience on our `osu! forum thread <https://osu.ppy.sh/community/forums/topics/1106057>`_. Let us know what worked (and what didn't!)
-
+    
 ****
 
 ****************************************

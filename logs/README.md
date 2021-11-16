@@ -2,6 +2,10 @@
 
 This folder contains examples of healthy log files that can be used as a reference point.
 
+- **LastRunWine-CX64Bit19.0.1-1** uses CX64Bit19.0.1-1
+- **LastRunWine-CX64Bit19.0.1-1-play** uses CX64Bit19.0.1-1 and records a failed osu!standard beatmap play, instead of immediately exiting to the menu screen
+- **LastRunWine-CX20.0.2** uses CX20.0.2
+
 ## CX64Bit19.0.1-1 Wineskin
 
 Version 11.4 (Build 20F71)

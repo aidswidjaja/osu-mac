@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Performance issues with high-polling rate mice &mdash; osu!mac</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> osu!mac
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/install.html">Installing osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/choose.html">Choosing a Wineskin</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Welcome to osu!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/index.html">Welcome to osu!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/screen.html">Setting up your screen options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/import.html">Importing beatmaps and skins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../welcome/transfer.html">Transferring data from another osu! installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common issues</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applesilicon-bigsur.html">Apple Silicon / Big Sur issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dotnet.html">.NET runtime issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commandprompt.html">Command prompt window showing before osu! crashes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdiplus-cjkfonts.html">osu! has graphical glitches, or isn’t rendering icons/CJK fonts properly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unidentified.html">osu! cannot be opened because the developer cannot be verified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="monterey.html">osu! doesn’t run on macOS Monterey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Startup issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wineskin.html">Wineskin.app doesn’t open, even if osu! does / exec[number].bat problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="graphics.html">osu! was unable to obtain a graphics context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dualmonitor.html">osu! captures my monitor/my second monitor is black</a></li>
+<li class="toctree-l1"><a class="reference internal" href="retina.html">Enabling Retina Mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input.html">Mouse/trackpad input feels unstable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wontclose.html">osu! won’t close</a></li>
+<li class="toctree-l1"><a class="reference internal" href="malware.html">osu! is being detected as malware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macos-agent.html">Pointing osu!macOS Agent to your osu! install location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agent-crash.html">osu!macOS Agent crashes on startup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-14.html">Discord Rich Presence (32-bit Wineskins / non-WS11 WineskinServer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-10-15.html">Discord Rich Presence (64-bit Wineskins / WS-11 WineskinServer)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discord-disc.html">Discord Rich Presence (Discussion)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/silentcrash.html">SilentCrash</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About osu!mac</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/resources.html">Other resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/templates.html">Support templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/logs.html">Logs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/acknowledgements.html">Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">osu!mac</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Performance issues with high-polling rate mice</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/issues/mouse.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="performance-issues-with-high-polling-rate-mice">
+<h1>Performance issues with high-polling rate mice<a class="headerlink" href="#performance-issues-with-high-polling-rate-mice" title="Permalink to this headline">¶</a></h1>
+<div class="wineskin-version line-block">
+<div class="line">This article is applicable to the following wrappers:</div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/7978076">slc</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197?start=6919344">Wineskin for macOS 10.14 Mojave and earlier</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/1106057">Wineskin with macOS Catalina 10.15 support</a></div>
+<div class="line">• <a class="reference external" href="https://osu.ppy.sh/users/10338558">Technocoder</a>’s <a class="reference external" href="https://osu.ppy.sh/community/forums/topics/682197">unofficial Wineskin for macOS 10.14 Mojave and earlier</a></div>
+</div>
+<hr class="docutils" />
+<div class="section" id="behaviour">
+<h2>Behaviour<a class="headerlink" href="#behaviour" title="Permalink to this headline">¶</a></h2>
+<p>Users may encounter issues when using high-polling rate computer mice with osu!, due to incompatibilities between higher polling rates with macOS and Wine. This includes increased lags and instability when using mice above 500Hz.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="cause">
+<h2>Cause<a class="headerlink" href="#cause" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://wiki.archlinux.org/title/mouse_polling_rate#Polling_rate_resulting_in_lag_with_wine">Mouse polling rates are a known issue with Wine.</a>, and although it has been marked as <code class="docutils literal notranslate"><span class="pre">CLOSED</span> <span class="pre">NOTOURBUG</span></code>  on the <a class="reference external" href="https://bugs.winehq.org/show_bug.cgi?id=46976">WineHQ Bugzilla page</a>, users have been experiencing issues with high polling rates and Wine. macOS has also been known to suffer from incompatibilities with high polling rates, <a class="reference external" href="https://discussions.apple.com/thread/252038691">including CPU spikes</a> and <a class="reference external" href="https://www.reddit.com/r/macgaming/comments/nwxa8d/comment/h1d4cdf/?utm_source=share&amp;utm_medium=web2x&amp;context=3">game incompatibilities</a>.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="resolution">
+<h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
+<p>There is no known fix for this issue, but there are different steps which have worked for different users.</p>
+<ul class="simple">
+<li><p>Update osu!</p></li>
+<li><p>Update macOS</p></li>
+<li><p>Decrease polling rate from 1000Hz to 500Hz</p></li>
+<li><p>Switch from a USB3 to USB2 port</p></li>
+<li><p>Avoid the macOS Mojave 10.14.6 Security Update (user-suggested, unconfirmed)</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="user-reports">
+<h2>User reports<a class="headerlink" href="#user-reports" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://osu.ppy.sh/community/forums/posts/8311721">User report #1</a></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="if-that-didn-t-work">
+<h2>If that didn’t work<a class="headerlink" href="#if-that-didn-t-work" title="Permalink to this headline">¶</a></h2>
+<p>There could be something else going on here, and performing <a class="reference external" href="troubleshooting.html">basic troubleshooting</a> should help you get to the bottom of it.</p>
+<p>If you’re still not sure what’s going on here, copy any osu! crash logs and <a class="reference external" href="troubleshooting.html#generating-a-report-with-osu-macos-agent">generate a report with osu!macOS Agent</a>, then let us know on the forums with what we can help.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright aidswidjaja and other osu!mac contributors. Licensed under the FreeBSD Documentation License, available at https://www.freebsd.org/copyright/freebsd-doc-license.html
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. <jinja2.runtime.BlockReference object at 0x10671c4c0>
+<br>
+<hr>
+<br>
+<div class="customfooter">
+    <strong>
+        <p>Visit more <a href="https://osu-mac.readthedocs.io/en/latest/about/resources.html">community resources</a> to help you get osu! running on macOS.</p>
+        <p>View our <a href="https://osu-mac.readthedocs.io/en/latest/issues/index.html">Issues</a> section for tips on how to <a href="https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html">troubleshoot</a> your problems, or see how to diagnose common issues other users have experienced in the past.</p>
+        <p>Make these docs better by <a href="https://osu-mac.readthedocs.io/en/latest/about/contributing.html">contributing to osu!mac</a> on <a href="https://github.com/aidswidjaja/osu-mac">GitHub</a>.
+        <p>Visit the <a href="https://osu.ppy.sh/community/forums/5">osu! forums</a> if you're stuck with anything at all!
+        </p>
+    </strong>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

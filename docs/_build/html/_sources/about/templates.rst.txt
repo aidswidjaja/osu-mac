@@ -20,7 +20,7 @@ Initial troubleshooting and diagnostics
 	
 	If you're still unable to solve your issue, move onto the next step.
 	
-	[b]Step 2: Report and repair using osu!macOS Agent[/b]
+	[b]Step 2: Report and repair with osu!macOS Agent[/b]
 	[list=1]
 	[*]Download the latest version of Technocoder's [url=https://osu.ppy.sh/community/forums/topics/1036678]osu!macOS Agent[/url] - older versions may have incompatibilities or bugs, especially with newer wrappers.
 	[*]Once it finishes downloading, open [b]osu!macOS Agent[/b].
@@ -34,12 +34,72 @@ Initial troubleshooting and diagnostics
 	[*]Locate your osu! installation.
 	[*]Right click on it, then select [b]Show Package Contents[/b].
 	[*]Open [b]Wineskin[/b].
-	[*]Click [b]Advanced[/b].
-	[*]Click [b]Test Run[/b]. If osu! starts successfully (even with glitches), you can then close the program down. Once the program has either closed or crashed, a dialog will pop up asking you whether you want to view [b]Test Run Logs[/b]. Click [b]Yes[/b].
-	[*]Copy the results of your Test Run logs to a pastebin such as [url=https://paste.ubuntu.com]paste.ubuntu.com[/url] set to never expire. Then attach the link in a reply to this thread, along with the report from osu!macOS Agent in Step 1.
+	[*]Click [b]Advanced[/b] > [b]Test Run[/b]. 
+	[*]If osu! starts successfully (even with glitches), you can then close the program down. Once the program has either closed or crashed, a dialog will pop up asking you whether you want to view [b]Test Run Logs[/b]. Click [b]Yes[/b].
+	[*]Copy the results of your Test Run logs to a pastebin such as [url=https://paste.gg]paste.gg[/url] set to never expire. Then attach the link in a reply to this thread, along with the report from osu!macOS Agent in Step 1.
 	[/list]
-	If you need any help with any of the steps outlined here, check out https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html or feel free to make a reply back here on the forum. Thanks!
+	If you need any help with any of the steps outlined here, check out https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html or feel free to make a reply back here on the forums. Thanks!
 	[/box]
+
+================================================
+Report and repair with osu!macOS Agent
+================================================
+
+.. code-block::
+
+	[box=Report and repair with osu!macOS Agent]
+	[list=1]
+	[*]Download the latest version of Technocoder's [url=https://osu.ppy.sh/community/forums/topics/1036678]osu!macOS Agent[/url] - older versions may have incompatibilities or bugs, especially with newer wrappers.
+	[*]Once it finishes downloading, open [b]osu!macOS Agent[/b].
+	[*]If you haven't already done so, click the [b]Select[/b] button and browse to osu!.app's location. The text box should display its filepath (e.g ~/Users/firefly/Desktop/osu!.app) and Wine Engine (e.g WS11WineCX64Bit19.0.1-1).
+    	[*]Select the [b]Troubleshoot[/b] tab, then click [b]Scan[/b].
+	[*]After the scan completes, click [b]Repair[/b].
+	[*]If this doesn't fix your issue, click [b]Copy Report[/b]. Copy the contents into a reply to this thread and we'll do our best to help you out! Please don't forget to do a [b]Test Run[/b] as outlined in the next step.
+	[/list]
+	If you need any help with any of the steps outlined here, check out https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html or feel free to make a reply back here on the forums. Thanks!
+	[/box]
+
+================================================
+Generating a Test Run through Wineskin
+================================================
+
+.. code-block::
+
+	[box=Generating a Test Run through Wineskin]
+	[list=1]
+	[*]Locate your osu! installation.
+	[*]Right click on osu!, then select [b]Show Package Contents[/b].
+	[*]Open [b]Wineskin[/b] > [b]Advanced[/b].
+	[*]Click [b]Test Run[/b]. 
+		[*]If osu! starts successfully (even with glitches), you can then close the program down. 
+		[*]Once the program has either closed or crashed, a dialog will pop up asking you whether you want to view [b]Test Run Logs[/b]. Click [b]Yes[/b].
+	[*]Copy the results of your Test Run logs to a pastebin such as [url=https://paste.gg]paste.gg[/url] set to never expire. Then attach the link in a reply to this thread, along with the report from osu!macOS Agent in Step 1.
+	[/list]
+	If you need any help with any of the steps outlined here, check out https://osu-mac.readthedocs.io/en/latest/issues/troubleshooting.html or feel free to make a reply back here on the forums. Thanks!
+	[/box]
+
+================================================
+Setting priority and affinity
+================================================
+
+.. code-block::
+
+	[box=Setting priority and affinity]
+	[list=1]
+	[*]Make sure osu! is currently running
+	[*]Locate your osu! installation
+	[*]Right click on osu!, then select [b]Show Package Contents[/b]
+	[*]Open [b]Wineskin[/b] > [b]Advanced[/b] > [b]Tools[/b]
+	[*]Click on [b]Task Manager (taskmgr)[/b] - it may take some time before the window opens
+	[*]Find osu!.exe in the list that appears.
+	[*]To set priority, right click, then select [b]Set priority[/b].
+		[*]By default, osu! is on High. Ensure the option is selected to High.
+	[*]To set affinity, right click, then select [b]Set affinity...[/b]
+		[*]In the window that appears, select the number of cores you would like to use
+		[*]More cores = greater performance (recommended)
+		[*]Less cores = greater stability in some specific situations
+		[*]Choosing specific cores may positively or negatively impact your game's performance or stability
+
 	
 ================================================
 osu! on Apple Silicon and Big Sur
