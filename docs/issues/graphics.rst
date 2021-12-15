@@ -26,9 +26,13 @@ osu! crashes on startup, displaying an error message that says *osu! was unable 
 Cause
 ****************************************
 
+.. note:: 
+
+	A previous version of this article incorrectly stated that osu! used DirectX. It has now been corrected. Please see `issue #8 <https://github.com/aidswidjaja/osu-mac/issues/8>`_ on GitHub for more information.
+
 This usually occurs because a user enabled Compatibility Mode in osu! settings, or changed to a screen resolution that Wine couldn't handle.
 
-Wine doesn't support Compatibility Mode (aka osu!fallback) since it relies on OpenGL, whereas standard osu! uses DirectX. If you look in the logs, you may notice that osu! will be unable to find an OpenGL file.
+Standard osu! uses OpenGL which is supported by the Wineskin, while Compatibility Mode will use DirectX which is **not supported** by osu! Wineskins.
 
 .. note::
 
