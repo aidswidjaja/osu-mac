@@ -32,11 +32,7 @@ Cause
 
 This usually occurs because a user enabled Compatibility Mode in osu! settings, or changed to a screen resolution that Wine couldn't handle.
 
-Standard osu! uses OpenGL which is supported by the Wineskin, while Compatibility Mode will use DirectX which is **not supported** by osu! Wineskins.
-
-.. note::
-
-    If you need to use Compatibility Mode, you can try switching to the X11 driver, though in our own testing this made no observeable difference.
+Standard osu! uses OpenGL which is supported by the Wineskin, while Compatibility Mode will use ANGLE / OpenGL ES which is **not supported** by osu! Wineskins. This explains why osu! will crash with OpenGL ES-related errors on Compatibility Mode.
 
 ****
 
