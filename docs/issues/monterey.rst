@@ -33,11 +33,7 @@ Resolution
 
 Update your version of macOS Monterey to any version after Beta 5.
 
-macOS Monterey is still considered to be _unsupported_. Although there are reports of WINE working on newer builds of macOS Monterey, we have not confirmed whether macOS Monterey works with osu! Wineskins.
-
-.. note::
-
-    Please keep in mind that the osu! compatibility layer for macOS is maintained entirely by volunteers, and we may not be able to immediately supply a Monterey-compatible Wineskin.
+macOS Monterey should work with the latest version of osu! wrappers when using versions of macOS Monterey after Beta 5, but if you are experiencing issues then please let us know in the `forums <https://osu.ppy.sh/community/forums/topics/1106057>`_.
 
 ****
 
