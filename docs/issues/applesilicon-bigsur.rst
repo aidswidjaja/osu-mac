@@ -15,7 +15,7 @@ Apple Silicon / Big Sur issues
 Behaviour
 ****************************************
 
-We are currently investigating reports of issues being experienced on Apple Silicon devices, as well as both Intel x86-powered and Apple Silicon devices running macOS Big Sur. Behaviour includes:
+Older Wineskin versions have reported experiencing issues on Apple Silicon devices, as well as both Intel x86-powered and Apple Silicon devices running macOS Big Sur. Behaviour includes:
 
 - `Command prompt window displaying for a few seconds, then the process crashing <commandprompt.rst>`_
 - osu! not starting when clicking
@@ -24,10 +24,12 @@ We are currently investigating reports of issues being experienced on Apple Sili
 ****
 
 ****************************************
-Information about this issue
+Resolution
 ****************************************
 
-Technocoder is doing his best to solve these issues, including creating new wrappers and working with the Unofficial Wineskin team to try out new versions of Wineskin and include them with osu!. If you're experiencing issues, help us out by running through `basic troubleshooting <troubleshooting.html>`_ and trying out the latest versions of new Wineskins.
+Download the `latest available wrapper version <https://osu.ppy.sh/community/forums/topics/1106057>`_
+
+If you're still experiencing issues, help us out by running through `basic troubleshooting <troubleshooting.html>`_ and trying out the latest versions of new Wineskins.
 
 ****
 
