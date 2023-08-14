@@ -1,4 +1,4 @@
-#############################################
+	#############################################
 Apple Silicon / Big Sur issues
 #############################################
 
@@ -7,7 +7,6 @@ Apple Silicon / Big Sur issues
     | This article is applicable to the following wrappers:
     | • `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with macOS Catalina 10.15 support <https://osu.ppy.sh/community/forums/topics/1106057>`_
     | • `Technocoder <https://osu.ppy.sh/users/10338558>`_'s `Wineskin with Apple Silicon support <https://osu.ppy.sh/community/forums/topics/1106057>`_
-
 
 ****
 

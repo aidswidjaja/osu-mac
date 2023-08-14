@@ -65,3 +65,7 @@ html_css_files = [
     'css/custom.css',
 ]
 
+rst_prolog = """.. attention::
+    **August 2023 update:** osu! Wineskins for macOS, osu!macOS Agent, and this osu!mac documentation website is no longer officially supported or maintained. Official support will no longer be provided by the authors of these respective projects on the osu! forums. You can read more information about this change from `Technocoder <https://osu.ppy.sh/community/forums/posts/9207717>`_ and `aidswidjaja <https://osu.ppy.sh/community/forums/posts/9239079>`_. Thank you for everything.
+"""
+
